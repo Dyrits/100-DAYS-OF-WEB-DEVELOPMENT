@@ -3,6 +3,16 @@ h1 {
   color: #473E3EFF;
 }
 
+ol {
+  list-style: none;
+  li {
+    width: 25rem;
+    background-color: #DF887CFF;
+    border-radius: 0.5rem;
+    margin: 0.25rem auto;
+  }
+}
+
 #today {
   list-style: none;
   margin: 0.75rem;
@@ -19,14 +29,5 @@ h1 {
   }
 }
 
-ol {
-  list-style: none;
-  li {
-    width: 25rem;
-    background-color: #DF887CFF;
-    border-radius: 0.5rem;
-    margin: 0.25rem auto;
-  }
-}
 .lessons { list-style: none; }
 ul { list-style: inside square; }

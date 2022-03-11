@@ -34,7 +34,7 @@ section ul {
 }
 section ul li {
   margin-top: 1rem;
-  padding-left: 10px;
+  padding-left: 0.5rem;
 }
 section a {
   background-color: #FEEFAD;
@@ -47,7 +47,7 @@ section a:hover {
   background-color: #FFF;
 }
 
-.highlighted {
+.important {
   color: #E9D0CA;
   border-left: 0.5rem solid #F2D355;
 }

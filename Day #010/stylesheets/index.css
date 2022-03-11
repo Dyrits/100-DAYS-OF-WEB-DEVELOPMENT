@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.lorem {
+  text-decoration: line-through;
+}
+
+body {
+  background-color: #F4EAFFFF;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  color: #5831C4FF;
+  font-size: 3.25rem;
+}
+header img {
+  width: 18.75em;
+  animation: jello-horizontal 0.9s both;
+}
+
+main {
+  background-color: #7A4ADAFF;
+  color: #F8F1FFFF;
+  width: 44rem;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+main section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main section ul li {
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid transparent;
+}
+main section a {
+  background-color: #FFEDB1FF;
+  color: #7A4ADAFF;
+  text-decoration: none;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+main section a:hover, main section a:active {
+  background-color: #F8F1FFFF;
+}
+
+footer {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  background-color: #FAC927FF;
+  color: #423304FF;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+footer a:hover, footer a:active {
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+}
+footer p {
+  color: #837195FF;
+  margin-top: 2rem;
+}
+footer p:before {
+  content: "© ";
+}
+
+.important {
+  color: #FFEDB1FF;
+  border-left: 0.5rem solid #F7D155FF;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -31,7 +31,7 @@ section {
     padding-left: 0;
     li {
       margin-top: 1rem;
-      padding-left: 10px;
+      padding-left: 0.5rem;
     }
   }
   a {
@@ -40,14 +40,12 @@ section {
     text-decoration: none;
     padding: 0.25rem;
     border-radius: 0.25rem;
-    &:hover {
-      background-color: #FFF;
-    }
+    &:hover { background-color: #FFF; }
   }
 }
 
 
-.highlighted {
+.important {
   color: #E9D0CA;
   border-left: 0.5rem solid #F2D355;
 }

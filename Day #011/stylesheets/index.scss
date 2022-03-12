@@ -23,6 +23,14 @@ main {
     font-weight: bold;
     font-size: 3.25rem;
   }
+  p {
+    color: #E6BA0C;
+    a {
+      color: #E6BA0C;
+      text-decoration: underline;
+      &:hover { color: #420202; }
+    }
+  }
 }
 
 a { color: #491D32FF }

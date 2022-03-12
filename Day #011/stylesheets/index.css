@@ -26,6 +26,16 @@ main #goal {
   font-weight: bold;
   font-size: 3.25rem;
 }
+main p {
+  color: #E6BA0C;
+}
+main p a {
+  color: #E6BA0C;
+  text-decoration: underline;
+}
+main p a:hover {
+  color: #420202;
+}
 
 a {
   color: #491D32FF;

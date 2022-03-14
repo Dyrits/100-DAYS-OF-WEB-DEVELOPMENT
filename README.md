@@ -1,4 +1,4 @@
-# Day 001
+# Day #001
 Get started with the course & create your first basic website!
 
 ---

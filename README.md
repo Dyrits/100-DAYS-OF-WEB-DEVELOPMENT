@@ -1,4 +1,4 @@
-# Day 013
+# Day #013
 Time to take control over your source code! Learn more about Git and GitHub and how you can use these tools effectively.
 
 ---

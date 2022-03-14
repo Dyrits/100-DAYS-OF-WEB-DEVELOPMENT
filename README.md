@@ -4,7 +4,7 @@ Let's finish the first summary module and ensure that we're all on the same page
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
         <li>Styling the Main Content</li>
         <li>Styling List Items & Links</li>

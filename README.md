@@ -4,7 +4,7 @@ Get started with the course & create your first basic website!
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
     <ul>
         <li>Welcome to This Course!</li>
         <li>What Is "Web Development" & How Does The Web Work?</li>

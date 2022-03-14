@@ -1,4 +1,4 @@
-# Day 12
+# Day #012
 Start diving deeper into Git (a version control software) by installing it on your system and learning about some first key Git concepts.
 
 ---

@@ -1,16 +1,20 @@
-# [100 Days Of Code (100 Days Of Web Development)](https://100daysofwebdev.com/paths/100-days-challenge)
-The "100 Days of Code" challenge is a challenge that was invented to motivate people to continue learning and coding (and therefore growing as a developer).
+# Day #008
+Learn about advanced CSS concepts & practice and apply what you learned until now!
 
-- [Day #001](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23001)
-- [Day #002](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23002)
-- [Day #003](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23003)
-- [Day #004](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23004)
-- [Day #005](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23005)
-- [Day #006](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23006)
-- [Day #007](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23007)
-- [Day #008](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23008)
-- [Day #009](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23009)
-- [Day #010](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23010)
-- [Day #011](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23011)
-- [Day #012](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23012)
-- [Day #013](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23013)
+---
+
+<details>
+    <summary>List of Lectures (Video Duration: 48 minutes)</summary>
+    <ul>
+        <li>Styling Differences Between Block & Inline Elements</li>
+        <li>Understanding Margin Collapsing</li>
+        <li>The "box-shadow" Property</li>
+        <li>Your Challenge!</li>
+        <li>Creating the HTML Layout</li>
+        <li>Styling the Main Section</li>
+        <li>Styling Images & Working with Negative Margins</li>
+        <li>Finishing Touches</li>
+        <li>Module Summary</li>
+        <li>A List Of All CSS Selectors</li>
+    </ul>
+</details>

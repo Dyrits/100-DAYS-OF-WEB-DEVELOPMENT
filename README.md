@@ -4,7 +4,7 @@ Time for a first, thorough summary and practice. We'll start summarzing key HTML
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
         <li>Module Introduction</li>
         <li>Your Task!</li>

@@ -1,16 +1,14 @@
-# [100 Days Of Code (100 Days Of Web Development)](https://100daysofwebdev.com/paths/100-days-challenge)
-The "100 Days of Code" challenge is a challenge that was invented to motivate people to continue learning and coding (and therefore growing as a developer).
+# Day #014
+Dive deeper into GitHub and learn how you can use it to collaborate with others and share your code.
 
-- [Day #001](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23001)
-- [Day #002](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23002)
-- [Day #003](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23003)
-- [Day #004](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23004)
-- [Day #005](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23005)
-- [Day #006](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23006)
-- [Day #007](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23007)
-- [Day #008](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23008)
-- [Day #009](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23009)
-- [Day #010](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23010)
-- [Day #011](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23011)
-- [Day #012](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23012)
-- [Day #013](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23013)
+---
+
+<details>
+    <summary>List of Lectures (Video Duration: 54 minutes)</summary>
+    <ul>
+        <li>Understanding the Personal Access Token & "git clone"</li>
+        <li>Collaborating on Projects - Collaborators & Organizations</li>
+        <li>Contributing to Projects - Forks & Pull Requests</li>
+        <li>Wrap Up</li>
+    </ul>
+</details>

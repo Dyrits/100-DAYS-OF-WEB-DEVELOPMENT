@@ -1,18 +1,17 @@
-# Day #015
-Back to coding! Let's dive into various techniques and concepts that help you create beautiful website layouts with CSS.
+# Day #016
+Learn more about CSS layouts and key styling techniques.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 38 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
     <ul>
-        <li>Module Introduction</li>
-        <li>Project Overview - What we Will Build</li>
-        <li>Project Setup</li>
-        <li>Creating the Landing Page Structure</li>
-        <li>Adding the Page Logo</li>
-        <li>Adding the Page Navigation</li>
-        <li>Introducing CSS Flexbox</li>
-        <li>Aligning Flex Items</li>
+        <li>Your Flexbox Challenge!</li>
+        <li>Adding Flexbox to our Project</li>
+        <li>Adding a Background Image</li>
+        <li>Creating a Container for the Hero-Content</li>
+        <li>Positioning Elements</li>
+        <li>Styling the Hero Content</li>
+        <li>Understanding Fixed & Absolute Positioning</li>
     </ul>
 </details>

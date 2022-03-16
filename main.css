@@ -1,0 +1,43 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+#logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: #f5f3a0;
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  width: 25%;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #f5f3a0;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#about {
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=main.css.map */

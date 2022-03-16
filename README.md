@@ -1,18 +1,18 @@
-# [100 Days Of Code (100 Days Of Web Development)](https://100daysofwebdev.com/paths/100-days-challenge)
-The "100 Days of Code" challenge is a challenge that was invented to motivate people to continue learning and coding (and therefore growing as a developer).
+# Day #015
+Back to coding! Let's dive into various techniques and concepts that help you create beautiful website layouts with CSS.
 
-- [Day #001](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23001)
-- [Day #002](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23002)
-- [Day #003](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23003)
-- [Day #004](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23004)
-- [Day #005](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23005)
-- [Day #006](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23006)
-- [Day #007](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23007)
-- [Day #008](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23008)
-- [Day #009](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23009)
-- [Day #010](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23010)
-- [Day #011](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23011)
-- [Day #012](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23012)
-- [Day #013](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23013)
-- [Day #014](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23014)
-- [Day #015](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23015)
+---
+
+<details>
+    <summary>List of Lectures (Video Duration: 38 minutes)</summary>
+    <ul>
+        <li>Module Introduction</li>
+        <li>Project Overview - What we Will Build</li>
+        <li>Project Setup</li>
+        <li>Creating the Landing Page Structure</li>
+        <li>Adding the Page Logo</li>
+        <li>Adding the Page Navigation</li>
+        <li>Introducing CSS Flexbox</li>
+        <li>Aligning Flex Items</li>
+    </ul>
+</details>

@@ -3,22 +3,10 @@ body {
   margin: 0;
 }
 
-#logo a {
-  padding: 10px;
-  font-family: "Oleo Script", sans-serif;
-  color: #f5f3a0;
-  font-size: 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px black;
-}
-
 header {
   display: flex;
   justify-content: space-between;
-}
-header nav {
-  width: 25%;
+  padding: 15px 60px;
 }
 header nav ul {
   height: 100%;
@@ -29,10 +17,28 @@ header nav ul {
   margin: 0;
   padding: 0;
 }
-header nav ul a {
+header nav ul li {
+  margin-left: 25px;
+}
+header nav ul li a {
   text-decoration: none;
   color: #f5f3a0;
   font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+  padding: 10px;
+}
+header nav ul li a:hover {
+  border-right: 2px solid #f5f3a0;
+  border-bottom: 2px solid #f5f3a0;
+}
+
+#logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: #f5f3a0;
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
   text-shadow: 1px 1px 2px black;
 }
 

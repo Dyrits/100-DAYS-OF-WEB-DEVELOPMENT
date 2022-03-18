@@ -12,7 +12,7 @@ header {
   text-align: center;
   padding: 15px 60px;
   flex-wrap: wrap;
-  @media only screen and (max-width: 796px) {justify-content: center; }
+  @media only screen and (max-width: 796px) { justify-content: center; }
   nav {
     ul {
       height: 100%;
@@ -42,6 +42,7 @@ header {
 }
 
 #logo {
+  @media only screen and (max-width: 796px) { margin-bottom: 15px; }
   a {
     padding: 10px;
     font-family: "Oleo Script", sans-serif;

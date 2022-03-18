@@ -43,6 +43,11 @@ header nav ul li a:hover {
   border-bottom: 2px solid #f5f3a0;
 }
 
+@media only screen and (max-width: 796px) {
+  #logo {
+    margin-bottom: 15px;
+  }
+}
 #logo a {
   padding: 10px;
   font-family: "Oleo Script", sans-serif;

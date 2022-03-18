@@ -1,17 +1,17 @@
-# Day #016
-Learn more about CSS layouts and key styling techniques.
+# Day #017
+Time to dive even deeper into the nitty-gritty (yet very important) details about CSS styling.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
     <ul>
-        <li>Your Flexbox Challenge!</li>
-        <li>Adding Flexbox to our Project</li>
-        <li>Adding a Background Image</li>
-        <li>Creating a Container for the Hero-Content</li>
-        <li>Positioning Elements</li>
-        <li>Styling the Hero Content</li>
-        <li>Understanding Fixed & Absolute Positioning</li>
+        <li>Working with % Units & Creating a Top Navigation Bar</li>
+        <li>Finishing the Header</li>
+        <li>Introducing the "Highlights" Section</li>
+        <li>Creating the HTML Code</li>
+        <li>Building the Flex Container</li>
+        <li>Flex Item Layout</li>
+        <li>Styling Text</li>
     </ul>
 </details>

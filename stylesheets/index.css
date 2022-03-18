@@ -1,10 +1,7 @@
-body {
-  background-image: url("../images/ocean.jpg");
+#hero {
+  background-image: url("../images/background/ocean.jpg");
   background-position: center;
   background-size: cover;
-}
-
-#hero {
   height: 800px;
   display: flex;
   align-items: center;
@@ -12,6 +9,7 @@ body {
 }
 #hero-content {
   width: 900px;
+  max-width: 90%;
   background-color: rgba(51, 47, 47, 0.8);
   box-shadow: 2px 4px 8px #444343;
   border-radius: 10px;
@@ -46,6 +44,45 @@ body {
   color: #f5f3a0;
   background-color: rgba(51, 47, 47, 0.8);
   border-radius: 20px 0 20px 0;
+}
+
+#highlights {
+  text-align: center;
+  text-transform: uppercase;
+}
+#highlights h2 {
+  color: #3b4140;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  margin: 25px;
+}
+
+#destinations {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.destination img {
+  height: 200px;
+  width: 265px;
+  box-shadow: 2px 4px 8px #444343;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.25s;
+}
+.destination img:hover {
+  transform: scale(1.05);
+}
+.destination p {
+  font-size: 24px;
+  color: #7c7b7b;
+}
+.destination p strong {
+  color: #00a075;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -4,9 +4,19 @@ body {
 }
 
 header {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   padding: 15px 60px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 796px) {
+  header {
+    justify-content: center;
+  }
 }
 header nav ul {
   height: 100%;
@@ -26,6 +36,7 @@ header nav ul li a {
   font-size: 25px;
   text-shadow: 1px 1px 2px black;
   padding: 10px;
+  border-radius: 10px 0 10px 0;
 }
 header nav ul li a:hover {
   border-right: 2px solid #f5f3a0;
@@ -40,6 +51,12 @@ header nav ul li a:hover {
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px black;
+}
+#logo a:hover .initials {
+  color: rgba(51, 47, 47, 0.8);
+  text-shadow: 1px 1px 2px #f5f3a0;
+  border-bottom: 2px solid #f5f3a0;
+  border-top: 2px solid #f5f3a0;
 }
 
 #about {

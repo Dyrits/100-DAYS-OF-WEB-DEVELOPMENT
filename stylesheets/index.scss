@@ -1,16 +1,14 @@
-body {
-  background-image: url("../images/ocean.jpg");
+#hero {
+  background-image: url("../images/background/ocean.jpg");
   background-position: center;
   background-size: cover;
-}
-
-#hero {
   height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
   &-content {
     width: 900px;
+    max-width: 90%;
     background-color: rgba(51,47, 47, 0.8);
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 10px;
@@ -45,5 +43,42 @@ body {
         border-radius: 20px 0 20px 0;
       }
     }
+  }
+}
+
+#highlights {
+  text-align: center;
+  text-transform: uppercase;
+  h2 {
+    color: rgb(59, 65, 64);
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    margin: 25px;
+  }
+}
+
+#destinations {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.destination {
+  img {
+    height: 200px;
+    width: 265px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.25s;
+    &:hover { transform: scale(1.05); }
+  }
+  p {
+    font-size: 24px;
+    color: rgb(124, 123, 123);
+    strong { color: rgb(0, 160, 117); }
   }
 }

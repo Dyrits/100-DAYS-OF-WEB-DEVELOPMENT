@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+  color: white;
+}
+
+header { position: static; }
+
+main {
+  ul {
+    list-style: none;
+    li {
+      img {
+        width: 300px;
+        height: 280px;
+      }
+    }
+  }
+}
+
+#logo a:hover {
+  color: white;
+  .initials {
+    color: rgb(245, 243, 160);
+    text-shadow: none;
+    border-bottom: 2px solid rgb(245, 243, 160);
+    border-top: 2px solid rgb(245, 243, 160);
+  }
+}

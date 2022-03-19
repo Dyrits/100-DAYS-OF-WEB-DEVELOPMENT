@@ -41,6 +41,27 @@ header {
   }
 }
 
+footer {
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  padding: 35px;
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    li {
+      width: 80px;
+      height: 80px;
+      margin: 0 50px;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.75s;
+        &:hover { transform: rotate(360deg); }
+      }
+    }
+  }
+}
+
 #logo {
   @media only screen and (max-width: 796px) { margin-bottom: 15px; }
   a {

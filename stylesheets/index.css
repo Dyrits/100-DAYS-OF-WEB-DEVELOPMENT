@@ -57,8 +57,10 @@
 }
 
 #highlights {
+  background: linear-gradient(0deg, #e3fffd, #caf3f0);
   text-align: center;
   text-transform: uppercase;
+  padding: 20px;
 }
 #highlights h2 {
   color: #3b4140;

@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(30deg, #4d4d4d, #3a3a3a);
+  color: white;
+}
+
+header {
+  position: static;
+}
+
+main ul {
+  list-style: none;
+}
+main ul li img {
+  width: 300px;
+  height: 280px;
+}
+
+#logo a:hover {
+  color: white;
+}
+#logo a:hover .initials {
+  color: #f5f3a0;
+  text-shadow: none;
+  border-bottom: 2px solid #f5f3a0;
+  border-top: 2px solid #f5f3a0;
+}
+
+/*# sourceMappingURL=destinations.css.map */

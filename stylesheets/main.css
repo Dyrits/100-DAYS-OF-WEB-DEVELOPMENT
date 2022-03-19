@@ -43,6 +43,29 @@ header nav ul li a:hover {
   border-bottom: 2px solid #f5f3a0;
 }
 
+footer {
+  background: linear-gradient(70deg, #181818, #191d1d);
+  padding: 35px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+footer ul li {
+  width: 80px;
+  height: 80px;
+  margin: 0 50px;
+}
+footer ul li img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.75s;
+}
+footer ul li img:hover {
+  transform: rotate(360deg);
+}
+
 @media only screen and (max-width: 796px) {
   #logo {
     margin-bottom: 15px;

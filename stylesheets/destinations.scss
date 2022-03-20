@@ -7,14 +7,22 @@ header { position: static; }
 
 main {
   ul {
+    width: 800px;
+    margin: 0 auto;
     list-style: none;
     li {
+      display: flex;
+      background-color: white;
       img {
         width: 300px;
         height: 280px;
       }
     }
   }
+}
+
+.item-content {
+  padding: 25px;
 }
 
 #logo a:hover {

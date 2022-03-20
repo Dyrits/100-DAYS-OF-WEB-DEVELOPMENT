@@ -1,18 +1,16 @@
-# Day #018
-Apply what you learned and start finishing the course section demo project by also diving into more key features.
+# Day #019
+It's time for more practicing and some brand-new CSS concepts as well!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 42 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 48 minutes)</summary>
     <ul>
-        <li>Understanding Parent - Child Margin Collapsing</li>
-        <li>Working with CSS Functions - Linear Gradients</li>
-        <li>The Next Step</li>
-        <li>Creating a Footer Section</li>
-        <li>Styling the Footer</li>
-        <li>Places Page - Overview & Preparations</li>
-        <li>Creating the Card Content</li>
-        <li>Using "position: static"</li>
+        <li>Creating the Card Look [</li>
+        <li>Understanding "overflow" & Your Challenge!</li>
+        <li>Solving the Challenge</li>
+        <li>Creating all Cards</li>
+        <li>The CSS Grid - Theory</li>
+        <li>Understanding the "nth-type" Selector & "grid-template-columns"</li>
     </ul>
 </details>

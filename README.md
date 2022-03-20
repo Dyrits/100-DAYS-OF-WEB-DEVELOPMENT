@@ -1,16 +1,20 @@
-# Day #019
-It's time for more practicing and some brand-new CSS concepts as well!
+# Day #020
+Explore more key CSS concepts - now focusing on 'responsive' websites that work well on all kinds of screen sizes and devices.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 48 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
     <ul>
-        <li>Creating the Card Look [</li>
-        <li>Understanding "overflow" & Your Challenge!</li>
-        <li>Solving the Challenge</li>
-        <li>Creating all Cards</li>
-        <li>The CSS Grid - Theory</li>
-        <li>Understanding the "nth-type" Selector & "grid-template-columns"</li>
+        <li>Your Grid Challenge</li>
+        <li>Working with Unicode UTF-8</li>
+        <li>Finishing Touches</li>
+        <li>Module Summary</li>
+        <li>Optional: Diving Deeper Into "position", Flexbox & the Grid </li>
+        <li>Module Introduction</li>
+        <li>Project Overview</li>
+        <li>Please Read: Optional Lectures</li>
+        <li>Optional: Your Challenge - Creating the HTML Structure</li>
+        <li>Optional: Challenge Solution - The HTML Structure</li>
     </ul>
 </details>

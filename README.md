@@ -17,4 +17,4 @@ Let's finish the first summary module and ensure that we're all on the same page
 
 ---
 
-/ [Netlify](https://100daysofcode-010.netlify.app/)
+/ [Netlify](https://100daysofcode-010-dyrits.netlify.app/)

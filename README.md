@@ -22,4 +22,4 @@ Time to share our first website with the world! Learn how to publish (deploy) a 
 
 ---
 
-/ [Netlify](https://100daysofcode-011.netlify.app/)
+/ [Netlify](https://100daysofcode-011-dyrits.netlify.app/)

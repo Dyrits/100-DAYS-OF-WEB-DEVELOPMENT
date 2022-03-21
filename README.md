@@ -11,6 +11,7 @@ Explore more key CSS concepts - now focusing on 'responsive' websites that work 
         <li>Finishing Touches</li>
         <li>Module Summary</li>
         <li>Optional: Diving Deeper Into "position", Flexbox & the Grid </li>
+        <hr>
         <li>Module Introduction</li>
         <li>Project Overview</li>
         <li>Please Read: Optional Lectures</li>
@@ -18,3 +19,5 @@ Explore more key CSS concepts - now focusing on 'responsive' websites that work 
         <li>Optional: Challenge Solution - The HTML Structure</li>
     </ul>
 </details>
+
+/ [Netlify] (https://100daysofcode-020-dyrits.netlify.app/)

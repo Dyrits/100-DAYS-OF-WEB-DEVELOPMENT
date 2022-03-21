@@ -20,4 +20,4 @@ Explore more key CSS concepts - now focusing on 'responsive' websites that work 
     </ul>
 </details>
 
-/ [Netlify] (https://100daysofcode-020-dyrits.netlify.app/)
+/ [Netlify](https://100daysofcode-020-dyrits.netlify.app/)

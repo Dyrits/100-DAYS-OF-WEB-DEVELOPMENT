@@ -10,7 +10,7 @@ Explore more key CSS concepts - now focusing on 'responsive' websites that work 
         <li>Working with Unicode UTF-8</li>
         <li>Finishing Touches</li>
         <li>Module Summary</li>
-        <li>Optional: Diving Deeper Into "position", Flexbox & the Grid </li>
+        <li>Optional: Diving Deeper Into "position", Flexbox & the Grid</li>
         <hr>
         <li>Module Introduction</li>
         <li>Project Overview</li>

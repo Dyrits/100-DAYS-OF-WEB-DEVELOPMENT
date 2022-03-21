@@ -1,21 +1,15 @@
-# Day #020
-Explore more key CSS concepts - now focusing on 'responsive' websites that work well on all kinds of screen sizes and devices.
+# Day #021
+Learn about important CSS features that help with building responsive websites.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 47 minutes)</summary>
     <ul>
-        <li>Your Grid Challenge</li>
-        <li>Working with Unicode UTF-8</li>
-        <li>Finishing Touches</li>
-        <li>Module Summary</li>
-        <li>Optional: Diving Deeper Into "position", Flexbox & the Grid </li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>Project Overview</li>
-        <li>Please Read: Optional Lectures</li>
-        <li>Optional: Your Challenge - Creating the HTML Structure</li>
-        <li>Optional: Challenge Solution - The HTML Structure</li>
+        <li>Optional: Styling the Header</li>
+        <li> Optional: Styling the "main" Section</li>
+        <li>What is Responsive Design?</li>
+        <li> The Problem with Pixels</li>
+        <li>Introducing "em" & "rem"</li>
     </ul>
 </details>

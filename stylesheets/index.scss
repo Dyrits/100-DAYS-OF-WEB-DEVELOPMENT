@@ -4,32 +4,24 @@ body {
   background-color: rgb(44, 41, 38);
 }
 
-
-#logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: rgb(238, 164, 80);
-  text-transform: uppercase;
-}
-
 a { text-decoration: none; }
 
 header {
-  height: 80px;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(29, 26, 24);
-  padding: 0 20px;
+  padding: 0 5%;
   ul {
     margin: 0 20px 0 0;
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     a  {
       color: rgb(185, 131, 31);
-      font-size: 20px;
+      font-size: 1.25rem;
       &:hover {
         color: rgb(228, 164, 44);
       }
@@ -37,19 +29,26 @@ header {
   }
 }
 
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+}
+
 main h1 {
   text-align: center;
   color: rgb(238, 164, 80);
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 #meals {
   width: 80%;
-  margin: 50px auto;
+  margin: 2rem auto;
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
     margin: 0;
     padding: 0;
   }
@@ -60,13 +59,14 @@ main h1 {
   border-radius: 10px;
   overflow: hidden;
   img {
-    height: 240px;
+    height: 15rem;
     width: 100%;
     object-fit: cover;
   }
   &-content {
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
+    h2 { margin-top : 0.75rem; }
   }
 }
 
@@ -74,6 +74,6 @@ main h1 {
   background-color: rgb(228, 157, 44);
   color: white;
   border-radius: 10px 5px 10px 5px;
-  padding: 10px 25px;
+  padding: 0.5rem 1.5rem;
   &:hover { background-color: rgb(221, 134, 34); }
 }

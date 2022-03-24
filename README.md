@@ -1,15 +1,16 @@
-# Day #022
-Time to dive deeper into CSS units and start exploring another important feature: 'Media Queries'.
+# Day #023
+Dive deeper into media queries and learn about mobile menus.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
     <ul>
-        <li>Applying "em" & "rem" for the Font Size</li>
-        <li>Deep Dive: "em" vs "rem" vs "%"</li>
-        <li>Updating the Project Units</li>
-        <li>Comparing Desktop & Mobile First Design</li>
-        <li>Understanding Media Queries</li>
+        <li>Adding Media Queries to the Project</li>
+        <li>Your Media Queries Challenge!</li>
+        <li>Side Drawer & Hamburger Icon - Theory</li>
+        <li>Creating the Hamburger Button</li>
+        <li>Creating the Side Drawer</li>
+        <li>Understanding HTML Fragments</li>
     </ul>
 </details>

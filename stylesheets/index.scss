@@ -13,17 +13,18 @@ header {
   align-items: center;
   background-color: rgb(29, 26, 24);
   padding: 0 5%;
-  ul {
-    margin: 0 20px 0 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
-    a  {
-      color: rgb(185, 131, 31);
-      font-size: 1.25rem;
-      &:hover {
-        color: rgb(228, 164, 44);
+  nav {
+    @media (max-width: 48rem) { display: none; }
+    ul {
+      margin: 0 20px 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 1.25rem;
+      a  {
+        color: rgb(185, 131, 31);
+        font-size: 1.25rem;
+        &:hover { color: rgb(228, 164, 44); }
       }
     }
   }
@@ -36,10 +37,54 @@ header {
   text-transform: uppercase;
 }
 
+.menu-button {
+  display: none;
+  @media (max-width: 48rem) {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+    span {
+      width: 100%;
+      height: 3px;
+      background-color: rgb(238, 164, 80);
+    }
+  }
+}
+
+#drawer {
+  display: none;
+  @media (max-width: 48rem) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 26, 27);
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 4rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      a {
+        color: rgb(253, 239, 213);
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 main h1 {
   text-align: center;
   color: rgb(238, 164, 80);
   font-size: 3rem;
+  @media (max-width: 48rem) { font-size: 1.5rem; }
 }
 
 #meals {
@@ -51,6 +96,7 @@ main h1 {
     gap: 1.25rem;
     margin: 0;
     padding: 0;
+    @media (max-width: 48rem) { grid-template-columns: 100%; }
   }
 }
 

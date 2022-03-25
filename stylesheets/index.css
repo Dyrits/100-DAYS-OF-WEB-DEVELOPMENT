@@ -31,6 +31,7 @@ header nav ul {
 header nav ul a {
   color: #b9831f;
   font-size: 1.25rem;
+  cursor: not-allowed;
 }
 header nav ul a:hover {
   color: #e4a42c;
@@ -43,51 +44,50 @@ header nav ul a:hover {
   text-transform: uppercase;
 }
 
-.menu-button {
+#menu-button {
   display: none;
+  width: 3rem;
+  height: 3rem;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+}
+#menu-button span {
+  width: 100%;
+  height: 3px;
+  background-color: #eea450;
 }
 @media (max-width: 48rem) {
-  .menu-button {
-    width: 3rem;
-    height: 3rem;
+  #menu-button {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 1;
-  }
-  .menu-button span {
-    width: 100%;
-    height: 3px;
-    background-color: #eea450;
   }
 }
 
 #drawer {
   display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1d1a1b;
 }
-@media (max-width: 48rem) {
-  #drawer {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #1d1a1b;
-  }
-  #drawer ul {
-    list-style: none;
-    margin: 0;
-    padding: 4rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  #drawer ul a {
-    color: #fdefd5;
-    font-size: 2rem;
-  }
+#drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#drawer ul a {
+  color: #fdefd5;
+  font-size: 2rem;
+  cursor: not-allowed;
+}
+#drawer:target {
+  display: block;
 }
 
 main h1 {

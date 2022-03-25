@@ -1,16 +1,21 @@
-# Day #023
-Dive deeper into media queries and learn about mobile menus.
+# Day #024
+Time to finish responsive designs and explore general guidelines + more concepts that help with building good-looking websites.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 51 minutes)</summary>
     <ul>
-        <li>Adding Media Queries to the Project</li>
-        <li>Your Media Queries Challenge!</li>
-        <li>Side Drawer & Hamburger Icon - Theory</li>
-        <li>Creating the Hamburger Button</li>
-        <li>Creating the Side Drawer</li>
-        <li>Understanding HTML Fragments</li>
+        <li>Understanding the Target Selector</li>
+        <li>Finishing the Side Drawer</li>
+        <li>Introducing the "z-index" Property</li>
+        <li>Module Summary</li>
+        <hr>
+        <li>Module Introduction</li>
+        <li>Three Things to Keep in Mind</li>
+        <li>Introducing the Module Project</li>
+        <li>Sizing & Spacing</li>
+        <li>Choosing the Right Font</li>
+        <li>Understanding The Importance of Grey, Primary & Accent Colors</li>
     </ul>
 </details>

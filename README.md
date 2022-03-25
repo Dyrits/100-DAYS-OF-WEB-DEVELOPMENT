@@ -20,4 +20,6 @@ Time to finish responsive designs and explore general guidelines + more concepts
     </ul>
 </details>
 
+---
+
 / [Netlify](https://100daysofcode-024-01-dyrits.netlify.app/)

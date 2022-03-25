@@ -19,3 +19,5 @@ Time to finish responsive designs and explore general guidelines + more concepts
         <li>Understanding The Importance of Grey, Primary & Accent Colors</li>
     </ul>
 </details>
+
+/ [Netlify](https://100daysofcode-024-01-dyrits.netlify.app/)

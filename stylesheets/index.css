@@ -1,0 +1,90 @@
+html {
+  background-color: #ececec;
+  font-family: "Krub", sans-serif;
+  font-weight: 400;
+}
+
+.card-container {
+  background-color: white;
+  width: 350px;
+  margin: 50px auto;
+  box-shadow: 3px 3px 10px #c9c8c8;
+}
+
+h1 {
+  color: #3a3a3a;
+  text-align: left;
+  padding: 30px 50px 0px 50px;
+  margin: 10px 0;
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+}
+
+.card-info {
+  color: #868686;
+  text-align: left;
+  padding: 0 50px;
+  margin: 10px 0 30px 0;
+}
+
+.price {
+  color: #292929;
+  background-color: #a7e2ff;
+  text-align: center;
+  margin: 30px auto 10px auto;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.price-info {
+  color: #868686;
+  text-align: center;
+  margin: 10px 0 30px 0;
+  padding: 0 50px;
+}
+
+.sub-details {
+  width: 300px;
+  margin: 30px 50px;
+}
+
+.sub-feature {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  width: 10px;
+}
+
+.sub-feature-text {
+  color: #3a3a3a;
+  padding: 2px;
+  margin: 5px;
+}
+
+.button-container {
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.button {
+  color: #00aaff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 70%;
+  padding: 10px;
+  margin: 0 0 30px 0;
+  border: 2px solid #e0e0e0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: white;
+  background-color: #00aaff;
+  border: 2px solid white;
+}
+
+/*# sourceMappingURL=index.css.map */

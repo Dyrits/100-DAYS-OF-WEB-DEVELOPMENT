@@ -1,21 +1,16 @@
-# Day #024
-Time to finish responsive designs and explore general guidelines + more concepts that help with building good-looking websites.
+# Day #025
+Learn about more key features that help with building beautiful webpages.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 51 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 56 minutes)</summary>
     <ul>
-        <li>Understanding the Target Selector</li>
-        <li>Finishing the Side Drawer</li>
-        <li>Introducing the "z-index" Property</li>
-        <li>Module Summary</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>Three Things to Keep in Mind</li>
-        <li>Introducing the Module Project</li>
-        <li>Sizing & Spacing</li>
-        <li>Choosing the Right Font</li>
-        <li>Understanding The Importance of Grey, Primary & Accent Colors</li>
+        <li>Introducing CSS Variables / CSS Custom Properties</li>
+        <li>CSS Variables in Action</li>
+        <li>Comparing "root" vs "html" vs "*" Selectors</li>
+        <li>Understanding CSS Transformations</li>
+        <li>Adding CSS Transitions</li>
+        <li>Working with SVGs</li>
     </ul>
 </details>

@@ -1,0 +1,17 @@
+body {
+  background-color: #1e1e1e;
+  color: #e1e1e1;
+  margin: 8Rem;
+}
+
+input {
+  width: 20rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+button {
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */

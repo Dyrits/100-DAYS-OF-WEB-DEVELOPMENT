@@ -1,20 +1,16 @@
-# Day #025
-Learn about more key features that help with building beautiful webpages.
+# Day #026
+Time to leave CSS. Learn how you can collect user input by using forms on your web pages.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 56 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 38 minutes)</summary>
     <ul>
-        <li>Introducing CSS Variables / CSS Custom Properties</li>
-        <li>CSS Variables in Action</li>
-        <li>Comparing "root" vs "html" vs "*" Selectors</li>
-        <li>Understanding CSS Transformations</li>
-        <li>Adding CSS Transitions</li>
-        <li>Working with SVGs</li>
+        <li>Module Introduction</li>
+        <li>What & Why</li>
+        <li>Important Form HTML Elements</li>
+        <li>Our First Input Element</li>
+        <li>Adding a Button</li>
+        <li>The Form Element, Form Submission & Different Types of Requests</li>
     </ul>
 </details>
-
----
-
-/ [Netlify](https://100daysofcode-025-dyrits.netlify.app/)

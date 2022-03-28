@@ -1,5 +1,6 @@
 body {
-  background-color: #1E1E1EFF;
+  background-color: #2A0944;
+  font-family: "Roboto", sans-serif;
 }
 
 form {
@@ -9,14 +10,34 @@ form {
   padding: 1rem;
   border-radius: 10px;
 }
+form input, form button {
+  display: block;
+  font: inherit;
+}
 form input {
   box-sizing: border-box;
   width: 100%;
-  display: block;
   margin: 1rem 0;
+  border: 1px solid #2A0944;
+  padding: 0.25rem;
+  color: #3B185F;
+  border-radius: 5px;
+}
+form input:focus {
+  background-color: #FEC260;
+  color: #3B185F;
 }
 form button {
-  display: block;
+  background-color: #2A0944;
+  color: #FEC260;
+  border: 1px solid #3B185F;
+  border-radius: 0 0 10px 0;
+  padding: 0.5rem 1.5rem;
+  transition: border-radius 0.5s;
+}
+form button:hover {
+  background-color: #3B185F;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

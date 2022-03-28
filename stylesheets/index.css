@@ -1,16 +1,21 @@
 body {
-  background-color: #1e1e1e;
-  color: #e1e1e1;
-  margin: 8Rem;
+  background-color: #1E1E1EFF;
 }
 
-input {
-  width: 20rem;
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 10px;
+}
+form input {
+  box-sizing: border-box;
+  width: 100%;
   display: block;
   margin: 1rem 0;
 }
-
-button {
+form button {
   display: block;
 }
 

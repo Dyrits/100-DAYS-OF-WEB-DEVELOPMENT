@@ -1,16 +1,21 @@
 body {
-  background-color: rgb(30, 30, 30);
-  color: rgb(225, 225, 225);
-  margin: 8Rem;
+  background-color: #1E1E1EFF;
+  //color: #E1E1E1FF;
 }
 
-input {
-  width: 20rem;
-  display: block;
-  margin: 1rem 0;
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 10px;
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+  }
+  button { display: block; }
 }
 
-button {
-  display: block;
-}
 

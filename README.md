@@ -1,16 +1,16 @@
-# Day #026
-Time to leave CSS. Learn how you can collect user input by using forms on your web pages.
+# Day #027
+Dive into more key form elements that you can use to gather all kinds of user input.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 38 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
     <ul>
-        <li>Module Introduction</li>
-        <li>What & Why</li>
-        <li>Important Form HTML Elements</li>
-        <li>Our First Input Element</li>
-        <li>Adding a Button</li>
-        <li>The Form Element, Form Submission & Different Types of Requests</li>
+        <li>Styling the Form Element</li>
+        <li>Adding Labels</li>
+        <li>More Detailed Forms Styling</li>
+        <li>Understanding Different Input Types</li>
+        <li>Understanding Email, Numbers, Password & Date Types</li>
+        <li>Working with Radio Buttons</li>
     </ul>
 </details>

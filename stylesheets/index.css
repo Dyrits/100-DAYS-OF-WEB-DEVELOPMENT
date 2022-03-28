@@ -39,4 +39,19 @@ form button:hover {
   cursor: pointer;
 }
 
+#verification {
+  margin: 1rem 0;
+}
+#verification h2 {
+  margin-bottom: 0.5rem;
+}
+#verification div {
+  display: flex;
+  align-items: center;
+}
+#verification div input {
+  width: auto;
+  margin: 0 0.5rem 0 0;
+}
+
 /*# sourceMappingURL=index.css.map */

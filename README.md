@@ -1,16 +1,16 @@
-# Day #027
-Dive into more key form elements that you can use to gather all kinds of user input.
+# Day #028
+Explore yet more form elements and practice what you learned about HTML forms.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 44 minutes)</summary>
     <ul>
-        <li>Styling the Form Element</li>
-        <li>Adding Labels</li>
-        <li>More Detailed Forms Styling</li>
-        <li>Understanding Different Input Types</li>
-        <li>Understanding Email, Numbers, Password & Date Types</li>
-        <li>Working with Radio Buttons</li>
+        <li>Using Checkboxes/li>
+        <li>The Textarea Element For Longer Text</li>
+        <li>Adding a Dropdown</li>
+        <li>Forms & Semantics (Structuring Forms)</li>
+        <li>Validation Attributes</li>
+        <li>More Input & Form Attributes</li>
     </ul>
 </details>

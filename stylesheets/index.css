@@ -59,12 +59,12 @@ form button:hover {
   margin-bottom: 0.5rem;
 }
 
-.selectables {
+.selectable {
   display: flex;
   align-items: center;
   margin: 1rem 0;
 }
-.selectables input {
+.selectable input {
   width: auto;
   margin: 0 0.5rem 0 0;
 }

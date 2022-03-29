@@ -19,16 +19,16 @@
                 <h2>Registration details</h2>
                 <ul>
                     <li>
-                        <label for="name">Your name:</label>
-                        <input type="text" id="name" name="name">
+                        <label for="username">Your username:</label>
+                        <input type="text" id="username" name="username" required>
                     </li>
                     <li>
                         <label for="email">Your email address:</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </li>
                     <li>
                         <label for="password">Your password:</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" minlength="8" required>
                     </li>
                 </ul>
             </section>
@@ -37,11 +37,11 @@
                 <ul>
                     <li>
                         <label for="birthdate">Your birthdate:</label>
-                        <input type="date" name="birthdate" id="birthdate">
+                        <input type="date" name="birthdate" id="birthdate" max="2004-03-28">
                     </li>
                     <li>
                         <label for="age">Your age:</label>
-                        <input type="number" name="age" id="age">
+                        <input type="number" name="age" id="age" min="18" required>
                     </li>
                     <li>
                         <label for="message">Would you like to add any extra information?</label>
@@ -65,16 +65,16 @@
                 <h2>Contact</h2>
                 <h3>How should we contact you?</h3>
                 <ul>
-                    <li class="selectables">
-                        <input type="radio" name="verify" id="verify-email" value="email">
+                    <li class="selectable">
+                        <input type="radio" name="verify" id="verify-email" value="email" required>
                         <label for="verify-email">Send me an email.</label>
                     </li>
-                    <li class="selectables">
-                        <input type="radio" name="verify" id="verify-sms" value="sms">
+                    <li class="selectable">
+                        <input type="radio" name="verify" id="verify-sms" value="sms" required>
                         <label for="verify-sms">Send me an SMS.</label>
                     </li>
-                    <li class="selectables">
-                        <input type="radio" name="verify" id="verify-phone" value="phone">
+                    <li class="selectable">
+                        <input type="radio" name="verify" id="verify-phone" value="phone" required>
                         <label for="verify-phone">Call me.</label>
                     </li>
                 </ul>
@@ -82,7 +82,7 @@
             </section>
             <hr>
             <section>
-                <div class="selectables">
+                <div class="selectable">
                     <input type="checkbox" name="agreement" id="agreement">
                     <label for="agreement">I agree to the terms and conditions.</label>
                 </div>

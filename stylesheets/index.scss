@@ -40,16 +40,15 @@ form {
   }
 }
 
-#verification {
+#verification h2 { margin-bottom: 0.5rem; }
+
+.selectables {
+  display: flex;
+  align-items: center;
   margin: 1rem 0;
-  h2 { margin-bottom: 0.5rem; }
-  div {
-    display: flex;
-    align-items: center;
-    input {
-      width: auto;
-      margin: 0 0.5rem 0 0;
-    }
+  input {
+    width: auto;
+    margin: 0 0.5rem 0 0;
   }
 }
 

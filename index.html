@@ -27,18 +27,23 @@
             <input type="password" name="password" id="password">
             <div id="verification">
                 <h2>How should we verify your account?</h2>
-                <div>
+                <div class="selectables">
                     <input type="radio" name="verify" id="verify-email" value="email">
                     <label for="verify-email">Send me an email.</label>
                 </div>
-                <div>
+                <div class="selectables">
                     <input type="radio" name="verify" id="verify-sms" value="sms">
                     <label for="verify-sms">Send me a SMS.</label>
                 </div>
-                <div>
+                <div class="selectables">
                     <input type="radio" name="verify" id="verify-phone" value="phone">
                     <label for="verify-phone">Call me.</label>
                 </div>
+            </div>
+            <hr>
+            <div class="selectables">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">I agree to the terms and conditions.</label>
             </div>
             <button>Submit</button>
         </form>

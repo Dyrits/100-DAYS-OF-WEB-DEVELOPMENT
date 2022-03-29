@@ -21,7 +21,7 @@ form ul {
   margin: 0;
   padding: 0;
 }
-form input, form textarea, form select, form button {
+form input, form textarea, form select {
   display: block;
   font: inherit;
 }
@@ -43,6 +43,7 @@ form textarea {
   max-width: 100%;
 }
 form button {
+  font: inherit;
   background-color: #2A0944;
   color: #FEC260;
   border: 1px solid #3B185F;

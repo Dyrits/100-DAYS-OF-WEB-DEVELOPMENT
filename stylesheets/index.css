@@ -10,11 +10,11 @@ form {
   padding: 1rem;
   border-radius: 10px;
 }
-form input, form button {
+form input, form button, form textarea {
   display: block;
   font: inherit;
 }
-form input {
+form input, form textarea {
   box-sizing: border-box;
   width: 100%;
   margin: 1rem 0;
@@ -23,9 +23,13 @@ form input {
   color: #3B185F;
   border-radius: 5px;
 }
-form input:focus {
+form input:focus, form textarea:focus {
   background-color: #FEC260;
   color: #3B185F;
+}
+form textarea {
+  min-width: 100%;
+  max-width: 100%;
 }
 form button {
   background-color: #2A0944;

@@ -10,11 +10,11 @@ form {
   background-color: #FFF;
   padding: 1rem;
   border-radius: 10px;
-  input, button {
+  input, button, textarea {
     display: block;
     font: inherit;
   }
-  input {
+  input, textarea {
     box-sizing: border-box;
     width: 100%;
     margin: 1rem 0;
@@ -26,6 +26,10 @@ form {
       background-color: #FEC260;
       color: #3B185F;
     }
+  }
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
   }
   button {
     background-color: #2A0944;

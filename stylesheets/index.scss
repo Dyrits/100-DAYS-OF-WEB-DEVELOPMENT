@@ -38,10 +38,7 @@ form {
       color: #3B185F;
     }
   }
-  textarea {
-    min-width: 100%;
-    max-width: 100%;
-  }
+  textarea { resize: vertical; }
   button {
     font: inherit;
     background-color: #2A0944;

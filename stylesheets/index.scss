@@ -10,11 +10,11 @@ form {
   background-color: #FFF;
   padding: 1rem;
   border-radius: 10px;
-  input, button, textarea {
+  input, textarea, select, button {
     display: block;
     font: inherit;
   }
-  input, textarea {
+  input, textarea, select {
     box-sizing: border-box;
     width: 100%;
     margin: 1rem 0;

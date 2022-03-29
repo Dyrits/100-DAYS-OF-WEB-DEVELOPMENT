@@ -10,11 +10,11 @@ form {
   padding: 1rem;
   border-radius: 10px;
 }
-form input, form button, form textarea {
+form input, form textarea, form select, form button {
   display: block;
   font: inherit;
 }
-form input, form textarea {
+form input, form textarea, form select {
   box-sizing: border-box;
   width: 100%;
   margin: 1rem 0;
@@ -23,7 +23,7 @@ form input, form textarea {
   color: #3B185F;
   border-radius: 5px;
 }
-form input:focus, form textarea:focus {
+form input:focus, form textarea:focus, form select:focus {
   background-color: #FEC260;
   color: #3B185F;
 }

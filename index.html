@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Day #029 (HTML Forms)</title>
+    <title>Day #029 (Contact us)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,72 +13,54 @@
 </head>
 <body>
     <main>
-        <h1>Register</h1>
+        <h1>Contact us</h1>
         <form action="/" method="post">
             <section>
-                <h2>Registration details</h2>
+                <h2>How can we help you?</h2>
                 <ul>
                     <li>
-                        <label for="username">Your username:</label>
+                        <label for="username">Your name:</label>
                         <input type="text" id="username" name="username" required>
                     </li>
                     <li>
-                        <label for="email">Your email address:</label>
-                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Your phone number:</label>
+                        <input type="text" name="phone" id="phone" required>
                     </li>
                     <li>
                         <label for="password">Your password:</label>
                         <input type="password" name="password" id="password" minlength="8" required>
                     </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Personal details</h2>
-                <ul>
                     <li>
-                        <label for="birthdate">Your birthdate:</label>
-                        <input type="date" name="birthdate" id="birthdate" max="2004-03-28">
-                    </li>
-                    <li>
-                        <label for="age">Your age:</label>
-                        <input type="number" name="age" id="age" min="18" required>
-                    </li>
-                    <li>
-                        <label for="message">Would you like to add any extra information?</label>
+                        <label for="message">Your message:</label>
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </li>
+                    <li>
+                        <label for="origin">How did you find us?</label>
+                        <select name="origin" id="origin">
+                            <option selected disabled>-- Pick an option --</option>
+                            <option>Web search</option>
+                            <option>Word of mouth</option>
+                            <option>Others...</option>
+                        </select>
+                    </li>
                 </ul>
             </section>
-            <section>
-                <h2>Customization</h2>
-                <label for="color">Color associated with your profile:</label>
-                <select name="color" id="color">
-                    <option selected disabled>-- Pick a color --</option>
-                    <option value="black">Black</option>
-                    <option value="white">White</option>
-                    <option value="red">Red</option>
-                    <option value="green">Green</option>
-                    <option value="blue">Blue</option>
-                </select>
-            </section>
-            <section id="verification">
-                <h2>Contact</h2>
-                <h3>How should we contact you?</h3>
+            <section id="reply">
+                <h2>How should we reply?</h2>
                 <ul>
                     <li class="selectable">
-                        <input type="radio" name="verify" id="verify-email" value="email" required>
-                        <label for="verify-email">Send me an email.</label>
+                        <input type="radio" name="reply" id="send-email" value="send-email" required>
+                        <label for="send-email">Send me an email.</label>
                     </li>
                     <li class="selectable">
-                        <input type="radio" name="verify" id="verify-sms" value="sms" required>
-                        <label for="verify-sms">Send me an SMS.</label>
+                        <input type="radio" name="reply" id="call" value="call" required>
+                        <label for="call">Call me.</label>
                     </li>
                     <li class="selectable">
-                        <input type="radio" name="verify" id="verify-phone" value="phone" required>
-                        <label for="verify-phone">Call me.</label>
+                        <input type="radio" name="reply" id="no-reply" value="no-reply" required>
+                        <label for="no-reply">Don't reply.</label>
                     </li>
                 </ul>
-                <p><em>But we don't have your phone number...</em></p>
             </section>
             <hr>
             <section>
@@ -87,8 +69,10 @@
                     <label for="agreement">I agree to the terms and conditions.</label>
                 </div>
             </section>
-            <button type="submit">Confirm</button>
-            <button type="reset">Clear</button>
+            <section id="buttons">
+                <button type="reset">Clear</button>
+                <button type="submit">Confirm</button>
+            </section>
         </form>
     </main>
 </body>

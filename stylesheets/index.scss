@@ -1,21 +1,27 @@
+html {
+  --color-blue-grey-100: #EDF9FE;
+  --color-blue-grey-300: #F5F8FF;
+  --color-blue-grey-700: #666266;
+  --color-blue-grey-900: #32395F;
+}
+
 body {
-  background-color: #2A0944;
+  background-color: var(--color-blue-grey-100);
   font-family: "Roboto", sans-serif;
-  //color: #E1E1E1FF;
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #FEC260;
 }
 
 form {
-  width: 30rem;
+  width: 40rem;
   margin: 3rem auto;
-  background-color: #FFF;
+  background-color: var(--color-blue-grey-300);
   padding: 1rem;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 4px 12px;
   ul {
     list-style: none;
     margin: 0;
@@ -29,31 +35,17 @@ form {
     box-sizing: border-box;
     width: 100%;
     margin: 1rem 0;
-    border: 1px solid #2A0944;
+    border: 1px solid var(--color-blue-grey-900);
     padding: 0.25rem;
-    color: #3B185F;
+    color: var(--color-blue-grey-900);
     border-radius: 5px;
     &:focus {
-      background-color: #FEC260;
-      color: #3B185F;
+      background-color: var(--color-blue-grey-700);
+      color: var(--color-blue-grey-300);
     }
   }
   textarea { resize: vertical; }
-  button {
-    font: inherit;
-    background-color: #2A0944;
-    color: #FEC260;
-    border: 1px solid #3B185F;
-    border-radius: 0 0 10px 0;
-    padding: 0.5rem 1.5rem;
-    &:hover {
-      background-color: #3B185F;
-      cursor: pointer;
-    }
-  }
 }
-
-#verification h2 { margin-bottom: 0.5rem; }
 
 .selectable {
   display: flex;
@@ -62,6 +54,29 @@ form {
   input {
     width: auto;
     margin: 0 0.5rem 0 0;
+  }
+}
+
+#buttons {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  button {
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    transition: border-radius 0.5s;
+    &[type="submit"] {
+      background-color:var(--color-blue-grey-900);
+      color: var(--color-blue-grey-300);
+    }
+    &[type="reset"] {
+      background-color: var(--color-blue-grey-300);
+      color: var(--color-blue-grey-900);
+    }
+    &:hover {
+      cursor: pointer;
+      border-radius: 5px 0 15px 0;
+    }
   }
 }
 

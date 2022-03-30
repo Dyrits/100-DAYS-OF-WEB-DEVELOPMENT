@@ -19,16 +19,16 @@
                 <h2>How can we help you?</h2>
                 <ul>
                     <li>
-                        <label for="username">Your name:</label>
-                        <input type="text" id="username" name="username" required>
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </li>
+                    <li>
+                        <label for="email">Your email:</label>
+                        <input type="email" name="email" id="email" minlength="8" required>
                     </li>
                     <li>
                         <label for="phone">Your phone number:</label>
-                        <input type="text" name="phone" id="phone" required>
-                    </li>
-                    <li>
-                        <label for="password">Your password:</label>
-                        <input type="password" name="password" id="password" minlength="8" required>
+                        <input type="tel" name="phone" id="phone" required>
                     </li>
                     <li>
                         <label for="message">Your message:</label>
@@ -69,7 +69,7 @@
                     <label for="agreement">I agree to the terms and conditions.</label>
                 </div>
             </section>
-            <section id="buttons">
+            <section id="submission">
                 <button type="reset">Clear</button>
                 <button type="submit">Confirm</button>
             </section>

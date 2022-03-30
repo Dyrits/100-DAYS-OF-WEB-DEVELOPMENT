@@ -1,7 +1,7 @@
 html {
   --color-blue-grey-100: #EDF9FE;
   --color-blue-grey-300: #F5F8FF;
-  --color-blue-grey-700: #666266;
+  --color-grey-700: #666266;
   --color-blue-grey-900: #32395F;
 }
 
@@ -42,7 +42,7 @@ form input, form textarea, form select {
   border-radius: 5px;
 }
 form input:focus, form textarea:focus, form select:focus {
-  background-color: var(--color-blue-grey-700);
+  background-color: var(--color-grey-700);
   color: var(--color-blue-grey-300);
 }
 form textarea {
@@ -59,25 +59,25 @@ form textarea {
   margin: 0 0.5rem 0 0;
 }
 
-#buttons {
+#submission {
   display: flex;
   justify-content: end;
   gap: 10px;
 }
-#buttons button {
+#submission button {
   font: inherit;
   padding: 0.5rem 1.5rem;
   transition: border-radius 0.5s;
 }
-#buttons button[type=submit] {
+#submission button[type=submit] {
   background-color: var(--color-blue-grey-900);
   color: var(--color-blue-grey-300);
 }
-#buttons button[type=reset] {
+#submission button[type=reset] {
   background-color: var(--color-blue-grey-300);
   color: var(--color-blue-grey-900);
 }
-#buttons button:hover {
+#submission button:hover {
   cursor: pointer;
   border-radius: 5px 0 15px 0;
 }

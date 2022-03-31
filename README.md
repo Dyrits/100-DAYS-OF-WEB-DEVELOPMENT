@@ -6,7 +6,7 @@ More forms practice AND the introduction of another key frontend technology: Jav
 <details>
     <summary>List of Lectures (Video Duration: 53 minutes)</summary>
     <ul>
-        <li>Your Challenge!/li>
+        <li>Your Challenge!</li>
         <li>Challenge: Base Page Structure & Styling</li>
         <li>Quiz 4 - Learning Check: Web Forms</li>
         <li>Challenge: First Set of Input Elements</li>

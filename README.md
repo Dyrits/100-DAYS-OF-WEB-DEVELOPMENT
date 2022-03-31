@@ -1,26 +1,18 @@
-# Day #029
-More forms practice AND the introduction of another key frontend technology: JavaScript!
+# Day #030
+Learn about important JavaScript fundamentals and key language concepts.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
     <ul>
-        <li>Your Challenge!/li>
-        <li>Challenge: Base Page Structure & Styling</li>
-        <li>Quiz 4 - Learning Check: Web Forms</li>
-        <li>Challenge: First Set of Input Elements</li>
-        <li>Challenge: Adding Remaining Elements</li>
-        <li>Challenge: Submission & Validation</li>
-        <li>Challenge: Styling</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>What is JavaScript & Why would we use it?</li>
-        <li>What You Will Learn In this Module</li>
-        <li>Introducing Values & Variables</li>
+        <li>Adding the "script" HTML Element</li>
+        <li>Working with Values & Basic JavaScript Commands</li>
+        <li>Introducing Variables ("Data Containers")</li>
+        <li>A Closer Look At The JavaScript Syntax</li>
+        <li>A Second Variable & Practice Time!</li>
+        <li>Outsourcing JavaScript Code Into External Files</li>
+        <li>Introducing Arrays (Managing Lists Of Data)</li>
+        <li>Introducing Objects (Grouping Related Data)</li>
     </ul>
 </details>
-
----
-
-/ [Netlify](https://100daysofcode-029-dyrits.netlify.app/)

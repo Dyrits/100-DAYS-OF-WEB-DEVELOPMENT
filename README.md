@@ -1,18 +1,19 @@
-# Day #030
-Learn about important JavaScript fundamentals and key language concepts.
+# Day #031
+Let's finish the JavaScript basics!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 44 minutes)</summary>
     <ul>
-        <li>Adding the "script" HTML Element</li>
-        <li>Working with Values & Basic JavaScript Commands</li>
-        <li>Introducing Variables ("Data Containers")</li>
-        <li>A Closer Look At The JavaScript Syntax</li>
-        <li>A Second Variable & Practice Time!</li>
-        <li>Outsourcing JavaScript Code Into External Files</li>
-        <li>Introducing Arrays (Managing Lists Of Data)</li>
-        <li>Introducing Objects (Grouping Related Data)</li>
+        <li>Splitting Code Across Multiple Lines</li>
+        <li>Accessing Object Properties</li>
+        <li>Performing Operations</li>
+        <li>Onwards To Custom Commands!</li>
+        <li>Introducing Functions</li>
+        <li>Functions & Variables</li>
+        <li>Returning Values In Functions</li>
+        <li>Passing Data Into Functions With Parameters</li>
+        <li>Functions - A Summary</li>
     </ul>
 </details>

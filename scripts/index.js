@@ -7,5 +7,5 @@ const person = {
     },
 }
 
-person.name || person.setName(prompt("What's your name?"));
-person.name && person.display();
+while (!person.name ) { person.setName(prompt("What's your name?")); }
+person.display();

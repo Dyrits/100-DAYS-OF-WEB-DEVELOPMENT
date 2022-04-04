@@ -1,23 +1,19 @@
-# Day #033
-Start diving into one of the most important JavaScript concepts that will help you build interactive websites: The DOM.
+# Day #034
+Learn and practice how you may work with the DOM efficiently.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 49 minutes)</summary>
     <ul>
-        <li>Basic Array Operations</li>
-        <li>Splitting JavaScript Code Across Multiple Files</li>
-        <li>Module Summary</li>
-        <li>Quiz 5 - Learning Check: JavaScript Basics</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>Our Starting Setup</li>
-        <li>The Global "window" & "document" Objects</li>
-        <li>What Is "The DOM"?</li>
-        <li>Exploring The DOM</li>
-        <li>Drilling Into The DOM To Select & Change HTML Elements</li>
-        <li>Loading Our Script Correctly</li>
-        <li>The DOM Tree & DOM Traversal</li>
+        <li>Drilling Into The DOM & Exploring Text Nodes</li>
+        <li>DOM Drilling Limitations</li>
+        <li>Searching The DOM For Elements</li>
+        <li>Querying Elements</li>
+        <li>Common Query Methods</li>
+        <li>Time to Practice: The Problem</li>
+        <li>Time to Practice: The Solution</li>
+        <li>Next Steps</li>
+        <li>Inserting New HTML Elements via JavaScript</li>
     </ul>
 </details>

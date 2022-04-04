@@ -10,7 +10,7 @@ let sibling = h1.nextElementSibling;
 h1 = document.getElementById("title");
 
 // 4. Select the second <p> element with querySelector (you might need to add something in the HTML code, e.g. a class) and store it in a new variable with a name of your choice.
-let p2 = document.querySelector("p:nth-child(2)");
+let p2 = document.querySelector("p:nth-of-type(2)");
 
 // 5. BONUS TASK: Try changing the text content of the <p> element you selected in (4) and set it to any other text of your choice.
 p2.textContent = "I am a new paragraph!";

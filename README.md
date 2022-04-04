@@ -1,19 +1,19 @@
-# Day #034
-Learn and practice how you may work with the DOM efficiently.
+# Day #035
+Learn how to listen and react to user input and user events - something you will need for basically every interactive website.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 49 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 39 minutes)</summary>
     <ul>
-        <li>Drilling Into The DOM & Exploring Text Nodes</li>
-        <li>DOM Drilling Limitations</li>
-        <li>Searching The DOM For Elements</li>
-        <li>Querying Elements</li>
-        <li>Common Query Methods</li>
-        <li>Time to Practice: The Problem</li>
-        <li>Time to Practice: The Solution</li>
-        <li>Next Steps</li>
-        <li>Inserting New HTML Elements via JavaScript</li>
+        <li>Deleting DOM Elements</li>
+        <li>Moving Existing Elements Around</li>
+        <li>Working with "innerHTML"</li>
+        <li>Quiz 6 - Learning Check: JavaScript & The DOM</li>
+        <li>Introducing Events</li>
+        <li>Adding a First "click" Event Listener</li>
+        <li>Listening To User Input Events</li>
+        <li>The "event" Object</li>
+        <li>Quiz 7 - Learning Check: JavaScript & DOM Events</li>
     </ul>
 </details>

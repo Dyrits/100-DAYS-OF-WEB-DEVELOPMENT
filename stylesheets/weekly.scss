@@ -8,7 +8,7 @@ ol {
   padding: 0;
   li {
     width: 25rem;
-    background-color: #df887c;
+    background-color: #11BFCA;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem auto;
@@ -31,18 +31,40 @@ ol {
   margin: 2rem;
   a {
     padding: 1rem 2rem;
-    background-color: #A7014EFF;
-    color: #FFF;
+    background-color: #CA1C11;
+    color: #EBBA11;
     font-size: 1.25rem;
     border-radius: 0.5rem;
-    &:hover {
-      background-color: #B40C5AFF;
-      text-decoration: none;
-    }
+    text-decoration: none;
   }
+  &:hover { animation: heartbeat 1.5s ease-in-out infinite both; }
 }
 
 ul {
   list-style: inside square;
   padding: 0;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.92);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.90);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
 }

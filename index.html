@@ -5,29 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Day #035 (Advanced JavaScript)</title>
+    <title>Day #036 (Advanced JavaScript)</title>
     <script src="./scripts/index.js" type="text/javascript" defer></script>
-    <style>
-        body { text-align: center; }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-evenly;
-        }
-    </style>
+    <link rel="stylesheet" href="./stylesheets/index.css">
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="./index.html">INDEX.HTML</a></li>
-            <li><a href="./old-index.html">OLD-INDEX.HTML</a></li>
-        </ul>
-    </header>
-    <main>
-        <p data-clicks="0">Click me!</p>
-        <label for="text">Change your text to uppercase:</label><input type="text" id="text">
-    </main>
+    <form action="/">
+        <div class="control">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" name="name" maxlength="60">
+            <span id="count"><span id="remainder">60</span>/60</span>
+        </div>
+        <button>Submit</button>
+    </form>
 </body>
 </html>

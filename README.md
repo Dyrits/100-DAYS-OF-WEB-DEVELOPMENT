@@ -1,19 +1,15 @@
-# Day #035
-Learn how to listen and react to user input and user events - something you will need for basically every interactive website.
+# Day #036
+Time to wrap up the JavaScript DOM fundamentals!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 39 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 54 minutes)</summary>
     <ul>
-        <li>Deleting DOM Elements</li>
-        <li>Moving Existing Elements Around</li>
-        <li>Working with "innerHTML"</li>
-        <li>Quiz 6 - Learning Check: JavaScript & The DOM</li>
-        <li>Introducing Events</li>
-        <li>Adding a First "click" Event Listener</li>
-        <li>Listening To User Input Events</li>
-        <li>The "event" Object</li>
-        <li>Quiz 7 - Learning Check: JavaScript & DOM Events</li>
+        <li>A More Realistic Demo & Example</li>
+        <li>Introducing "Constant Variables"</li>
+        <li>Changing Element Styles With JavaScript</li>
+        <li>Managing CSS Classes With JavaScript</li>
+        <li>Module Summary</li>
     </ul>
 </details>

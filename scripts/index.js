@@ -1,7 +1,5 @@
-document.querySelector("p").addEventListener("click", function() {
-  this.innerText = `The paragraph has been clicked ${++ this.dataset.clicks} time(s)!`;
-});
+const remainder = document.querySelector('#remainder');
 
-document.querySelector("input").addEventListener("input", function($event) {
-  this.value = this.value.toUpperCase();
-});
+document.querySelector("#name").oninput = function() {
+  [this, remainder].forEach(element => element.classList[{ 10: "add", 11: "remove"}[remainder.innerText = 60 - this.value.length]]?.("warning"));
+};

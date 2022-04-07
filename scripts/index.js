@@ -29,4 +29,5 @@ button2.addEventListener('click', function() {
     p1.style.backgroundColor = "#0509DD";
     p1.style.color = "#DDD905";
     p1.classList.add("blue-background");
-    },{ once: true });
+    }, { once: true }
+);

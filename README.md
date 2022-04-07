@@ -1,18 +1,20 @@
-# Day #037
-Learn about more key JavaScript concepts: It's time for 'control structures' now!
+# Day #038
+Explore how different kinds of control structures work and why (and when) you would use them!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 49 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
-        <li>Time to Practice: The Problem</li>
-        <li>Time to Practice: The Solution</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>Getting Started with "Control Structures"</li>
-        <li>Introducing Boolean Values ("Booleans") & Comparison Operators</li>
-        <li>Booleans & Comparison Operators In Action</li>
-        <li>Using Booleans In "if" Statements (Conditional Code Execution)</li>
+        <li>A Real Example</li>
+        <li>Alternatives with "else" and "else if"</li>
+        <li>More on Boolean Values</li>
+        <li>Truthy" & "Falsy" Values</li>
+        <li>Quiz 8 - Learning Check: "if" Statements</li>
+        <li>Introducing Loops (Repeated Code Execution)</li>
+        <li>The "for-of" Loop (for Arrays)</li>
+        <li>Using the Regular "for" Loop with Arrays</li>
+        <li>The "for-in" Loop (for Objects)</li>
+        <li>The "while" Loop</li>
     </ul>
 </details>

@@ -13,9 +13,7 @@ form {
   background-color: #f6f5c9;
 }
 
-.control {
-  margin-bottom: 1rem;
-}
+.control { margin-bottom: 1rem; }
 
 label {
   display: block;
@@ -36,9 +34,7 @@ input {
   vertical-align: middle;
 }
 
-input:focus {
-  background-color: #fdf5c4;
-}
+input:focus { background-color: #fdf5c4; }
 
 button {
   font: inherit;
@@ -55,14 +51,8 @@ button:hover {
   border-color: #d1c517;
 }
 
-#count {
-  color: #69654b;
-}
+#count { color: #69654b; }
 
-input.warning {
-  background-color: #f8bf91;
-}
+input.warning { background-color: #f8bf91; }
 
-#remainder.warning {
-  color: #d36d1a;
-}
+#remainder.warning { color: #d36d1a; }

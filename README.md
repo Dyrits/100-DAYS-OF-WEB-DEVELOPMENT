@@ -1,15 +1,18 @@
-# Day #036
-Time to wrap up the JavaScript DOM fundamentals!
+# Day #037
+Learn about more key JavaScript concepts: It's time for 'control structures' now!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 54 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 49 minutes)</summary>
     <ul>
-        <li>A More Realistic Demo & Example</li>
-        <li>Introducing "Constant Variables"</li>
-        <li>Changing Element Styles With JavaScript</li>
-        <li>Managing CSS Classes With JavaScript</li>
-        <li>Module Summary</li>
+        <li>Time to Practice: The Problem</li>
+        <li>Time to Practice: The Solution</li>
+        <hr>
+        <li>Module Introduction</li>
+        <li>Getting Started with "Control Structures"</li>
+        <li>Introducing Boolean Values ("Booleans") & Comparison Operators</li>
+        <li>Booleans & Comparison Operators In Action</li>
+        <li>Using Booleans In "if" Statements (Conditional Code Execution)</li>
     </ul>
 </details>

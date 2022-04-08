@@ -1,12 +1,10 @@
 const remainder = document.querySelector('#remainder');
-const methods = {
-    10: ({ classList }) => classList.add("warning"),
-    11: ({ classList }) => classList.remove("warning"),
-    0: ({ classList }) => classList.add("error"),
-    1: ({ classList }) => classList.remove("error")
-};
 
 document.querySelector("#name").oninput = function() {
+    const actions = { 11: ["remove", "warning"], 10: ["add", "warning"], 1: ["remove", "error"], 0: ["add", "error"] };
     const key = (remainder.innerText = 60 - this.value.length);
-    key in methods && [this, remainder].forEach(methods[key]);
+    if (key in actions) {
+        const [action, className] = actions[key];
+        [this, remainder].forEach(({ classList }) => classList[action](className))
+    }
 };

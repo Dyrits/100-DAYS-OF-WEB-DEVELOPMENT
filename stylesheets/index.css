@@ -52,7 +52,7 @@ button:hover {
 }
 
 #count { color: #69654b; }
-
 input.warning { background-color: #f8bf91; }
-
+input.error { background-color: rgb(248, 157, 145); }
 #remainder.warning { color: #d36d1a; }
+#remainder.error { color:rgb(211, 54, 26); }

@@ -17,7 +17,6 @@ document.querySelector("#highlight-links button").onclick = function() {
 
 document.querySelector("#user-data button").onclick = function() {
     const ul = document.querySelector("#output-user-data");
-    console.log(ul)
     for(let [information, value] of Object.entries(userData)) {
         const li = document.createElement("li");
         li.innerHTML = `${information}: ${value}`;
@@ -26,10 +25,11 @@ document.querySelector("#user-data button").onclick = function() {
     this.disabled = true;
 }
 
+const roll = () => Math.floor(Math.random() * 6) + 1;
+
 document.querySelector("#statistics button").onclick = () => {
     const rolls = document.querySelector("#output-total-rolls");
-    rolls.innerHTML = `${1}`;
     const guess = (document.querySelector("#output-target-number").innerHTML = document.querySelector("#user-target-number").value);
-    const roll = () => Math.floor(Math.random() * 6) + 1;
+    rolls.innerHTML = `${1}`;
     while (roll() !== parseInt(guess)) { rolls.innerHTML++; }
 }

@@ -28,7 +28,7 @@ document.querySelector("#user-data button").onclick = function() {
 const displayRoll = (roll) => {
     const ul = document.querySelector("#dice-rolls");
     const li = document.createElement("li");
-    li.innerHTML = `#${ul.children.length + 1}: You rolled ${roll}.`;
+    li.innerHTML = `#${("0" + (ul.children.length + 1)).slice(-2)}: You rolled ${roll}.`;
     ul.appendChild(li);
 }
 

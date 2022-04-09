@@ -25,11 +25,28 @@ document.querySelector("#user-data button").onclick = function() {
     this.disabled = true;
 }
 
-const roll = () => Math.floor(Math.random() * 6) + 1;
+const displayRoll = (roll) => {
+    const ul = document.querySelector("#dice-rolls");
+    const li = document.createElement("li");
+    li.innerHTML = `#${ul.children.length + 1}: You rolled ${roll}.`;
+    ul.appendChild(li);
+}
+
+const cleanDisplay = () => {
+    const ul = document.querySelector("#dice-rolls");
+    while(ul.firstChild) { ul.removeChild(ul.firstChild); }
+}
+
+const roll = () => {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    displayRoll(roll);
+    return roll;
+}
 
 document.querySelector("#statistics button").onclick = () => {
+    cleanDisplay();
     const rolls = document.querySelector("#output-total-rolls");
     const guess = (document.querySelector("#output-target-number").innerHTML = document.querySelector("#user-target-number").value);
     rolls.innerHTML = `${1}`;
-    while (roll() !== parseInt(guess)) { rolls.innerHTML++; }
+    while (roll() !== parseInt(guess)) { rolls.innerHTML++;}
 }

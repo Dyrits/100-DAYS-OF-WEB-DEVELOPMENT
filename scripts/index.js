@@ -3,7 +3,10 @@ document.querySelectorAll("input[type=number]").forEach(input => input.addEventL
 }, { once: true }));
 
 document.querySelector("#calculator button").onclick = () => {
-    const number = parseInt(document.querySelector("#user-number").value);
+    const input = document.querySelector("#user-number");
+    let number = input.value;
+    while(!number || isNaN(number)) { number = prompt("Please enter a valid number:"); }
+    input.value = number;
     const output =  document.querySelector("#calculated-sum");
     output.classList.add("visible");
     output.innerHTML = `${number * (Math.abs(number) + 1) / 2}`;
@@ -45,8 +48,11 @@ const roll = () => {
 
 document.querySelector("#statistics button").onclick = () => {
     cleanDisplay();
+    const input = document.querySelector("#user-target-number");
+    let guess = input.value;
+    while (!guess || isNaN(guess) || guess > 6 || guess < 1) { guess = prompt("Please enter a number between 1 and 6:"); }
+    document.querySelector("#output-target-number").innerHTML = (input.value = guess);
     const rolls = document.querySelector("#output-total-rolls");
-    const guess = (document.querySelector("#output-target-number").innerHTML = document.querySelector("#user-target-number").value);
     rolls.innerHTML = `${1}`;
     while (roll() !== parseInt(guess)) { rolls.innerHTML++;}
 }

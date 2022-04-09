@@ -58,6 +58,10 @@ input {
   color: rgb(66, 63, 44);
 }
 
+#user-number {
+  width: 8.5rem;
+}
+
 input:focus {
   background-color: rgb(248, 239, 187);
 }

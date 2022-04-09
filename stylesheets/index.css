@@ -1,58 +1,95 @@
 body {
+  margin: 3rem;
   font-family: sans-serif;
-  background-color: #24231e;
+  background-color: rgb(32, 32, 29);
 }
 
-form {
-  margin: 3rem auto;
-  width: 90%;
+h1 {
+  text-align: center;
+  color: rgb(236, 202, 8);
+}
+
+section {
+  margin: 2rem auto;
+  width: 95%;
   max-width: 50rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
   border-radius: 6px;
-  padding: 1rem;
-  background-color: #f6f5c9;
+  background-color: rgb(253, 251, 216);
 }
 
-.control { margin-bottom: 1rem; }
+button {
+  font: inherit;
+  cursor: pointer;
+  background-color: rgb(236, 202, 8);
+  border: 1px solid rgb(236, 202, 8);
+  color: rgb(29, 28, 26);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(236, 183, 8);
+  border-color: rgb(236, 183, 8);
+}
+
+.control {
+  margin: 1rem 0;
+}
+
+label, 
+input {
+  display: block;
+}
 
 label {
-  display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 input {
   font: inherit;
-  font-size: 1.15rem;
-  padding: 0.35rem;
-  border: 1px solid #cccccc;
-  background-color: #fcf9e9;
-  color: #353327;
-  width: 25rem;
+  font-size: 1.5rem;
   border-radius: 4px;
-  margin-right: 1rem;
-  vertical-align: middle;
+  border: 1px solid rgb(156, 153, 136);
+  width: 3rem;
+  max-width: 100%;
+  padding: 0.5rem;
+  color: rgb(66, 63, 44);
 }
 
-input:focus { background-color: #fdf5c4; }
+input:focus {
+  background-color: rgb(248, 239, 187);
+}
 
-button {
-  font: inherit;
-  background-color: #d1b817;
-  border: 1px solid #d1b817;
-  color: #2c2b24;
+a {
+  text-decoration: none;
+  color: rgb(236, 145, 8);
+}
+
+.output {
+  font-weight: bold;
+  background-color: rgb(233, 191, 55);
+  padding: 0.25rem;
   border-radius: 4px;
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
 }
 
-button:hover {
-  background-color: #d1c517;
-  border-color: #d1c517;
+a.highlight {
+  background-color: rgb(63, 4, 141);
+  padding: 0.25rem;
 }
 
-#count { color: #69654b; }
-input.warning { background-color: #f8bf91; }
-input.error { background-color: rgb(248, 157, 145); }
-#remainder.warning { color: #d36d1a; }
-#remainder.error { color:rgb(211, 54, 26); }
+#calculated-sum {
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  display: none;
+}
+
+#calculated-sum.visible { display: block; }
+
+button:disabled {
+  pointer-events: none;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+}

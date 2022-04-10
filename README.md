@@ -1,20 +1,14 @@
-# Day #039
-Explore how different kinds of control structures work and why (and when) you would use them!
+# Day #040
+It's 'Milestone Project' time! Apply many of the concepts you learned until now (not just JavaScript!) and build a browser game: The Tic-Tac-Toe game.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 49 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 44 minutes)</summary>
     <ul>
-        <li>Practice Time: Setup & The "for" Loop</li>
-        <li>Practice Time: The "for-of" Loop</li>
-        <li>Practice Time: The "for-in" Loop</li>
-        <li>Practice Time: The "while" Loop</li>
-        <li>Module Summary</li>
-        <li>Quiz 9 - Learning Checks: Loops</li>
+        <li>Module Introduction</li>
+        <li>Planning The Project</li>
+        <li>Creating The HTML Structure</li>
+        <li>Adding Base Page Styles</li>
     </ul>
 </details>
-
----
-
-/ [Netlify](https://100daysofcode-039-dyrits.netlify.app/)

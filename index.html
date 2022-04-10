@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Loops</title>
-  <link rel="stylesheet" href="stylesheets/index.css">
-  <script src="scripts/data.js" defer></script>
-  <script src="scripts/index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day #040 (Tic, Tac, Toe)</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" type="text/css">
 </head>
-
 <body>
-  <h1>JavaScript Loops in Action</h1>
-  <section id="calculator">
-    <h2>JavaScript Calculator</h2>
-    <p>Determine the sum of all numbers (beginning at zero) up to a number of your choice.</p>
-    <div class="control">
-      <label for="user-number">Your Number</label>
-      <input type="number" id="user-number">
-    </div>
-    <button disabled>Calculate Sum</button>
-    <p id="calculated-sum" class="output"></p>
-  </section>
-
-  <section id="highlight-links">
-    <h2>Highlight Links</h2>
-    <button>Highlight all links in the text</button>
-    <p>This is some text that also contains useful links (like <a href="">this one</a> that actually lead nowhere. They
-      lead nowhere because this text and example is <strong>not</strong> about the anchor elements or the link
-      destinations but instead about JavaScript.</p>
-    <p>Because you can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> (okay, this
-      link actually <strong>does</strong> lead somewhere) not
-      just for funny demos or useless examples but for real useful things - like highlighting all the links in a text.
-    </p>
-    <p>You can dive even deeper into JavaScript with one of our bestselling, deep-dive, JavaScript-focused <a
-        href="https://academind.com/courses/">courses</a>.</p>
-  </section>
-
-  <section id="user-data">
-    <h2>Your Information</h2>
-    <button>Display User Data</button>
-    <ul id="output-user-data"></ul>
-  </section>
-
-  <section id="statistics">
-    <h2>Statistics</h2>
-    <p>Test your luck and find out how many dice rolls (1-6 dice) it takes you to roll a certain number (between 1 and
-      6).</p>
-    <div class="control">
-      <label for="user-target-number">Your Target Number</label>
-      <input type="number" min="1" max="6" id="user-target-number">
-    </div>
-    <button disabled>Roll the Dice</button>
-    <ul id="dice-rolls"></ul>
-    <p>It took you <span id="output-total-rolls" class="output">X</span> rolls to roll a <span id="output-target-number" class="output">Y</span>.</p>
-  </section>
+    <header>
+        <h1>Tic, Tac, Toe</h1>
+        <p>Built with HTML, CSS and JavaScript.</p>
+    </header>
+    <main>
+        <aside>
+            <h2>What's your name?</h2>
+            <form>
+                <div>
+                    <label for="player-name">Player <span id="player-number">##</span></label>
+                    <input type="text" id="player-name" name="player-name">
+                </div>
+                <div>
+                    <button>Cancel</button>
+                    <button type="submit">Confirm</button>
+                </div>
+            </form>
+        </aside>
+        <section id="configuration">
+            <h2>Configuration</h2>
+            <ol>
+                <li>
+                    <article>
+                        <h2>Player #1</h2>
+                        <h3>(Unknown) #1</h3>
+                        <img src="./icons/plus.png" alt="+">
+                        <button>Edit</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Player #2</h2>
+                        <h3>(Unknown) #2</h3>
+                        <img src="./icons/circle.png" alt="+">
+                        <button>Edit</button>
+                    </article>
+                </li>
+            </ol>
+            <button><img src="./icons/start.png" alt="Start"></button>
+        </section>
+        <section id="game">
+            <article>
+                <h3>You won <span class="active-player">##</span>!</h3>
+            </article>
+            <p>It's <span class="active-player">##</span>'s turn.</p>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        <section>
+    </main>
 </body>
-
 </html>

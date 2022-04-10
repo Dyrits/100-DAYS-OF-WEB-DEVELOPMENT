@@ -1,1 +1,28 @@
+@import "animations";
 @import "icons";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'El Messiri', sans-serif;
+  color: rgb(230, 230, 230);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+header {
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.background {
+  position : absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+

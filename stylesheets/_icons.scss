@@ -1,12 +1,26 @@
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .markers {
   width: 60px;
   transform: rotate(45deg);
 }
 
-.settings {
-  cursor: pointer;
+.settings img {
   width: 20px;
-};
-
+  transition: transform 2.5s;
+  &:hover { transform: rotate(360deg); }
+}
 
 #start img { width: 80px; }
+
+aside button img {
+  width: 50px;
+  transition: transform 0.25s;
+  &:hover { transform: scale(1.1); }
+}
+
+

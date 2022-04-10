@@ -1,10 +1,15 @@
-article img {
-  width: 50px;
+.markers {
+  width: 60px;
   transform: rotate(45deg);
 }
 
-button img {
-  width: 75px;
+.settings {
+  cursor: pointer;
+  width: 20px;
+}
+
+#start img {
+  width: 80px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,60 +5,66 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Day #040 (Tic, Tac, Toe)</title>
+    <title>Day #041 (Tic, Tac, Toe)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="scripts/particles.js" defer></script>
+    <script src="scripts/configuration.js" defer></script>
+    <script src="scripts/game.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <link rel="stylesheet" href="./stylesheets/index.css" type="text/css">
 </head>
 <body>
+    <aside id="backdrop"></aside>
     <canvas class="background"></canvas>
     <header class=".header">
         <h1>Tic, Tac, Toe</h1>
-        <p>Built with HTML, CSS and JavaScript.</p>
+        <p class="goldenrod">Built with HTML, CSS and JavaScript.</p>
     </header>
     <main>
-        <aside>
+        <aside class="overlay" id="modal">
             <h2>What's your name?</h2>
             <form>
-                <div>
+                <div class="input">
                     <label for="player-name">Player <span id="player-number">##</span></label>
                     <input type="text" id="player-name" name="player-name">
                 </div>
                 <div>
-                    <button><img src="./icons/cancel.png" alt="Cancel" ></button>
-                    <button type="submit"><img src="./icons/confirm.png" alt="Confirm" ></button>
+                    <button id="cancel"><img src="./icons/cancel.png" alt="Cancel" ></button>
+                    <button type="submit" id="confirm"><img src="./icons/confirm.png" alt="Confirm" ></button>
                 </div>
             </form>
         </aside>
         <section id="configuration">
-            <h2>Configuration</h2>
             <ol>
                 <li>
                     <article>
-                        <h2>Player #1 <button class="settings"><img src="icons/settings.png" alt="Setting" ></button></h2>
-                        <h3>(Unknown) #1</h3>
-                        <img src="./icons/plus.png" alt="+" class="markers">
+                        <button class="settings" data-player="#1"><img src="icons/settings.png" alt="Setting" ></button>
+                        <h2>Player #1</h2>
+                        <h3 class="goldenrod" id="player-#1-name">(Unknown) #1</h3>
+                        <img src="icons/X.png" alt="+" class="markers">
                     </article>
                 </li>
                 <li>
                     <article>
-                        <h2>Player #2 <button class="settings"><img src="icons/settings.png" alt="Settings" ></button></h2>
-                        <h3>(Unknown) #2</h3>
-                        <img src="./icons/circle.png" alt="+" class="markers">
+                        <button class="settings" data-player="#2"><img src="icons/settings.png" alt="Settings" ></button>
+                        <h2>Player #2</h2>
+                        <h3 class="goldenrod" id="player-#2-name">(Unknown) #2</h3>
+                        <img src="icons/O.png" alt="+" class="markers">
                     </article>
                 </li>
             </ol>
-            <button id="start" class="vibrate"><img src="./icons/start.png" alt="Start"></button>
+            <button disabled id="start"><img src="./icons/start.png" alt="Start"></button>
         </section>
         <section id="game">
-            <article>
-                <h3>You won <span id="winner">##</span>!</h3>
+            <article id="game-over">
+                <h2>You won <span id="winner" class="goldenrod">##</span>!</h2>
+                <p>Click the start button to play again.</p>
             </article>
-            <p>It's <span id="active-player">##</span>'s turn.</p>
-            <ol>
+            <p>It's <span id="active-player" class="goldenrod">##</span>'s turn.</p>
+            <ol id="game-board">
                 <li></li>
                 <li></li>
                 <li></li>

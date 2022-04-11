@@ -1,0 +1,26 @@
+#modal {
+  text-align: center;
+  h2 { margin: 2.5rem; }
+}
+
+.input {
+  margin: 0.5rem 0;
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  input {
+    font: inherit;
+    border: 1px solid #434343;
+    border-radius: 10px 0 15px 0;
+    width: 15rem;
+    padding: 0.5rem;
+    &:focus {
+      outline: none;
+      background-color: #434343;
+      border: 1px solid rgb(230, 230, 230);
+      color: rgb(230, 230, 230);
+    }
+  }
+}

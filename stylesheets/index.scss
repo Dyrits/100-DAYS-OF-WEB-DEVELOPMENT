@@ -9,11 +9,11 @@ html, body {
 body {
   font-family: 'Orbitron', sans-serif;
   color: rgb(230, 230, 230);
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: linear-gradient(to right, #434343 0%, #000 100%);
 }
 
 header {
-  padding: 2rem 5%;
+  padding: 2rem 5% 1rem 5%;
   text-align: center;
 }
 
@@ -24,5 +24,12 @@ header {
   left: 0;
   z-index: -1;
 }
+
+.goldenrod { color: #DAA520; }
+
+@import "overlay";
+@import "modal";
+@import "configuration";
+@import "game";
 
 

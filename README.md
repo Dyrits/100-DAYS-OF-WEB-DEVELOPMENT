@@ -1,14 +1,14 @@
-# Day #040
-It's 'Milestone Project' time! Apply many of the concepts you learned until now (not just JavaScript!) and build a browser game: The Tic-Tac-Toe game.
+# Day #041
+Let's continue working on the Tic-Tac-Toe game by adding some styling as well as some event handlers to it.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 44 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 51 minutes)</summary>
     <ul>
-        <li>Module Introduction</li>
-        <li>Planning The Project</li>
-        <li>Creating The HTML Structure</li>
-        <li>Adding Base Page Styles</li>
+        <li>Adding Styling For The Game Configuration Area</li>
+        <li>Styling The Game Board</li>
+        <li>CAdding JavaScript, Script Files & First Event Listeners</li>
+        <li>Showing & Hiding The Configuration Modal (Overlay)</li>
     </ul>
 </details>

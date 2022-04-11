@@ -1,4 +1,4 @@
-refreshConfiguration(false);
+refreshConfiguration();
 
 document.querySelectorAll(".settings").forEach(button => {
     button.addEventListener("click", openModal);

@@ -14,6 +14,4 @@ document.querySelectorAll("#game-board li").forEach(square => {
         displayPlayerName();
 }, {once: true}); });
 
-function displayPlayerName() {
-    document.querySelector("#active-player").innerHTML = players.current.name;
-}
+function displayPlayerName() { document.querySelector("#active-player").innerHTML = players.current.name; }

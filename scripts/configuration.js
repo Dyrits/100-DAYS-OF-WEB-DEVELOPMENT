@@ -51,7 +51,7 @@ function disableStartButton() {
 
 }
 
-function refreshConfiguration(isModalOpen) {
+function refreshConfiguration(isModalOpen = false) {
     displayPlayersNames();
     displayPlayerName();
     !localStorage.getItem("#1") || !localStorage.getItem("#2") ? disableStartButton() : enableStartButton();

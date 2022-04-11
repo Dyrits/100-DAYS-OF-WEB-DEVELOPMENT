@@ -264,6 +264,7 @@ header {
 }
 .input input {
   font: inherit;
+  text-align: center;
   border: 1px solid #434343;
   border-radius: 10px 0 15px 0;
   width: 15rem;

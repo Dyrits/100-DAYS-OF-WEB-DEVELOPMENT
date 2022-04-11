@@ -1,6 +1,9 @@
 const players = {
-    "#1": { name: localStorage.getItem("#1") || "(Unknown) #1", icon: "X" } ,
-    "#2": { name: localStorage.getItem("#2") || "(Unknown) #2", icon: "O"}
+    "#1": { name: localStorage.getItem("#1") || "(Unknown) #1", icon: "X", nextPlayer: "#2" },
+    "#2": { name: localStorage.getItem("#2") || "(Unknown) #2", icon: "O", nextPlayer: "#1" },
+    _current: "#1",
+    get current() { return this[this._current];},
+    switchPlayer () { this._current = this.current.nextPlayer;},
 }
 
 function openModal() {
@@ -32,14 +35,11 @@ function displayPlayersNames() {
 }
 
 function enableStartButton() {
-    if (!localStorage.getItem("#1") || !localStorage.getItem("#2")) { disableStartButton(); }
-    else {
-        const start = document.querySelector("#start");
-        start.disabled = false;
-        start.style.cursor = "pointer";
-        start.classList.add("vibrate");
-        start.classList.add("heartbeat");
-    }
+    const start = document.querySelector("#start");
+    start.disabled = false;
+    start.style.cursor = "pointer";
+    start.classList.add("vibrate");
+    start.classList.add("heartbeat");
 }
 
 function disableStartButton() {
@@ -48,10 +48,12 @@ function disableStartButton() {
     start.style.cursor = "not-allowed";
     start.classList.remove("vibrate");
     start.classList.remove("heartbeat");
+
 }
 
 function refreshConfiguration(isModalOpen) {
-    displayPlayersNames()
-    enableStartButton();
+    displayPlayersNames();
+    displayPlayerName();
+    !localStorage.getItem("#1") || !localStorage.getItem("#2") ? disableStartButton() : enableStartButton();
     isModalOpen && closeModal();
 }

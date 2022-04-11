@@ -1,3 +1,8 @@
+const players = {
+    "#1": { name: localStorage.getItem("#1") || "(Unknown) #1", icon: "X" } ,
+    "#2": { name: localStorage.getItem("#2") || "(Unknown) #2", icon: "O"}
+}
+
 function openModal() {
     document.querySelector("#modal").style.display = "block";
     document.querySelector("#backdrop").style.display = "block";

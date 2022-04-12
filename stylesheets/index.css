@@ -11,7 +11,7 @@
 }
 
 .bounce-in {
-  animation: bounce-in 1.1s both;
+  animation: bounce-in 1.1s;
 }
 
 @keyframes flicker-in {
@@ -240,6 +240,10 @@ body {
 header {
   padding: 2rem 5% 1rem 5%;
   text-align: center;
+}
+
+main {
+  display: none;
 }
 
 .background {

@@ -3,6 +3,6 @@ window.addEventListener("load",function() {
         selector: '.background',
         maxParticles: 50,
         connectParticles: true,
-        color: "#FFFFFF"
+        color: '#FFFFFF'
     });
 });

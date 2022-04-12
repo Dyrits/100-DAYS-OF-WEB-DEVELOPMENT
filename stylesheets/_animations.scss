@@ -1,7 +1,7 @@
 .flicker-in { animation: flicker-in 1s linear both; }
 .vibrate:hover { animation: vibrate 0.3s linear infinite both; }
 .heartbeat { animation: heartbeat 2s linear infinite both; }
-.bounce-in { animation: bounce-in 1.1s both; }
+.bounce-in { animation: bounce-in 1.1s; }
 
 @keyframes flicker-in {
   0% { opacity: 0;}

@@ -5,3 +5,5 @@ const players = {
     get current() { return this[this._current];},
     switchPlayer () { this._current = this.current._next;},
 }
+
+const board = [["", "", ""], ["", "", ""], ["", "", ""],];

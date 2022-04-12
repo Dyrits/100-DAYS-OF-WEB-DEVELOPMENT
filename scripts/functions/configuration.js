@@ -14,39 +14,34 @@ function closeModal($event) {
 function savePlayer($event) {
     $event.preventDefault();
     const number = document.querySelector("#player-number").innerHTML;
-    const playerName = document.querySelector("#player-name").value;
-    localStorage.setItem(number, playerName);
-    players[number].name = playerName || `(Unknown) ${number}`;
+    const name = document.querySelector("#player-name").value.trim();
+    updateName(number, name);
     refreshConfiguration(true);
 }
 
-function displayPlayersNames() {
+function updateName(number, name) {
+    localStorage.setItem(number, name);
+    players[number].name = name || `(Unknown) ${number}`;
+}
+
+function displayNames() {
     ["#1", "#2"].forEach(number => {
         document.getElementById(`player-${number}-name`).innerHTML = players[number].name;
     });
 }
 
-function enableStartButton() {
+function toggleStartButton(isEnabled) {
     const start = document.querySelector("#start");
-    start.disabled = false;
-    start.style.cursor = "pointer";
-    start.classList.add("vibrate");
-    start.classList.add("heartbeat");
-}
-
-function disableStartButton() {
-    const start = document.querySelector("#start");
-    start.disabled = true;
-    start.style.cursor = "not-allowed";
-    start.classList.remove("vibrate");
-    start.classList.remove("heartbeat");
-
+    start.disabled = !isEnabled;
+    start.style.cursor = isEnabled ? "pointer" : "not-allowed";
+    start.classList[isEnabled ? "add" : "remove"]("vibrate");
+    start.classList[isEnabled ? "add" : "remove"]("heartbeat");
+    document.querySelector("#warning").style.display = isEnabled ? "none" : "block";
 }
 
 function refreshConfiguration(isModalOpen = false) {
-    console.log("Refreshing configuration");
-    displayPlayersNames();
-    displayPlayerName();
-    !localStorage.getItem("#1") || !localStorage.getItem("#2") ? disableStartButton() : enableStartButton();
+    displayNames();
+    displayName();
+    !localStorage.getItem("#1") || !localStorage.getItem("#2") ? toggleStartButton(false) : toggleStartButton(true);
     isModalOpen && closeModal();
 }

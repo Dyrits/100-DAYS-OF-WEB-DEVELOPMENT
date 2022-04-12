@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="scripts/particles.js" defer></script>
+    <script src="scripts/variables.js" defer></script>
     <script src="scripts/configuration.js" defer></script>
     <script src="scripts/game.js" defer></script>
+    <script src="scripts/events.js" defer></script>
     <script src="scripts/index.js" defer></script>
     <link rel="stylesheet" href="./stylesheets/index.css" type="text/css">
 </head>
@@ -26,14 +28,14 @@
     <main>
         <aside class="overlay" id="modal">
             <h2>What's your name?</h2>
-            <form>
+            <form id="edit-player">
                 <div class="input">
-                    <label for="player-name">Player <span id="player-number">##</span></label>
-                    <input type="text" id="player-name" name="player-name" maxlength="12"  placeholder="~12 characters of less.">
+                        <label for="player-name">Player <span id="player-number">##</span></label>
+                        <input type="text" id="player-name" name="player-name" maxlength="12"  placeholder="~12 characters of less.">
                 </div>
                 <div>
-                    <button id="cancel"><img src="./icons/cancel.png" alt="Cancel" ></button>
-                    <button type="submit" id="confirm"><img src="./icons/confirm.png" alt="Confirm" ></button>
+                    <button id="cancel" type="button"><img src="./icons/cancel.png" alt="Cancel" ></button>
+                    <button id="confirm" type="submit"><img src="./icons/confirm.png" alt="Confirm" ></button>
                 </div>
             </form>
         </aside>

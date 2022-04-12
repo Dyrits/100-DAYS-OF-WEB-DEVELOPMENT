@@ -1,15 +1,14 @@
-const players = {
-    "#1": { name: localStorage.getItem("#1") || "(Unknown) #1", icon: "X", _next: "#2" },
-    "#2": { name: localStorage.getItem("#2") || "(Unknown) #2", icon: "O", _next: "#1" },
-    _current: "#1",
-    get current() { return this[this._current];},
-    switchPlayer () { this._current = this.current._next;},
-}
-
 function openModal() {
     document.querySelector("#modal").style.display = "block";
     document.querySelector("#backdrop").style.display = "block";
     document.querySelector("#player-number").innerHTML = this.dataset.player;
+}
+
+function closeModal($event) {
+    $event && $event.preventDefault();
+    document.querySelector("#player-name").value = String();
+    document.querySelector("#modal").style.display = "none";
+    document.querySelector("#backdrop").style.display = "none";
 }
 
 function savePlayer($event) {
@@ -19,13 +18,6 @@ function savePlayer($event) {
     localStorage.setItem(number, playerName);
     players[number].name = playerName || `(Unknown) ${number}`;
     refreshConfiguration(true);
-}
-
-function closeModal($event) {
-    $event && $event.preventDefault();
-    document.querySelector("#player-name").value = String();
-    document.querySelector("#modal").style.display = "none";
-    document.querySelector("#backdrop").style.display = "none";
 }
 
 function displayPlayersNames() {
@@ -52,6 +44,7 @@ function disableStartButton() {
 }
 
 function refreshConfiguration(isModalOpen = false) {
+    console.log("Refreshing configuration");
     displayPlayersNames();
     displayPlayerName();
     !localStorage.getItem("#1") || !localStorage.getItem("#2") ? disableStartButton() : enableStartButton();

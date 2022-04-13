@@ -6,4 +6,7 @@ const players = {
     switchPlayer () { this._current = this.current._next;},
 }
 
-const board = [["", "", ""], ["", "", ""], ["", "", ""],];
+const game = {
+    board: [["", "", ""], ["", "", ""], ["", "", ""],],
+    round: 1
+}

@@ -1,3 +1,44 @@
+function startGame() {
+    document.querySelector("#game").style.display = "block";
+    resetGame();
+    toggleBoardEvents(true);
+    toggleDisplay(true);
+    displayName();
+}
+
+function resetGame() {
+    game.board = [["", "", ""], ["", "", ""], ["", "", ""]];
+    game.round = 1;
+    document.querySelectorAll("#game-board li").forEach(square => {
+        square.hasChildNodes() && square.removeChild(square.firstChild);
+    });
+    ["draw", "win"].forEach(status => { document.querySelector(`#result-${status}`).style.display = "none"; });
+}
+
+function terminateGame(isDraw = false) {
+    toggleBoardEvents(false);
+    toggleDisplay(false)
+    displayOutcome(isDraw);
+    players.switchPlayer();
+}
+
+function toggleDisplay(isActive) {
+    document.querySelector("#start").classList[isActive ? "remove" : "add"]("heartbeat");
+    document.querySelector("#game-over").style.display = isActive ? "none" : "block";
+    toggleSettingsButtons(!isActive);
+}
+
+function displayOutcome(isDraw) {
+    document.querySelector(isDraw  ? "#result-draw" : "#result-win").style.display = "block";
+    if (!isDraw) { document.querySelector("#winner").innerHTML = players.current.name; }
+}
+
+function toggleBoardEvents(isActive) {
+    document.querySelectorAll("#game-board li").forEach(square => {
+        square[isActive ? "addEventListener" : "removeEventListener"]("click", placeIcon, {once: true});
+    });
+}
+
 function getIcon(player) {
     const icon = document.createElement('img');
     icon.classList.add("markers");
@@ -7,8 +48,12 @@ function getIcon(player) {
 
 function placeIcon() {
     displayIcon(this);
-    players.switchPlayer();
-    displayName();
+    if (isWinning(this.dataset)) { terminateGame(); }
+    else if (++game.round === 10) { terminateGame(true); }
+    else {
+        players.switchPlayer();
+        displayName();
+    }
 }
 
 function displayIcon(square) {
@@ -18,3 +63,29 @@ function displayIcon(square) {
 }
 
 function displayName() { document.querySelector("#active-player").innerHTML = players.current.name; }
+
+function isWinning({ row, column }) {
+    game.board[row][column] = players.current.icon;
+    return checkRows() || checkColumns() || checkDiagonals();
+}
+
+function checkRows() {
+    for (let row = 0; row < game.board.length; row++) {
+        if (game.board[row].every(square => square === players.current.icon)) { return true; }
+    }
+    return false;
+}
+
+function checkColumns() {
+    for (let column = 0; column < game.board.length; column++) {
+        if (game.board.every(row => row[column] === players.current.icon)) { return true;}
+    }
+    return false;
+}
+
+function checkDiagonals() {
+    const { board } = game;
+    const { current } = players;
+    return (board[0][0] === current.icon && board[1][1] === current.icon && board[2][2] === current.icon)
+        || (board[0][2] === current.icon && board[1][1] === current.icon && board[2][0] === current.icon);
+}

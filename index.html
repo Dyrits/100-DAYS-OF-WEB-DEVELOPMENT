@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Day #042 (Tic, Tac, Toe)</title>
+    <title>Day #043 (Tic, Tac, Toe)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -63,20 +63,21 @@
         </section>
         <section id="game">
             <article id="game-over">
-                <h2>You won <span id="winner" class="goldenrod">##</span>!</h2>
+                <h2 id="result-draw">It's a draw</h2>
+                <h2 id="result-win">You won <span id="winner" class="goldenrod">##</span>!</h2>
                 <p>Click the start button to play again.</p>
             </article>
             <p>It's <span id="active-player" class="goldenrod">##</span>'s turn.</p>
             <ol id="game-board">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li data-row="0" data-column="0"></li>
+                <li data-row="0" data-column="1"></li>
+                <li data-row="0" data-column="2"></li>
+                <li data-row="1" data-column="0"></li>
+                <li data-row="1" data-column="1"></li>
+                <li data-row="1" data-column="2"></li>
+                <li data-row="2" data-column="0"></li>
+                <li data-row="2" data-column="1"></li>
+                <li data-row="2" data-column="2"></li>
             </ol>
         </section>
     </main>

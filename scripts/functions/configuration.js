@@ -39,6 +39,13 @@ function toggleStartButton(isEnabled) {
     document.querySelector("#warning").style.display = isEnabled ? "none" : "block";
 }
 
+function toggleSettingsButtons(isEnabled) {
+    document.querySelectorAll(".settings").forEach(function (element) {
+        element.classList[isEnabled ? "remove" : "add"]("inactive");
+        element.disabled = !isEnabled;
+    });
+}
+
 function refreshConfiguration(isModalOpen = false) {
     displayNames();
     displayName();

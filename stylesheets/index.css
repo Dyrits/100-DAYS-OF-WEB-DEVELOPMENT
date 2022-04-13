@@ -226,6 +226,13 @@ aside button img:hover {
   transform: scale(1.1);
 }
 
+.inactive {
+  cursor: not-allowed;
+}
+.inactive img:hover {
+  transform: none;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -372,6 +379,14 @@ main {
 #game-over h2 {
   font-size: 2rem;
   margin: 0.5rem 0;
+}
+
+#result-draw {
+  display: none;
+}
+
+#result-win {
+  display: none;
 }
 
 #active-player {

@@ -34,4 +34,8 @@ aside button img {
   &:hover { transform: scale(1.1); }
 }
 
+.inactive {
+  cursor: not-allowed;
+  img:hover { transform: none; }
+}
 

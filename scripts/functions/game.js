@@ -11,6 +11,7 @@ function resetGame() {
     game.round = 1;
     document.querySelectorAll("#game-board li").forEach(square => {
         square.hasChildNodes() && square.removeChild(square.firstChild);
+        square.classList.remove("disabled");
     });
     ["draw", "win"].forEach(status => { document.querySelector(`#result-${status}`).style.display = "none"; });
 }

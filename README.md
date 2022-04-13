@@ -1,13 +1,13 @@
-# Day #043
-Let's move on to the game logic of our Tic-Tac-Toe game. Time to get started on that!
+# Day #044
+Time to finish our first milestone project!
 
 ---
 
 <details>
     <summary>List of Lectures (Video Duration: 39 minutes)</summary>
     <ul>
-        <li>Adding Logic For Starting A Game</li>
-        <li>Managing Game Rounds (Turns) & Field Selection</li>
-        <li>Tracking Selected Fields On The Game Board</li>
+        <li>Checking For A Winner Or Draw</li>
+        <li>Ending The Game & Adding Restart Logic</li>
+        <li>Module Summary</li>
     </ul>
 </details>

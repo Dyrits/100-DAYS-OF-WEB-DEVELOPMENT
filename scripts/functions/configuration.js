@@ -1,4 +1,5 @@
 function openModal() {
+    toggleStartButton(false);
     document.querySelector("#modal").style.display = "block";
     document.querySelector("#backdrop").style.display = "block";
     document.querySelector("#player-number").innerHTML = this.dataset.player;
@@ -9,6 +10,7 @@ function closeModal($event) {
     document.querySelector("#player-name").value = String();
     document.querySelector("#modal").style.display = "none";
     document.querySelector("#backdrop").style.display = "none";
+    refreshConfiguration(false)
 }
 
 function savePlayer($event) {

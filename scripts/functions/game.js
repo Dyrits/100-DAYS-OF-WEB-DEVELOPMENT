@@ -1,7 +1,6 @@
 function startGame() {
     document.querySelector("#game").style.display = "block";
     resetGame();
-    toggleBoardEvents(true);
     toggleDisplay(true);
     displayName();
 }
@@ -12,12 +11,15 @@ function resetGame() {
     document.querySelectorAll("#game-board li").forEach(square => {
         square.hasChildNodes() && square.removeChild(square.firstChild);
         square.classList.remove("disabled");
+        square.addEventListener("click", placeIcon);
     });
     ["draw", "win"].forEach(status => { document.querySelector(`#result-${status}`).style.display = "none"; });
 }
 
 function terminateGame(isDraw = false) {
-    toggleBoardEvents(false);
+    document.querySelectorAll("#game-board li").forEach(square => {
+        square.removeEventListener("click", placeIcon,);
+    });
     toggleDisplay(false)
     displayOutcome(isDraw);
     players.switchPlayer();
@@ -32,12 +34,6 @@ function toggleDisplay(isActive) {
 function displayOutcome(isDraw) {
     document.querySelector(isDraw  ? "#result-draw" : "#result-win").style.display = "block";
     if (!isDraw) { document.querySelector("#winner").innerHTML = players.current.name; }
-}
-
-function toggleBoardEvents(isActive) {
-    document.querySelectorAll("#game-board li").forEach(square => {
-        square[isActive ? "addEventListener" : "removeEventListener"]("click", placeIcon, {once: true});
-    });
 }
 
 function getIcon(player) {

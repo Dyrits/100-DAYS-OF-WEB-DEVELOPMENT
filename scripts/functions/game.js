@@ -10,7 +10,6 @@ function resetGame() {
     game.round = 1;
     document.querySelectorAll("#game-board li").forEach(square => {
         square.hasChildNodes() && square.removeChild(square.firstChild);
-        square.classList.remove("disabled");
         square.addEventListener("click", placeIcon);
     });
     ["draw", "win"].forEach(status => { document.querySelector(`#result-${status}`).style.display = "none"; });
@@ -28,6 +27,9 @@ function terminateGame(isDraw = false) {
 function toggleDisplay(isActive) {
     document.querySelector("#start").classList[isActive ? "remove" : "add"]("heartbeat");
     document.querySelector("#game-over").style.display = isActive ? "none" : "block";
+    document.querySelectorAll("#game-board li").forEach(square => {
+        square.classList[isActive ? "remove" : "add"]("disabled");
+    });
     toggleSettingsButtons(!isActive);
 }
 
@@ -82,7 +84,7 @@ function checkColumns() {
 
 function checkDiagonals() {
     const { board } = game;
-    const { current } = players;
-    return (board[0][0] === current.icon && board[1][1] === current.icon && board[2][2] === current.icon)
-        || (board[0][2] === current.icon && board[1][1] === current.icon && board[2][0] === current.icon);
+    const { icon } = players.current;
+    return (board[0][0] === icon && board[1][1] === icon && board[2][2] === icon)
+        || (board[0][2] === icon && board[1][1] === icon && board[2][0] === icon);
 }

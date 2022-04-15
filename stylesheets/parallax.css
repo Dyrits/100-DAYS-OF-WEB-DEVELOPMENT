@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+section {
+    width: min(100%, 50rem);
+    margin: 2rem auto;
+}
+
+img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}

@@ -19,7 +19,3 @@ As a developer, you often use third-party packages so that you don't have to wri
         <li>Another Example: Preparing a Parallax Page</li>
     </ul>
 </details>
-
----
-
-/ [Netlify](https://100daysofcode-044-dyrits.netlify.app/)

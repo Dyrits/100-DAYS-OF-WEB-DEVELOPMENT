@@ -1,25 +1,19 @@
-# Day #045
+# Day #046
 As a developer, you often use third-party packages so that you don't have to write all the code on your own. Learn more about that on this day.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 51 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 37 minutes)</summary>
     <ul>
+        <li>Adding A Parallax Effect Package</li>
+        <li>Viewing Third-Party Source Code & Module Summary</li>
+        <hr>
         <li>Module Introduction</li>
-        <li>What & Why?</li>
-        <li>Third-Party Code vs Custom Code ("Your Own Code")</li>
-        <li>First Example: Adding Bootstrap For Some Default Styling</li>
-        <li>Adding & Using the Bootstrap CSS Package</li>
-        <li>Adding a JavaScript Package</li>
-        <li>Adding an Image Carousel / Gallery with a Third-Party Package</li>
-        <li>Combining Third-Party Packages With Custom Code</li>
-        <li>More Bootstrap Examples</li>
-        <li>Exercise Solution & First Summary</li>
-        <li>Another Example: Preparing a Parallax Page</li>
+        <li>What is "The Backend" & Why Do We Need Server-side Code?</li>
+        <li>Dynamic Websites vs Static Websites</li>
+        <li>Frontend vs Backend vs Fullstack Development</li>
+        <li>Choosing a Backend (Server-side) Programming Language</li>
+        <li>Quiz 10 - Learning Check: Frontend vs Backend</li>
     </ul>
 </details>
-
----
-
-/ [Netlify](https://100daysofcode-044-dyrits.netlify.app/)

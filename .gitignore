@@ -4,5 +4,8 @@
 *.sass.map
 *.scss.map
 
+# Node
+node_modules/
+
 # PHPStorm
 .idea

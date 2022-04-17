@@ -1,19 +1,18 @@
-# Day #046
-As a developer, you often use third-party packages so that you don't have to write all the code on your own. Learn more about that on this day.
+# Day #047
+Learn more NodeJS basics. NodeJS is the primary backend technology we use in this course.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 37 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 52 minutes)</summary>
     <ul>
-        <li>Adding A Parallax Effect Package</li>
-        <li>Viewing Third-Party Source Code & Module Summary</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>What is "The Backend" & Why Do We Need Server-side Code?</li>
-        <li>Dynamic Websites vs Static Websites</li>
-        <li>Frontend vs Backend vs Fullstack Development</li>
-        <li>Choosing a Backend (Server-side) Programming Language</li>
-        <li>Quiz 10 - Learning Check: Frontend vs Backend</li>
+        <li>Module Introduction </li>
+        <li>Installing NodeJS</li>
+        <li>Executing NodeJS Code</li>
+        <li>Creating a Custom NodeJS Server</li>
+        <li>Handling Requests & Creating Custom Responses</li>
+        <li>Doing More Server-side Work</li>
+        <li>Quiz 11 - Learning Check: NodeJS Basics</li>
+        <li>Summary</li>
     </ul>
 </details>

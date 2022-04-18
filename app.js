@@ -1,15 +1,41 @@
-const http = require("http");
+const FS = require('fs');
+const PATH = require('path');
 
-const server = http.createServer(run);
+const express = require('express');
+
+const app = express();
+
 const port = 3000;
 
-server.listen(port, () => {
-  console.log(`The server is running on port ${port}.`);
+const file = {};
+file.path = PATH.join(__dirname, ".data", "users.json");
+
+app.use(express.urlencoded({ extended: false }));
+
+app.get("/current-time", (request, response) => {
+    response.send(`<h1>${new Date().toISOString()}</h1>`);
 });
 
-function run(request, response) {
-    const query = {};
-    query.time = request.url === "/current-time";
-    const h1 = `<h1>${query.time ? new Date().toISOString() : "Hello World!"}</h1>`;
-    response.end(h1);
-}
+app.get("/", (request, response) => {
+    response.send(`
+        <form method="POST" action="/save-user">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <input type="submit" value="Submit">
+        </form>
+    `);
+});
+
+
+
+app.post("/save-user", ({ body }, response) => {
+    const { username } = body;
+    file.content = JSON.parse(FS.readFileSync(file.path, "utf8")) || {};
+    file.content.push(username);
+    FS.writeFileSync(file.path, JSON.stringify(file.content));
+    response.send(`<h1>Username "${username}" saved in ${file.path}!</h1>`);
+});
+
+app.listen(3000, () => {
+    console.log(`The server is running on port ${port}.`);
+});

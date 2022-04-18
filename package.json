@@ -1,5 +1,25 @@
 {
+  "name": "100-days-of-code",
+  "version": "1.0.0",
+  "description": "#048",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyrits/100-DAYS-OF-CODE.git"
+  },
+  "author": "Dylan J. Gerrits",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dyrits/100-DAYS-OF-CODE/issues"
+  },
+  "homepage": "https://github.com/Dyrits/100-DAYS-OF-CODE#README",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
   }
 }

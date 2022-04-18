@@ -26,14 +26,25 @@ app.get("/", (request, response) => {
     `);
 });
 
-
-
 app.post("/save-user", ({ body }, response) => {
     const { username } = body;
-    file.content = JSON.parse(FS.readFileSync(file.path, "utf8")) || {};
-    file.content.push(username);
-    FS.writeFileSync(file.path, JSON.stringify(file.content));
+    const users = JSON.parse(FS.readFileSync(file.path, "utf8")) || [];
+    users.push(username);
+    FS.writeFileSync(file.path, JSON.stringify(users));
     response.send(`<h1>Username "${username}" saved in ${file.path}!</h1>`);
+});
+
+app.get("/json/users", (request, response) => {
+    const users = JSON.parse(FS.readFileSync(file.path, "utf8")) || [];
+    response.send(users);
+});
+
+app.get("/users", (request, response) => {
+    const users = JSON.parse(FS.readFileSync(file.path, "utf8")) || [];
+    let html = "<ul>";
+    for (const user of users) { html += `<li>${user}</li>`;}
+    html += "</ul>";
+    response.send(html);
 });
 
 app.listen(3000, () => {

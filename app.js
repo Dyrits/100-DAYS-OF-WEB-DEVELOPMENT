@@ -19,13 +19,18 @@ app.get('/', (request, response) => {
   response.render("index");
 });
 
-app.get("/:file", ({ params }, response) => {
-  params.file === "index" ? response.redirect("/") : response.render(params.file);
-});
-
 app.post("/recommend", ({ body }, response) => {
   manager.write("restaurants.json", body);
   response.redirect("/confirm");
+});
+
+app.get("/restaurants", (request, response) => {
+  const restaurants = manager.read("restaurants.json");
+  response.render("restaurants", { restaurants });
+});
+
+app.get("/:file", ({ params }, response) => {
+  params.file === "index" ? response.redirect("/") : response.render(params.file);
 });
 
 app.listen(3000, () => {

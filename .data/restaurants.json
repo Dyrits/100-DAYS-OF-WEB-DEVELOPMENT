@@ -1,9 +1,16 @@
 [
   {
-    "name": "Mangez-moi !",
-    "address": "Rue de la Paix, 75000 Paris",
-    "cuisine": "Française",
-    "website": "https://mangez-moi.fr",
-    "description": "La nourriture est délicieuse."
+    "name": "Frenessí",
+    "address": "Autopista Norte 114 - 44, Bogota Colombia",
+    "cuisine": "International",
+    "website": "https://en.frenessi.co/",
+    "description": "Frenessí, is the new restaurant of the Seratta Group (Seratta Gourmand Market, Viva la Vida, Descortés and Giornatta) where you can enjoy an experiential menu that will make you travel through worlds never imagined. You will awaken your five senses as you embark on an adventure where you will know thousands of worlds without getting up from your chair."
+  },
+  {
+    "name": "Piazza Italia By Storia D'amore Calle 93",
+    "address": "Calle 93a 13a 21, Bogota 110221 Colombiay",
+    "cuisine": "Italian",
+    "website": "http://www.restaurantestoriadamore.com/",
+    "description": "You deserve a special moment, and we want to bring Italy to your table as in every visit to our restaurants. Taste the authentic Italian cuisine at home or to pick up at your nearest location."
   }
 ]

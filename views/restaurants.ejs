@@ -49,24 +49,28 @@
 </aside>
 <main>
     <h1>Recommended restaurants</h1>
+    <% if (restaurants.length) { %>
     <p>Find your next favorite restaurants with help of our other users!</p>
+    <p>We found <%= restaurants.length %> restaurant(s).</p>
+    <% } else { %>
+    <p>Unfortunately, we have nothing to recommend you, yet. You can be the first one to <a href="/recommend">recommend</a> us a restaurant!</p>
+    <% } %>
     <ul id="restaurants-list">
+        <% for (const restaurant of restaurants) { %>
         <li class="restaurant-item">
             <article>
-                <h2>Restaurant Title</h2>
+                <h2><%= restaurant.name %></h2>
                 <div class="restaurant-meta">
-                    <p>Mexican</p>
-                    <p>Address of the restaurant, including city</p>
+                    <p><%= restaurant.cuisine %></p>
+                    <p><%= restaurant.address %></p>
                 </div>
-                <p>
-                    A short description, explaining why this restaurant is awesome!
-                </p>
+                <p><%= restaurant.description %></p>
                 <div class="restaurant-actions">
-                    <a href="">View Website</a>
+                    <a href="<%= restaurant.website %>" target="_blank">View Website</a>
                 </div>
             </article>
         </li>
-
+        <% } %>
     </ul>
 </main>
 </body>

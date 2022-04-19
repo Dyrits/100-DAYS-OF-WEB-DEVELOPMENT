@@ -10,8 +10,9 @@
             href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" href="../public/styles/shared.css"/>
-    <script src="../public/scripts/responsive.js" defer></script>
+    <link rel="stylesheet" href="./styles/shared.css"/>
+    <link rel="stylesheet" href="./styles/restaurants.css"/>
+    <script src="./scripts/responsive.js" defer></script>
 </head>
 <body>
 <header id="main-header">
@@ -47,8 +48,26 @@
     </nav>
 </aside>
 <main>
-    <h1>Success!</h1>
-    <p>Your restaurant was successfully added to our list!</p>
+    <h1>Recommended restaurants</h1>
+    <p>Find your next favorite restaurants with help of our other users!</p>
+    <ul id="restaurants-list">
+        <li class="restaurant-item">
+            <article>
+                <h2>Restaurant Title</h2>
+                <div class="restaurant-meta">
+                    <p>Mexican</p>
+                    <p>Address of the restaurant, including city</p>
+                </div>
+                <p>
+                    A short description, explaining why this restaurant is awesome!
+                </p>
+                <div class="restaurant-actions">
+                    <a href="">View Website</a>
+                </div>
+            </article>
+        </li>
+
+    </ul>
 </main>
 </body>
 </html>

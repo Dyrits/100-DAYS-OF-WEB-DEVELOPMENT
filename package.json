@@ -1,12 +1,13 @@
 {
   "name": "100-days-of-code",
   "version": "1.0.0",
-  "description": "#049",
+  "description": "#050",
   "main": "app.js",
   "keywords": [],
   "authors": "Dylan J. Gerrits & Maximilian Schwarzmüller (Academind GmbH)",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^3.0.2",
     "express": "^4.17.1"
   },
   "devDependencies": {

@@ -1,19 +1,31 @@
 const express = require('express');
 const PATH = require('path');
+const FS = require('fs');
+
+const manager = require("./helpers/data-manager");
 
 const app = express();
 
-const views = {
-  directory: PATH.join(__dirname, 'views'),
-  get (file) { return PATH.join(this.directory, `${file}.html`); }
-};
+const views = { directory: PATH.join(__dirname, 'views'), };
+
+app.set("views", views.directory);
+app.set("view engine", "ejs");
+
+app.use(express.urlencoded({ extended: false }));
+
+app.use(express.static(PATH.join(__dirname, "public")));
 
 app.get('/', (request, response) => {
-  response.sendFile(views.get('index'));
+  response.render("index");
 });
 
 app.get("/:file", ({ params }, response) => {
-  params.file === "index" ? response.redirect("/") : response.sendFile(views.get(params.file));
+  params.file === "index" ? response.redirect("/") : response.render(params.file);
+});
+
+app.post("/recommend", ({ body }, response) => {
+  manager.write("restaurants.json", body);
+  response.redirect("/confirm");
 });
 
 app.listen(3000, () => {

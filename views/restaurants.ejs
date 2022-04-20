@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Eatwell - Make The World A Tastier Place</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
-            rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/shared.css"/>
-    <link rel="stylesheet" href="./styles/restaurants.css"/>
-    <script src="./scripts/responsive.js" defer></script>
-</head>
+<%- include("./partials/_head", { stylesheets: ["restaurants"] })  %>
 <body>
 <%- include("./partials/_header")  %>
 <%- include("./partials/_aside")  %>
@@ -27,19 +14,7 @@
     <% } %>
     <ul id="restaurants-list">
         <% for (const restaurant of restaurants) { %>
-        <li class="restaurant-item">
-            <article>
-                <h2><%= restaurant.name %></h2>
-                <div class="restaurant-meta">
-                    <p><%= restaurant.cuisine %></p>
-                    <p><%= restaurant.address %></p>
-                </div>
-                <p><%= restaurant.description %></p>
-                <div class="restaurant-actions">
-                    <a href="<%= restaurant.website %>" target="_blank">View Website</a>
-                </div>
-            </article>
-        </li>
+            <%- include("./partials/restaurants/_restaurant.ejs", { restaurant })  %>
         <% } %>
     </ul>
 </main>

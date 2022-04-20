@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/_head", { stylesheets: ["restaurants"] })  %>
+<body>
+<%- include("./partials/_header")  %>
+<%- include("./partials/_aside")  %>
+<main>
+    <h1><%= restaurant.name %></h1>
+    <p><%= restaurant.cuisine %> | <%= restaurant.address %></p>
+    <p><%= restaurant.description %></p>
+    <p><a href="<%= restaurant.website %>" target="_blank">Website</a></p>
+</main>
+</body>
+</html>

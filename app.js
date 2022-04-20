@@ -1,6 +1,7 @@
 const express = require('express');
 const PATH = require('path');
 const FS = require('fs');
+const UUID = require('uuid');
 
 const manager = require("./helpers/data-manager");
 
@@ -20,13 +21,18 @@ app.get('/', (request, response) => {
 });
 
 app.post("/recommend", ({ body }, response) => {
-  manager.write("restaurants.json", body);
+  manager.write("restaurants.json", {...body, id: UUID.v4()});
   response.redirect("/confirm");
 });
 
 app.get("/restaurants", (request, response) => {
   const restaurants = manager.read("restaurants.json");
   response.render("restaurants", { restaurants });
+});
+
+app.get("/restaurants/:id", (request, response) => {
+  const restaurant = manager.read("restaurants.json").find(restaurant => restaurant.id === request.params.id);
+  response.render("restaurant", { restaurant });
 });
 
 app.get("/:file", ({ params }, response) => {

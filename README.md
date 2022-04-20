@@ -1,16 +1,18 @@
-# Day #050
-Dive deeper into the generation of dynamic content with help of backend technologies.
+# Day #051
+Learn how to not just generate dynamic content but also work with dynamic URL paths.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
     <ul>
-        <li>Serving Static Files (CSS & JavaScript)</li>
-        <li>Parsing Form Data & Redirecting Requests</li>
-        <li>Adding the EJS Template Engine</li>
-        <li>Rendering Dynamic Content With Templates</li>
-        <li>Outputting Repeated Content With EJS & Loops</li>
-        <li>Rendering Conditional Content</li>
+        <li>Including Partial Content</li>
+        <li>EJS & IDE Support</li>
+        <li>Module Summary</li>
+        <li>Quiz 13 - Learning Check: Static & Dynamic Content</li>
+        <hr>
+        <li>Module Introduction</li>
+        <li>Introducing Dynamic Routes</li>
+        <li>Managing Data with Unique IDs</li>
     </ul>
 </details>

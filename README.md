@@ -19,4 +19,3 @@ The "100 Days of Code" challenge is a challenge that was invented to motivate pe
 |:------------------------------------------------------------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | [Day #051](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23051) |               |               |               |               | 
 |                                 -                                  |               |               |               |               |
-|

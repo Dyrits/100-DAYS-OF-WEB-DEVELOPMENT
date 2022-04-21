@@ -3,7 +3,7 @@ const PATH = require('path');
 const FS = require('fs');
 const UUID = require('uuid');
 
-const $restaurants = require("./utilities/restaurants-data");
+const $restaurants = require("./services/restaurants");
 
 const app = express();
 

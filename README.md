@@ -1,18 +1,16 @@
-# Day #051
-Learn how to not just generate dynamic content but also work with dynamic URL paths.
+# Day #052
+Dive even deeper into backend development, dynamic request handling and response metadata.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
-        <li>Including Partial Content</li>
-        <li>EJS & IDE Support</li>
-        <li>Module Summary</li>
-        <li>Quiz 13 - Learning Check: Static & Dynamic Content</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>Introducing Dynamic Routes</li>
-        <li>Managing Data with Unique IDs</li>
+        <li>Loading & Displaying Detail Data</li>
+        <li>Showing a 404 Page For "Not Found" Cases</li>
+        <li>More 404 Page Usage (Non-Existent Routes)</li>
+        <li>Handling Server-Side Errors (500 Status Code)</li>
+        <li>Working With Status Codes</li>
+        <li>Code Refactoring & Adding More Functions</li>
     </ul>
 </details>

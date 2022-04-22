@@ -1,6 +1,5 @@
 const express = require('express');
 const PATH = require('path');
-const FS = require('fs');
 const UUID = require('uuid');
 
 const $restaurants = require("./services/restaurants");

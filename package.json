@@ -6,6 +6,9 @@
   "keywords": [],
   "authors": "Dylan J. Gerrits & Maximilian Schwarzmüller (Academind GmbH)",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "ejs": "^3.0.2",
     "express": "^4.17.1",

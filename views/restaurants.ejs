@@ -12,6 +12,10 @@
     <% } else { %>
     <p>Unfortunately, we have nothing to recommend you, yet. You can be the first one to <a href="/recommend">recommend</a> us a restaurant!</p>
     <% } %>
+    <form action="/restaurants" method="GET">
+        <input type="hidden" value="<%= order %>" name="order">
+        <button class="button" type="submit">Change order</button>
+    </form>
     <ul id="restaurants-list">
         <% for (const restaurant of restaurants) { %>
             <%- include("./partials/restaurants/_restaurant.ejs", { restaurant })  %>

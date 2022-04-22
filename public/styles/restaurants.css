@@ -42,15 +42,18 @@ main {
   text-align: right;
 }
 
-.restaurant-actions a {
+.restaurant-actions a, .button {
   padding: 0.5rem 1.5rem;
   background-color: rgb(202, 158, 62);
   border-radius: 4px;
   color: white;
   text-decoration: none;
+  cursor: pointer;
+  border: none;
 }
 
 .restaurant-actions a:hover,
-.restaurant-actions a:active {
+.restaurant-actions a:active,
+.button:hover {
   background-color: rgb(202, 141, 62);
 }

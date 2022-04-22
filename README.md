@@ -1,16 +1,16 @@
-# Day #052
-Dive even deeper into backend development, dynamic request handling and response metadata.
+# Day #053
+Explore more features of the 'Express Router' and finish the basic backend concepts.
 
 ---
 
 <details>
     <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
-        <li>Loading & Displaying Detail Data</li>
-        <li>Showing a 404 Page For "Not Found" Cases</li>
-        <li>More 404 Page Usage (Non-Existent Routes)</li>
-        <li>Handling Server-Side Errors (500 Status Code)</li>
-        <li>Working With Status Codes</li>
-        <li>Code Refactoring & Adding More Functions</li>
+        <li>Importing & Exporting Code In NodeJS</li>
+        <li>Using The Express Router To Split The Route Configuration</li>
+        <li>Introducing Query Parameters (& Hidden Form Fields)</li>
+        <li>Query Parameters vs Route Parameters</li>
+        <li>Module Summary</li>
+        <li>Quiz 14 - Learning Check: Advanced Express Features</li>
     </ul>
 </details>

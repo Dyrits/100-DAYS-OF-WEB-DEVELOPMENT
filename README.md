@@ -1,16 +1,16 @@
-# Day #053
-Explore more features of the 'Express Router' and finish the basic backend concepts.
+# Day 054
+We need more advanced JavaScript concepts! Time to dive into those!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 51 minutes)</summary>
     <ul>
-        <li>Importing & Exporting Code In NodeJS</li>
-        <li>Using The Express Router To Split The Route Configuration</li>
-        <li>Introducing Query Parameters (& Hidden Form Fields)</li>
-        <li>Query Parameters vs Route Parameters</li>
-        <li>Module Summary</li>
-        <li>Quiz 14 - Learning Check: Advanced Express Features</li>
+        <li>Module Introduction</li>
+        <li>Functions & Default Parameters</li>
+        <li>Rest Parameters & The Spread Operator</li>
+        <li>Functions Are Objects!</li>
+        <li>Working with Template Literals</li>
+        <li>Primitive vs Reference Values</li>
     </ul>
 </details>

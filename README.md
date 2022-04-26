@@ -1,4 +1,4 @@
-# Day 055
+# Day #055
 Explore more advanced JavaScript concepts - concepts which matter for both frontend and backend development.
 
 ---

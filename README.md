@@ -1,19 +1,21 @@
-# Day 056
-Time to finish the more advanced JavaScript concepts and move on to databases.
+# Day #057
+Learn about databases in general (what & why) and start diving into SQL database systems.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 45 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 51 minutes)</summary>
     <ul>
-        <li>Diving Into Asynchronous Code & Callback Functions</li>
-        <li>Introducing Promises</li>
-        <li>Asynchronous Code & Error Handling</li>
-        <li>Improving Code With async / await</li>
-        <li>Quiz 17 - Learning Check: Asynchronous Code</li>
-        <li>Module Summary</li>
+        <li>A Quick Introduction To SQL Databases (RDBMS)</li>
+        <li>A Quick Introduction To NoSQL Databases</li>
+        <li>SQL vs NoSQL Databases</li>
+        <li>Quiz 18 - Learning Check: Databases Introduction</li>
         <hr>
         <li>Module Introduction</li>
-        <li>Why Databases? And What Are Databases In The First Place?</li>
+        <li>What & Why?</li>
+        <li>RDBMS Option</li>
+        <li>Installing MySQL & Setup Steps</li>
+        <li>Database Server vs Databases vs Tables</li>
+        <li>Writing Our First SQL Code & Creating a Database</li>
     </ul>
 </details>

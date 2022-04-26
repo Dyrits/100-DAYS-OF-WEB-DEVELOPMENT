@@ -1,4 +1,4 @@
-# Day 054
+# Day #054
 We need more advanced JavaScript concepts! Time to dive into those!
 
 ---

@@ -5,14 +5,13 @@ services:
     volumes:
       - ./.mysql:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=academind
       - MYSQL_ROOT_PASSWORD=root-password
-      - MYSQL_USER=dyrits
-      - MYSQL_PASSWORD=dyrits-password
     ports:
       - "3306:3306"
     expose:
       - 3306
+    security_opt:
+      - seccomp:unconfined
 
 volumes:
   mysql:

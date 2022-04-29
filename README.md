@@ -1,16 +1,17 @@
-# Day #058
-Dive deeper into SQL, an important database querying language.
+# Day #059
+xplore data entity relations and how you can work with them when using SQL.
 
 ---
 
 <details>
     <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
-        <li>Creating a Table & Table Structure</li>
-        <li>Inserting Data Into A Table</li>
-        <li>Reading Data From A Table (incl. Filtering)</li>
-        <li>Updating & Deleting Data</li>
-        <li>Designing A More Complex Database</li>
-        <li>Adding A New Table</li>
+        <li>Implementing A More Complex Design With Relations</li>
+        <li>Inserting Related Data</li>
+        <li>Practice: Inserting Related Data</li>
+        <li>Querying & Joining Related Data</li>
+        <li>Practice: Joining Data</li>
+        <li>Module Summary & More On Relationships</li>
+        <li>Quiz 19 - Learning Check: SQL Introduction</li>
     </ul>
 </details>

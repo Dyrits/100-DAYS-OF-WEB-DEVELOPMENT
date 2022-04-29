@@ -23,3 +23,6 @@ The "100 Days of Code" challenge is a challenge that was invented to motivate pe
 | [Day #054](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23054) |               |               |               |               |
 | [Day #055](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23055) |               |               |               |               |
 | [Day #056](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23056) |               |               |               |               |
+| [Day #057](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23057) |               |               |               |               |
+| [Day #058](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23058) |               |               |               |               |
+| [Day #059](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23059) |               |               |               |               |

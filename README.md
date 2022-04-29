@@ -1,5 +1,5 @@
 # Day #059
-xplore data entity relations and how you can work with them when using SQL.
+Explore data entity relations and how you can work with them when using SQL.
 
 ---
 

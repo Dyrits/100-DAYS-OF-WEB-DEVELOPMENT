@@ -1,3 +1,5 @@
+use restaurant_finder;
+
 create table addresses
 (
     id            int auto_increment,

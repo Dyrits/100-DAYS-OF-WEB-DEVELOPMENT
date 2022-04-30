@@ -1,7 +1,7 @@
 {
   "name": "100-days-of-code",
   "version": "1.0.0",
-  "description": "",
+  "description": "Day #060",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"

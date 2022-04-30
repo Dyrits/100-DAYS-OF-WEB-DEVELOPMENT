@@ -14,7 +14,7 @@ create table authors
 create unique index authors_id_uindex
     on authors (id);
 
-create table post
+create table posts
 (
     id        int auto_increment,
     title     varchar(255)                       not null,
@@ -29,5 +29,5 @@ create table post
 );
 
 create unique index post_id_uindex
-    on post (id);
+    on posts (id);
 

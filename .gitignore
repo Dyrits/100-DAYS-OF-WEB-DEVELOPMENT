@@ -10,5 +10,8 @@ node_modules/
 # MySQL
 .mysql/
 
+# MongoDB
+.mongo/
+
 # PHPStorm
 .idea/

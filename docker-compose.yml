@@ -1,17 +1,12 @@
 version: "3.5"
 services:
-  mysql:
-    image: mysql:8.0.25
-    volumes:
-      - ./.mysql:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=root-password
+  mongo:
+    image: mongo
     ports:
-      - "3306:3306"
+      - "27017:27017"
     expose:
-      - 3306
-    security_opt:
-      - seccomp:unconfined
-
+      - "27017"
+    volumes:
+      - .mongo:/data/db
 volumes:
-  mysql:
+  mongo:

@@ -1,0 +1,83 @@
+db.types.insertMany([
+    { name: "Italian" },
+    { name: "French" },
+    { name: "American" }
+])
+
+db.restaurants.insertMany([
+{
+    name: "Bagels and Coffee",
+    address: {
+        street: "123 Main St",
+        zipcode: 12345,
+        number: "123",
+        city: "New York",
+        country: "United States"
+    },
+    type: { id: ObjectId("626ebab351daba7b16a5ceb8"), name: "American" },
+}, {
+    name: "Le Croissant",
+    address: {
+        street: "456 Main St",
+        zipcode: 54321,
+        number: "456",
+        city: "New York",
+        country: "United States"
+    },
+   type: { id: ObjectId("626ebab351daba7b16a5ceb7"), name: "French" },
+}, {
+    name: "Cafe Del Mar",
+    address: {
+        street: "789 Main St",
+        zipcode: 98765,
+        number: "789",
+        city: "New York",
+        country: "United States"
+    },
+    type: { id: ObjectId("626ebab351daba7b16a5ceb6"), name: "Italian" },
+}])
+
+db.reviews.insertMany([
+{
+    reviewer: {
+        name: "John Doe",
+        email: "johndoe@fake-mail.com"
+    },
+    review: {
+        rating: 5,
+        comment: "Best restaurant in the world!",
+        date: new Date("2020-01-01")
+    },
+    restaurant: {
+        id: ObjectId("626ebb7f51daba7b16a5cebb"),
+        name: "Bagels and Coffee"
+    }
+}, {
+    reviewer: {
+        name: "Jane Doe",
+        email: "janedoe@fake-mail.com"
+    },
+    review: {
+        rating: 4,
+        comment: "Not bad, but could be better.",
+        date: new Date("2019-01-02")
+    },
+    restaurant: {
+        id: ObjectId("626ebb7f51daba7b16a5cebb"),
+        name: "Bagels and Coffee"
+    }
+}, {
+    reviewer: {
+        name: "Matt Smith",
+        email: "mattsmith@fake-mail.com"
+    },
+    review: {
+        rating: 3,
+        comment: "Meh.",
+        date: new Date("2022-01-03")
+    },
+    restaurant: {
+        id: ObjectId("626ebb7f51daba7b16a5cebd"),
+        name: "Cafe Del Mar"
+    }
+}])

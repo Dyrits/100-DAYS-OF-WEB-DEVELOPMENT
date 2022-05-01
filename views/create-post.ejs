@@ -10,7 +10,7 @@
   <%- include('includes/header') %>
   <main>
     <h1>Add a new post</h1>
-    <form action="/posts" method="POST">
+    <form action="/posts/save" method="POST">
       <div class="form-control">
         <label for="title">Title</label>
         <input type="text" id="title" name="title" required>
@@ -27,7 +27,7 @@
         <label for="author">Select Author</label>
         <select id="author" name="author">
           <% for (const author of authors) { %>
-            <option value="<%- author.id %>"><%- author.name %></option>
+            <option value="<%= author.id %>"><%= author.name %></option>
           <% } %>
         </select>
       </div>

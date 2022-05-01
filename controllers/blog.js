@@ -1,5 +1,3 @@
-const database = require("../data/database");
-
 const service = require("../services/blog");
 
 module.exports = {

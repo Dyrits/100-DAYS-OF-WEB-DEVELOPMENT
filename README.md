@@ -1,16 +1,17 @@
-# Day #062
-Finish the usage of SQL in a Node + Express website and practice what you learned.
+# Day #063
+Besides SQL, you could also use a NoSQL database system. Learn more about NoSQL on this day!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 47 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 55 minutes)</summary>
     <ul>
-        <li>Fetching & Displaying a Single Blog Post</li>
-        <li>Formatting & Transforming Fetched Data</li>
-        <li>Preparing The "Update Post" Page</li>
-        <li>Updating Posts</li>
-        <li>Deleting Posts</li>
-        <li>Module Summary</li>
+        <li>Module Introduction </li>
+        <li>The Idea Behind NoSQL Database Systems</li>
+        <li>Introducing MongoDB</li>
+        <li>General Setup Instructions & Installing MongoDB on macOS</li>
+        <li>Installing MongoDB on Windows</li>
+        <li>Installing the MongoDB Shell</li>
+        <li> Inserting Data with MongoDB</li>
     </ul>
 </details>

@@ -1,17 +1,16 @@
-# Day #063
-Besides SQL, you could also use a NoSQL database system. Learn more about NoSQL on this day!
+# Day #065
+Just as before with SQL, learn how to use NoSQL together with Node & Express.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 55 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 56 minutes)</summary>
     <ul>
-        <li>Module Introduction </li>
-        <li>The Idea Behind NoSQL Database Systems</li>
-        <li>Introducing MongoDB</li>
-        <li>General Setup Instructions & Installing MongoDB on macOS</li>
-        <li>Installing MongoDB on Windows</li>
-        <li>Installing the MongoDB Shell</li>
-        <li> Inserting Data with MongoDB</li>
+        <li>Module Introduction</li>
+        <li>Planning the Database Structure & Layout</li>
+        <li>Project & Database Initialization</li>
+        <li>Connecting to MongoDB (from inside NodeJS)</li>
+        <li>Fetching & Displaying A List Of Authors</li>
+        <li>Inserting Documents</li>
     </ul>
 </details>

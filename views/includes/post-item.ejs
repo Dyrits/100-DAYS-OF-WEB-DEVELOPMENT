@@ -1,0 +1,12 @@
+<article class="post-item">
+  <h2><%= title %></h2>
+  <p class="post-item-author">By <%= author.name %></p>
+  <p><%= summary %></p>
+  <div class="post-actions">
+    <form action="/posts/<%= id %>/delete" method="POST">
+      <button class="btn btn-alt">Delete Post</button>
+    </form>
+    <a href="posts/<%= id %>/update">Edit Post</a>
+    <a class="btn" href="posts/<%= id %>">View Post</a>
+  </div>
+</article>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<% const { title, content, date, author } = post; %>
+<head>
+  <%- include('includes/head', { title }) %>
+  <link rel="stylesheet" href="/styles/posts.css">
+</head>
+
+<body>
+<%- include('includes/header') %>
+<main id="post-detail">
+  <h1><%= title %></h1>
+  <section id="post-meta">
+    <address><a href="mailto:<%= author.email %>"><%= author.name %></a></address> |
+    <time datetime="<%= date.iso %>"><%= date.locale %></time>
+  </section>
+  <hr>
+  <section>
+    <p id="body"><%= content %></p>
+  </section>
+</main>
+</body>
+
+</html>

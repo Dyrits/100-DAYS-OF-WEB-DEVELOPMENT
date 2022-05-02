@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('includes/head', { title: 'All Posts' }) %>
+  <link rel="stylesheet" href="/styles/posts.css">
+</head>
+
+<body>
+<%- include('includes/header') %>
+<main id="all-posts">
+  <h1>All Posts</h1>
+  <% if (!posts || posts.length === 0) { %>
+    <p>There is no publication yet. Feel free to create a new one!</p>
+  <% } else { %>
+    <ol id="posts-list">
+      <% for (const post of posts) {
+        const { id, title, summary, author } = post; %>
+      <li><%- include('includes/post-item', { id, title, summary, author }) %></li>
+      <% } %>
+    </ol>
+  <% } %>
+
+</main>
+</body>
+
+</html>

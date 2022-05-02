@@ -1,0 +1,20 @@
+use blog
+
+db.authors.inserMany([
+    {
+        "name": "Dylan Gerrits",
+        "email": "dylangerrits@fake-mail.com",
+    },
+    {
+        "name": "Maximilian Schwarzmüller",
+        "email": "maximilianscwarzmüller@fake-mail.com"
+    },
+    {
+        "name": "Markus Schmölz",
+        "email": "markusschmölz@fake-mail.com"
+    },
+    {
+        "name": "John Smith",
+        "email": "johnsmith@fake-email.com"
+    }
+]);

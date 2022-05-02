@@ -34,7 +34,7 @@ module.exports = {
         delete: async (id) => {
             await database.query("DELETE FROM posts WHERE id = ?", [id]);
         },
-        findById: async (id) => {
+        find: async (id) => {
             const fields = "posts.*, authors.name as author_name, authors.email as author_email";
             const [[post]] = await database.query(
                 `SELECT ${fields} FROM posts ${jointure} WHERE posts.id = ?`,

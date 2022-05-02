@@ -13,36 +13,32 @@ const service = {
         find: async(id) => await database.schema.collection("authors").findOne({ _id: new ObjectId(id) }),
     },
     posts: {
+        _format: async (body) => {
+            const {title, summary, content} = body;
+            const date = new Date();
+            const author = await service.authors.find(body.author);
+            return {title, summary, content, date, author};
+        },
         findAll: async () => {
             const posts = await database.schema.collection("posts").find().toArray();
             identify(posts);
             return posts;
         },
         save: async (body) => {
-            const { title, summary, content } = body;
-            const date = new Date();
-            const author = await service.authors.find(body.author);
-            const post = { title, summary, content, date, author };
+            const post = await service.posts._format(body);
             await database.schema.collection("posts").insertOne(post);
         },
         update: async (body, id) => {
-            const { title, summary, content, author } = body;
-            await database.query(
-                "UPDATE posts SET title = ?, summary = ?, content = ?, author_id = ? WHERE id = ?",
-                [title, summary, content, author, id]
-            );
+            const post = await service.posts._format(body);
+            // TODO: Update a post.
         },
         delete: async (id) => {
-            await database.query("DELETE FROM posts WHERE id = ?", [id]);
+            // TODO: Delete a post.
         },
-        findById: async (id) => {
-            const fields = "posts.*, authors.name as author_name, authors.email as author_email";
-            const [[post]] = await database.query(
-                `SELECT ${fields} FROM posts ${jointure} WHERE posts.id = ?`,
-                [id]
-            );
-            const { title, summary, content } = post;
-            const date = {
+        find: async (id) => {
+            const post = await database.schema.collection("posts").findOne({_id: new ObjectId(id)})
+            post.id = post._id;
+            post.date = {
                 iso: post.date.toISOString(),
                 locale: post.date.toLocaleString("en-US", {
                     weekday: "long",
@@ -51,12 +47,7 @@ const service = {
                     day: "numeric"
                 })
             };
-            const author = {
-                id: post.author_id,
-                name: post.author_name,
-                email: post.author_email,
-            };
-            return { id, title, summary, content, date, author };
+            return post;
         },
     }
 }

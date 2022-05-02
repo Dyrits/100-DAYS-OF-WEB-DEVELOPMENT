@@ -27,11 +27,11 @@ module.exports = {
             response.render("create-post", { authors });
         },
         display: async ({  params }, response) => {
-            const post = await service.posts.findById(params.id);
+            const post = await service.posts.find(params.id);
             post ? response.render("post-detail", { post }) : response.status(404).render("404");
         },
         update: async ({ params }, response) => {
-            const post = await service.posts.findById(params.id);
+            const post = await service.posts.find(params.id);
             const authors = await service.authors.findAll();
             response.render("update-post", { post, authors });
         },

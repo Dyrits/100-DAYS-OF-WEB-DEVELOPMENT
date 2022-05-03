@@ -20,7 +20,7 @@ const service = {
             return {title, summary, content, date, author};
         },
         findAll: async () => {
-            const posts = await database.schema.collection("posts").find().toArray();
+            const posts = await database.schema.collection("posts").find({}, { title: 1, summary: 1, author: 1 }).toArray();
             identify(posts);
             return posts;
         },
@@ -30,10 +30,10 @@ const service = {
         },
         update: async (body, id) => {
             const post = await service.posts._format(body);
-            // TODO: Update a post.
+            await database.schema.collection("posts").updateOne({ _id: new ObjectId(id) }, { $set: post });
         },
         delete: async (id) => {
-            // TODO: Delete a post.
+            await database.schema.collection("posts").deleteOne({ _id: new ObjectId(id) });
         },
         find: async (id) => {
             const post = await database.schema.collection("posts").findOne({_id: new ObjectId(id)})

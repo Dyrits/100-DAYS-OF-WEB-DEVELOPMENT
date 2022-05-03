@@ -17,10 +17,10 @@ const service = {
             const {title, summary, content} = body;
             const date = new Date();
             const author = await service.authors.find(body.author);
-            return {title, summary, content, date, author};
+            return { title, summary, content, date, author };
         },
         findAll: async () => {
-            const posts = await database.schema.collection("posts").find({}, { title: 1, summary: 1, author: 1 }).toArray();
+            const posts = await database.schema.collection("posts").find({}, { projection: { title: 1, summary: 1, author: 1 } }).toArray();
             identify(posts);
             return posts;
         },
@@ -36,18 +36,23 @@ const service = {
             await database.schema.collection("posts").deleteOne({ _id: new ObjectId(id) });
         },
         find: async (id) => {
-            const post = await database.schema.collection("posts").findOne({_id: new ObjectId(id)})
-            post.id = post._id;
-            post.date = {
-                iso: post.date.toISOString(),
-                locale: post.date.toLocaleString("en-US", {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric"
-                })
-            };
-            return post;
+            try {
+                const post = await database.schema.collection("posts").findOne({_id: new ObjectId(id)}, { projection: { summary : 0} })
+                post.id = post._id;
+                post.date = {
+                    iso: post.date.toISOString(),
+                    locale: post.date.toLocaleString("en-US", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric"
+                    })
+                };
+                return post;
+            } catch (error) {
+                console.error(`The post ${id} could not be found: ${error.message}.`);
+                return null;
+            }
         },
     }
 }

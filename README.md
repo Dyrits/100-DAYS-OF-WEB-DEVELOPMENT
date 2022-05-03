@@ -19,10 +19,10 @@ The "100 Days of Code" challenge is a challenge that was invented to motivate pe
 |:------------------------------------------------------------------:|:------------------------------------------------------------------:|:-------------:|:-------------:|:-------------:|
 | [Day #051](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23051) | [Day #061](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23061) |               |               |               | 
 | [Day #052](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23052) | [Day #062](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23062) |               |               |               |
-| [Day #053](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23053) |                                                                    |               |               |               |
-| [Day #054](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23054) |                                                                    |               |               |               |
-| [Day #055](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23055) |                                                                    |               |               |               |
-| [Day #056](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23056) |                                                                    |               |               |               |
+| [Day #053](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23053) | [Day #063](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23063) |               |               |               |
+| [Day #054](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23054) | [Day #064](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23064) |               |               |               |
+| [Day #055](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23055) | [Day #065](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23065) |               |               |               |
+| [Day #056](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23056) | [Day #066](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23066) |               |               |               |
 | [Day #057](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23057) |                                                                    |               |               |               |
 | [Day #058](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23058) |                                                                    |               |               |               |
 | [Day #059](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23059) |                                                                    |               |               |               |

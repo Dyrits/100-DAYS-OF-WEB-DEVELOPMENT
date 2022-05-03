@@ -1,16 +1,15 @@
-# Day #065
-Just as before with SQL, learn how to use NoSQL together with Node & Express.
+# Day #066
+Continue using NoSQL with Node + Express and apply what you learned.
 
 ---
 
 <details>
     <summary>List of Lectures (Video Duration: 56 minutes)</summary>
     <ul>
-        <li>Module Introduction</li>
-        <li>Planning the Database Structure & Layout</li>
-        <li>Project & Database Initialization</li>
-        <li>Connecting to MongoDB (from inside NodeJS)</li>
-        <li>Fetching & Displaying A List Of Authors</li>
-        <li>Inserting Documents</li>
+        <li>Fetching & Displaying Documents</li>
+        <li>Fetching a Single Document</li>
+        <li>Transforming & Preparing Data</li>
+        <li>Updating Documents</li>
+        <li>Deleting Documents</li>
     </ul>
 </details>

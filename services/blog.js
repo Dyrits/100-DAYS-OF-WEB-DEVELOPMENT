@@ -50,8 +50,7 @@ const service = {
                 };
                 return post;
             } catch (error) {
-                console.error(`The post ${id} could not be found: ${error.message}.`);
-                return null;
+                return console.error(`The post ${id} could not be found: ${error.message}.`); // The return value is undefined.
             }
         },
     }

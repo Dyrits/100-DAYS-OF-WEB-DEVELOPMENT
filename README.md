@@ -6,7 +6,7 @@ On many websites, you need to support file uploads. Time to dive into this impor
 <details>
     <summary>List of Lectures (Video Duration: 47 minutes)</summary>
     <ul>
-        <li>FExpressJS & Handling Asynchronous Code Errors</li>
+        <li>ExpressJS & Handling Asynchronous Code Errors</li>
         <hr>
         <li>Module Introduction</li>
         <li>The Two Sides Of Uploading Files & Setting Up A Starting Project</li>

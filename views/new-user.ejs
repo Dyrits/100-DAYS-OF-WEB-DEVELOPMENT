@@ -10,14 +10,14 @@
 </head>
 <body>
   <main id="new-user">
-    <form action="/profiles" method="POST">
+    <form action="/profiles" method="POST" enctype="multipart/form-data">
       <div class="form-control">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
       </div>
       <div class="form-control">
         <label for="image">User image</label>
-        ???
+        <input type="file" id="image" name="image" required accept="image/*">
       </div>
       <button class="btn">Save User</button>
     </form>

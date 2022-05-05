@@ -24,7 +24,7 @@ app.use( (error, request, response, next) => {
 });
 
 database.connect().then(() => {
-  database.schema && app.listen(3000, () => {
+  database.schema && app.listen(process.env.PORT || 3000, () => {
     console.info("The server started on port 3000.");
   });
 });

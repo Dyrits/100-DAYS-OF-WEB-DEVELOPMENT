@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+#new-user form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #user-profiles ul {
   list-style: none;
   margin: 0;
@@ -39,5 +45,11 @@
 
 .form-control {
   margin: 0.5rem 0;
+}
+
+#image-preview {
+  display: none;
+  width: 100px;
+  margin: 10px;
 }
 

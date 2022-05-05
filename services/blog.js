@@ -37,7 +37,7 @@ const service = {
         },
         find: async (id) => {
             try {
-                const post = await database.schema.collection("posts").findOne({_id: new ObjectId(id)}, { projection: { summary : 0} })
+                const post = await database.schema.collection("posts").findOne({_id: new ObjectId(id)})
                 post.id = post._id;
                 post.date = {
                     iso: post.date.toISOString(),

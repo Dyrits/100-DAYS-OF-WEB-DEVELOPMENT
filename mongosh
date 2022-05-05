@@ -1,6 +1,6 @@
 use blog
 
-db.authors.inserMany([
+db.authors.insertMany([
     {
         "name": "Dylan Gerrits",
         "email": "dylangerrits@fake-mail.com",

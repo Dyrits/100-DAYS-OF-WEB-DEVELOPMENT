@@ -25,6 +25,7 @@ const service = {
             return posts;
         },
         save: async (body) => {
+            console.log(body);
             const post = await service.posts._format(body);
             await database.schema.collection("posts").insertOne(post);
         },

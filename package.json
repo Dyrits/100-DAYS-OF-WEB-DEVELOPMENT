@@ -4,7 +4,7 @@
   "description": "Day #066",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "authors": "Dylan J. Gerrits & Maximilian Schwarzmüller (Academind GmbH)",

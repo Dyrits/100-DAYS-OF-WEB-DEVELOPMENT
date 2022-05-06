@@ -11,6 +11,8 @@ router.get("/posts", controller.render.list);
 router.get("/new-post", controller.render.save);
 router.get("/posts/:id", controller.render.display);
 router.get("/posts/:id/update", controller.render.update);
+router.get("/posts/:id/comments", controller.$comments.findAll);
+router.post("/posts/:id/comments", controller.$comments.save);
 
 
 module.exports = router;

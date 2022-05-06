@@ -1,5 +1,9 @@
 /* All posts page */
 
+h1 {
+  text-align: left;
+}
+
 #all-posts {
   text-align: center;
 }
@@ -53,4 +57,33 @@
 
 #body {
   white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */
+}
+
+#comments {
+  margin: 2rem 0;
+  border-top: 2px solid rgb(204, 204, 204);
+  text-align: center;
+}
+
+#comments-form {
+  margin: 2rem auto;
+  max-width: 30rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+#comments-form h2 {
+  margin: 0 0 1rem 0;
+}
+
+#comments-form form {
+  margin: 2rem 0;
+}
+
+.comment-item {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  max-width: 30rem;
+  border: 1px solid rgb(204, 204, 204);
 }

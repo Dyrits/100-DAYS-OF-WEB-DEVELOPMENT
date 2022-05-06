@@ -54,6 +54,19 @@ const service = {
                 return console.error(`The post ${id} could not be found: ${error.message}.`); // The return value is undefined.
             }
         },
+    },
+    comments: {
+        findAll: async (id) => {
+            const post = await service.posts.find(id);
+            const comments = await database.schema.collection("comments").find({ post: post._id }).toArray();
+            identify(comments);
+            return { post, comments };
+        },
+        save: async (body, id) => {
+            const { title, content } = body;
+            const comment = { post: new ObjectId(id), title, content };
+            await database.schema.collection("comments").insertOne(comment);
+        }
     }
 }
 

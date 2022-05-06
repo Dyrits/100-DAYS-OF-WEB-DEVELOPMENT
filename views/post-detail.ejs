@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<% const { title, content, date, author } = post; %>
+<% const { id, title, content, date, author } = post; %>
 <head>
   <%- include('includes/head', { title }) %>
-  <link rel="stylesheet" href="/styles/posts.css">
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/forms.css" />
+  <link rel="stylesheet" href="/styles/posts.css" />
 </head>
 
 <body>
@@ -17,6 +19,35 @@
   <hr>
   <section>
     <p id="body"><%= content %></p>
+  </section>
+  <section id="comments">
+    <% if (!comments) { %>
+      <p>This post might have comments. You can load them if you want to view them.</p>
+      <form action="/posts/<%= id %>/comments" method="GET">
+        <button class="btn btn-alt">Load Comments</button>
+      </form>
+    <% } else if (!comments.length) { %>
+      <p>No comments found.</p>
+    <% } else { %>
+      <ol>
+        <% for (const comment of comments) { %>
+          <li><%- include('includes/comment-item', { comment: comment }) %></li>
+        <% } %>
+      </ol>
+    <% } %>
+  <section id="comments-form">
+    <h2>Leave a comment</h2>
+    <form action="/posts/<%= id %>/comments" method="POST">
+      <div class="form-control">
+        <label for="title">Comment title</label>
+        <input type="text" id="title" name="title" required />
+      </div>
+      <div class="form-control">
+        <label for="content">Your comment</label>
+        <textarea name="content" id="content" rows="3" required></textarea>
+      </div>
+      <button class="btn">Save Comment</button>
+    </form>
   </section>
 </main>
 </body>

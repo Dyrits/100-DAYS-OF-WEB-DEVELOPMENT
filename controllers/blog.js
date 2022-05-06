@@ -7,14 +7,26 @@ module.exports = {
             response.redirect("/posts");
         },
         update: async ({ body, params }, response) => {
-            const { id } = params
-            await service.posts.update(body, id)
+            const { id } = params;
+            await service.posts.update(body, id);
             response.redirect("/posts");
         },
         delete: async ({ params }, response) => {
             const { id } = params
             await service.posts.delete(id)
             response.redirect("/posts");
+        }
+    },
+    $comments: {
+        findAll: async ({ params }, response) => {
+            const { id } = params;
+            const { post, comments } = await service.comments.findAll(id);
+            post ? response.render("post-detail", { post, comments }) : response.status(404).render("404");
+        },
+        save: async ({ body, params }, response) => {
+            const { id } = params;
+            await service.comments.save(body, id);
+            response.render(`/posts/${id}`);
         }
     },
     render: {
@@ -28,7 +40,8 @@ module.exports = {
         },
         display: async ({  params }, response) => {
             const post = await service.posts.find(params.id);
-            post ? response.render("post-detail", { post }) : response.status(404).render("404");
+            let comments;
+            post ? response.render("post-detail", { post, comments }) : response.status(404).render("404");
         },
         update: async ({ params }, response) => {
             const post = await service.posts.find(params.id);

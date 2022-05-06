@@ -18,15 +18,10 @@ module.exports = {
         }
     },
     $comments: {
-        findAll: async ({ params }, response) => {
-            const { id } = params;
-            const { post, comments } = await service.comments.findAll(id);
-            post ? response.render("post-detail", { post, comments }) : response.status(404).render("404");
-        },
         save: async ({ body, params }, response) => {
             const { id } = params;
             await service.comments.save(body, id);
-            response.render(`/posts/${id}`);
+            response.redirect(`/posts/${id}`);
         }
     },
     render: {
@@ -47,6 +42,11 @@ module.exports = {
             const post = await service.posts.find(params.id);
             const authors = await service.authors.findAll();
             response.render("update-post", { post, authors });
+        },
+        comments: async ({ params }, response) => {
+            const { id } = params;
+            const { post, comments } = await service.comments.findAll(id);
+            post ? response.render("post-detail", { post, comments }) : response.status(404).render("404");
         },
     },
     redirect: {

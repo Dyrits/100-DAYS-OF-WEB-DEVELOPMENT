@@ -18,10 +18,17 @@ module.exports = {
         }
     },
     $comments: {
+        findAll: async ({ params }, response) => {
+            const { id } = params;
+            const comments = await service.comments.findAll(id);
+            return comments ?
+                response.status(200).json({ comments }) :
+                response.status(404).json({ comments: {},  message: "Comments have not been found!" });
+        },
         save: async ({ body, params }, response) => {
             const { id } = params;
             await service.comments.save(body, id);
-            response.redirect(`/posts/${id}`);
+            response.json({ message: "Comment has been saved!" });
         }
     },
     render: {
@@ -42,12 +49,7 @@ module.exports = {
             const post = await service.posts.find(params.id);
             const authors = await service.authors.findAll();
             response.render("update-post", { post, authors });
-        },
-        comments: async ({ params }, response) => {
-            const { id } = params;
-            const { post, comments } = await service.comments.findAll(id);
-            post ? response.render("post-detail", { post, comments }) : response.status(404).render("404");
-        },
+        }
     },
     redirect: {
         list: (request, response) => { response.redirect('/posts'); }

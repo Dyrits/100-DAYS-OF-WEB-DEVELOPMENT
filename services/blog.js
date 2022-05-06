@@ -57,10 +57,9 @@ const service = {
     },
     comments: {
         findAll: async (id) => {
-            const post = await service.posts.find(id);
-            const comments = await database.schema.collection("comments").find({ post: post._id }).toArray();
+            const comments = await database.schema.collection("comments").find({ post : new ObjectId(id) }).toArray();
             identify(comments);
-            return { post, comments };
+            return comments;
         },
         save: async (body, id) => {
             const { title, content } = body;

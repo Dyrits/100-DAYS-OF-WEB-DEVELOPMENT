@@ -27,7 +27,7 @@
       <label for="author">Select Author</label>
       <select id="author" name="author">
         <% for (const author of authors) { %>
-          <option <%= author.id === post.author.id && "selected" %> value="<%= author.id %>"><%= author.name %></option>
+          <option <%= author.id.toString() === post.author.id.toString() && "selected" %> value="<%= author.id %>"><%= author.name %></option>
         <% } %>
       </select>
     </div>

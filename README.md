@@ -1,19 +1,15 @@
-# Day #066
-Continue using NoSQL with Node + Express and apply what you learned.
+# Day #069
+Learn more about AJAX requests and how to work with them (on both the frontend and backend).
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 42 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 57 minutes)</summary>
     <ul>
-        <li>Fetching & Displaying Documents</li>
-        <li>Fetching a Single Document</li>
-        <li>Transforming & Preparing Data</li>
-        <li>Updating Documents</li>
-        <li>Deleting Documents</li>
+        <li>The Starting Project & A Problem</li>
+        <li>Sending & Handling a GET Ajax Request</li>
+        <li>Updating The DOM Based On The Response</li>
+        <li>Preparing The POST Request Data</li>
+        <li>Sending & Handling a POST Ajax Request</li>
     </ul>
 </details>
-
----
-
-/ [Heroku](https://blog-djg.herokuapp.com/)

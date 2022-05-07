@@ -28,7 +28,7 @@
   <section id="comments-form">
     <h2>Leave a comment</h2>
     <form action="/posts/<%= id %>/comments">
-      <input type="hidden" name="post" value="<%= id %>">
+      <input id="id" type="hidden" name="post" value="<%= id %>">
       <div class="form-control">
         <label for="title">Comment title</label>
         <input type="text" id="title" name="title" required />

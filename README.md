@@ -1,15 +1,20 @@
-# Day #069
-Learn more about AJAX requests and how to work with them (on both the frontend and backend).
+# Day #070
+Dive even deeper into AJAX requests before you thereafter start exploring 'User Authentication' in detail!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 57 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 46 minutes)</summary>
     <ul>
-        <li>The Starting Project & A Problem</li>
-        <li>Sending & Handling a GET Ajax Request</li>
-        <li>Updating The DOM Based On The Response</li>
-        <li>Preparing The POST Request Data</li>
-        <li>Sending & Handling a POST Ajax Request</li>
+        <li>Improving The User Experience (UX)</li>
+        <li>Handling Errors (Server-side & Technical)</li>
+        <li>We Now Have More HTTP Methods!</li>
+        <li>Module Summary</li>
+        <li>Quiz 21 - Learning Check: Ajax / JS-driven Http Requests</li>
+        <hr>
+        <li>Module Introduction</li>
+        <li>What is "Authentication" & Why Would You Want To Add It To A Website?</li>
+        <li>Our Starting Project</li>
+        <li>Adding a Basic Signup Functionality</li>
     </ul>
 </details>

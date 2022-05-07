@@ -21,14 +21,22 @@ module.exports = {
         findAll: async ({ params }, response) => {
             const { id } = params;
             const comments = await service.comments.findAll(id);
-            return comments ?
-                response.status(200).json({ comments }) :
-                response.status(404).json({ comments: {},  message: "Comments have not been found!" });
+            if (comments) { response.status(200).json({ comments }) ; }
+            else {
+                response.statusMessage = "Comments have not been found!";
+                response.status(404).end();
+            }
         },
         save: async ({ body, params }, response) => {
-            const { id } = params;
-            await service.comments.save(body, id);
-            response.json({ message: "Comment has been saved!" });
+            try {
+                const { id } = params;
+                await service.comments.save(body, id);
+                response.status(200).json({ message: "Comment has been saved!" });
+            }
+            catch (error) {
+                response.statusMessage = `The comment could not be saved. ${error}`;
+                response.status(500).end();
+            }
         }
     },
     render: {

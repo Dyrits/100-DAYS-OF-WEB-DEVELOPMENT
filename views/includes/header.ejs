@@ -1,14 +1,14 @@
 <header id="main-header">
-  <div id="logo">
-    <a href="/">MyBlog</a>
-  </div>
   <nav>
     <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/signup">Signup</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/admin">Admin</a></li>
       <li>
-        <a href="/posts">All Posts</a>
-      </li>
-      <li>
-        <a href="/new-post">Create Post</a>
+        <form action="/logout" method="POST">
+          <button>Logout</button>
+        </form>
       </li>
     </ul>
   </nav>

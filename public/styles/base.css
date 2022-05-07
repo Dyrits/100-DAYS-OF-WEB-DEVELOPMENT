@@ -1,8 +1,5 @@
-/* Base styles & resets */
-
 html {
-  font-family: 'Roboto Slab', serif;
-  color: rgb(46, 45, 48);
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -10,33 +7,69 @@ body {
 }
 
 main {
-  width: 80%;
-  margin: 3rem auto;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
+  text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color:rgb(89, 0, 255);
+  color:rgb(70, 0, 128);
 }
 
 a:hover,
 a:active {
-  color:rgb(232, 90, 245);
+  color: rgb(113, 0, 128);
 }
 
-ul, ol {
+#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 0, 128);
+}
+
+#main-header ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Global components */
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-header button {
+  font: inherit;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: white;
+  padding: 0;
+}
+
+#main-header a:hover,
+#main-header a:active,
+#main-header button:hover,
+#main-header button:active {
+  color: rgb(209, 88, 233);
+}
 
 .btn {
-  cursor: pointer;
   font: inherit;
-  background-color: rgb(89, 0, 255);
-  border: 1px solid rgb(89, 0, 255);
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(70, 0, 128);
+  border: 1px solid rgb(70, 0, 128);
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
@@ -44,53 +77,17 @@ ul, ol {
 
 .btn:hover,
 .btn:active {
-  background-color: rgb(71, 4, 196);
-  border-color: rgb(71, 4, 196);
-  color: white;
+  background-color: rgb(57, 1, 102);
+  border-color: rgb(57, 1, 102);
 }
 
 .btn.btn-alt {
   background-color: transparent;
-  border-color: transparent;
-  color:rgb(89, 0, 255);
+  border: none;
+  color:rgb(70, 0, 128);
 }
 
 .btn.btn-alt:hover,
 .btn.btn-alt:active {
-  color:rgb(232, 90, 245);
-}
-
-/* Site-wide content / elements */
-
-#main-header {
-  padding: 2rem 10%;
-  background-color: rgb(89, 0, 255);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
-#main-header ul {
-  display: flex;
-}
-
-#main-header li {
-  margin-left: 2rem;
-}
-
-#main-header nav a {
-  color: white;
-  font-size: 1.25rem;
-}
-
-#main-header nav a:hover,
-#main-header nav a:active {
-  color:rgb(255, 217, 0);
+  background-color: rgb(231, 212, 246);
 }

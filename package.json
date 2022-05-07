@@ -1,23 +1,21 @@
 {
   "name": "100-days-of-code",
   "version": "1.0.0",
-  "description": "Day #70",
+  "description": "Day #070",
   "main": "app.js",
-  "engines": {
-    "node": "14.17.3"
-  },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [],
   "authors": "Dylan J. Gerrits & Maximilian Schwarzmüller (Academind GmbH)",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mongodb": "4.5"
+    "mongodb": "^4.0.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.12"
   }
 }

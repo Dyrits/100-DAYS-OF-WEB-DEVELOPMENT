@@ -2,8 +2,11 @@ const path = require('path');
 
 const express = require('express');
 
-const db = require('./data/database');
-const demoRoutes = require('./routes/demo');
+const database = require('./data/database');
+
+const routes = {
+  demo: require("./routes/demo")
+}
 
 const app = express();
 
@@ -13,12 +16,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 
-app.use(demoRoutes);
+app.use(routes.demo);
 
-app.use(function(error, req, res, next) {
-  res.render('500');
-})
+app.use( (error, request, response, next) => {
+  console.log(error);
+  response.status(500).render("500");
+});
 
-db.connectToDatabase().then(function () {
-  app.listen(3000);
+database.connect().then(() => {
+  database.schema && app.listen(process.env.PORT || 3000, () => {
+    console.info(`The server started on port ${process.env.PORT || 3000}.`);
+  });
 });

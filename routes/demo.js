@@ -1,29 +1,14 @@
 const express = require('express');
-
-const db = require('../data/database');
-
 const router = express.Router();
 
-router.get('/', function (req, res) {
-  res.render('welcome');
-});
+const controller = require('../controllers/demo');
 
-router.get('/signup', function (req, res) {
-  res.render('signup');
-});
-
-router.get('/login', function (req, res) {
-  res.render('login');
-});
-
-router.post('/signup', async function (req, res) {});
-
-router.post('/login', async function (req, res) {});
-
-router.get('/admin', function (req, res) {
-  res.render('admin');
-});
-
-router.post('/logout', function (req, res) {});
+router.get("/", controller.render.welcome);
+router.get("/signup", controller.render.signup);
+router.get("/login", controller.render.login);
+router.get('/admin', controller.render.admin);
+router.post('/signup', null);
+router.post('/login', null);
+router.post('/logout', null);
 
 module.exports = router;

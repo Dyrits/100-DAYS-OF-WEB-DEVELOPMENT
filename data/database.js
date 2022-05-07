@@ -1,24 +1,22 @@
-const mongodb = require('mongodb');
+const { MongoClient } = require('mongodb');
 
-const MongoClient = mongodb.MongoClient;
-
-let database;
-
-async function connectToDatabase() {
-  const client = await MongoClient.connect(
-    'mongodb://localhost:27017'
-  );
-  database = client.db('auth-demo');
-}
-
-function getDb() {
-  if (!database) {
-    throw { message: 'You must connect first!' };
-  }
-  return database;
-}
+const { info, error } = console;
 
 module.exports = {
-  connectToDatabase: connectToDatabase,
-  getDb: getDb,
-};
+  _uri: process.env.NODE_ENV === "production" ? process.env.MONGODB_URI : "mongodb://localhost:27017/",
+  connect: async function() {
+    info("Connecting to database...");
+    const client = await MongoClient.connect(this._uri);
+    if (client) {
+      info("The connection to the database is successful. Retrieving the schema...");
+      this._schema = client.db("blog");
+      this._schema ? info("The schema has been retrieved.") : error("The schema has not been retrieved.");
+    } else { error( "The connection to the database has failed."); }
+  },
+  get schema() {
+    if (!this._schema) {
+      throw { message: "The connection to the database has not been established." }
+    }
+    return this._schema;
+  }
+}

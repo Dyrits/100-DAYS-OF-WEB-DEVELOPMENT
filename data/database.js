@@ -3,10 +3,10 @@ const { MongoClient } = require('mongodb');
 const { info, error } = console;
 
 module.exports = {
-  _uri: process.env.NODE_ENV === "production" ? process.env.MONGODB_URI : "mongodb://localhost:27017/",
+  uri: process.env.NODE_ENV === "production" ? process.env.MONGODB_URI : "mongodb://localhost:27017/",
   connect: async function() {
     info("Connecting to database...");
-    const client = await MongoClient.connect(this._uri);
+    const client = await MongoClient.connect(this.uri);
     if (client) {
       info("The connection to the database is successful. Retrieving the schema...");
       this._schema = client.db("demonstration");

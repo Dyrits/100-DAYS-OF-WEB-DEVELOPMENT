@@ -1,22 +1,36 @@
-const path = require('path');
+const path = require("path");
+const express = require("express");
+const session = require("express-session");
+const MongoDBStore = require("connect-mongodb-session")(session);
 
-const express = require('express');
-
-const database = require('./data/database');
+const database = require("./data/database");
 
 const routes = {
-  demo: require("./routes/demo")
+  demonstration: require("./routes/demonstration")
 }
 
 const app = express();
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+const store = new MongoDBStore({
+  uri: database.uri,
+  database: "demonstration",
+  collection: "sessions"
+});
 
-app.use(express.static('public'));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
-app.use(routes.demo);
+app.use(session({
+  secret: process.env.SESSION_SECRET || "0CEACCAE7EBB2FA08B3D6E99FC197978",
+  resave: false,
+  saveUninitialized: false,
+  store: store
+}));
+
+app.use(routes.demonstration);
 
 app.use( (error, request, response, next) => {
   console.log(error);

@@ -1,4 +1,4 @@
-const service = require("../services/demo");
+const service = require("../services/demonstration");
 
 module.exports = {
     $users: {

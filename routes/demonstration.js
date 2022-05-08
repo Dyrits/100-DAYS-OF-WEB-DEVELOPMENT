@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const controller = require("../controllers/demo");
+const controller = require("../controllers/demonstration");
 
 router.get("/", controller.render.welcome);
 router.get("/signup", controller.render.signup);

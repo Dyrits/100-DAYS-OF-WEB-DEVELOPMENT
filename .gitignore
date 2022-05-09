@@ -6,12 +6,5 @@
 
 # Node
 node_modules/
-
-# MySQL
-.mysql/
-
-# MongoDB
-.mongo-data/
-
 # PHPStorm
 .idea/

@@ -33,9 +33,10 @@ app.use(session({
 
 app.use(routes.demonstration);
 
-app.use( (error, request, response, next) => {
+app.use( (error, { session }, response, next) => {
   console.log(error);
-  response.status(500).render("500");
+  const authenticated = session.user?.authenticated
+  response.status(500).render("500", { authenticated });
 });
 
 database.connect().then(() => {

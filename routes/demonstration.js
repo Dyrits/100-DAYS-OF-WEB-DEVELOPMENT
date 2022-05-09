@@ -9,6 +9,6 @@ router.get("/login", controller.render.login);
 router.get('/admin', controller.render.admin);
 router.post('/signup', controller.$users.signup);
 router.post('/login', controller.$users.login);
-router.post('/logout', () => {});
+router.post('/logout', controller.$users.logout);
 
 module.exports = router;

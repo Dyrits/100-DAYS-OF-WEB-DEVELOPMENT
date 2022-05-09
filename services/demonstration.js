@@ -7,7 +7,7 @@ const validate = {
     email: (email, confirmation) => email?.includes("@") && confirmation && email === confirmation,
     password: password => password && password?.trim().length >= 6,
     uniqueness: async email => {
-        const user = await service.users.findOne({ email });
+        const user = await service.users.get({ email });
         return !user
     }
 };

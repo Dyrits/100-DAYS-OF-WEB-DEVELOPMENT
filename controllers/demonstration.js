@@ -10,20 +10,28 @@ module.exports = {
             await service.users.authenticate(body, session);
             const success = session.user?.authenticated;
             success ? response.redirect("/admin") : response.redirect("/login");
+        },
+        logout: async({ session }, response) => {
+            await session.destroy();
+            response.redirect("/");
         }
     },
     render: {
-        welcome: async (request, response) => {
-            response.render("welcome");
+        welcome: async ({ session }, response) => {
+            const authenticated = session.user;
+            response.render("welcome", { authenticated });
         },
-        signup: async (request, response) => {
-            response.render("signup");
+        signup: async ({ session }, response) => {
+            const authenticated = session.user;
+            authenticated ? response.redirect("/") : response.render("signup", { authenticated });
         },
-        login: async (request, response) => {
-            response.render("login");
+        login: async ({ session }, response) => {
+            const authenticated = session.user;
+            authenticated ? response.redirect("/") : response.render("login", { authenticated });
         },
         admin: async ({ session }, response) => {
-            session.user?.authenticated ? response.render("admin") : response.render("401");
+            const authenticated = session.user;
+            response.render(authenticated ? "admin" : "401", { authenticated });
         }
     }
 }

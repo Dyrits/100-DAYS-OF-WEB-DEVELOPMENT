@@ -24,10 +24,11 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 app.use(session({
-  secret: process.env.SESSION_SECRET || "0CEACCAE7EBB2FA08B3D6E99FC197978",
+  secret: process.env.SESSION_SECRET || "LOCAL_SECRET",
   resave: false,
   saveUninitialized: false,
-  store: store
+  store: store,
+  cookie: { maxAge: 1000 * 60 * 60 * 24 * 7}
 }));
 
 app.use(routes.demonstration);

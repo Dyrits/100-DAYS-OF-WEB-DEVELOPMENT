@@ -7,6 +7,6 @@ services:
     expose:
       - "27017"
     volumes:
-      - .mongo-db:/data/db
+      - mongo-data:/data/db
 volumes:
-  mongo-db:
+  mongo-data:

@@ -35,7 +35,7 @@ app.use(routes.demonstration);
 
 app.use( (error, { session }, response, next) => {
   console.log(error);
-  const authenticated = session.user?.authenticated
+  const authenticated = session.user?.authenticated;
   response.status(500).render("500", { authenticated });
 });
 

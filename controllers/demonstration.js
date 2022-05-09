@@ -18,11 +18,11 @@ module.exports = {
     },
     render: {
         welcome: async ({ session }, response) => {
-            const authenticated = session.user?.authenticated
+            const authenticated = session.user?.authenticated;
             response.render("welcome", { authenticated });
         },
         signup: async ({ session }, response) => {
-            const authenticated = session.user?.authenticated
+            const authenticated = session.user?.authenticated;
             let data = { email: null, confirmation: null, password: null, message: null, error: false };
             data = session.error || data;
             authenticated ? response.redirect("/") : response.render("signup", { authenticated, data });
@@ -32,7 +32,7 @@ module.exports = {
             authenticated ? response.redirect("/") : response.render("login", { authenticated });
         },
         admin: async ({ session }, response) => {
-            const authenticated = session.user?.authenticated
+            const authenticated = session.user?.authenticated;
             response.render(authenticated ? "admin" : "401", { authenticated });
         }
     }

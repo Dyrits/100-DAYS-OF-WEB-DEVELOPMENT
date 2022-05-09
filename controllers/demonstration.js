@@ -6,8 +6,9 @@ module.exports = {
             const success = await service.users.save(body);
             success ? response.redirect("/login") : response.redirect("/signup");
         },
-        login: async ({ body }, response) => {
-            const success = await service.users.authenticate(body);;
+        login: async ({ session, body }, response) => {
+            await service.users.authenticate(body, session);
+            const success = session.user?.authenticated;
             success ? response.redirect("/admin") : response.redirect("/login");
         }
     },
@@ -21,8 +22,8 @@ module.exports = {
         login: async (request, response) => {
             response.render("login");
         },
-        admin: async (request, response) => {
-            response.render("admin");
+        admin: async ({ session }, response) => {
+            session.user?.authenticated ? response.render("admin") : response.render("401");
         }
     }
 }

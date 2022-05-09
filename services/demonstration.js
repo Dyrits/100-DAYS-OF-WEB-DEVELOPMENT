@@ -23,10 +23,12 @@ const service = {
             const { acknowledged } = await database.schema.collection("users").insertOne(user);
             return acknowledged;
         },
-        authenticate : async (body) => {
+        authenticate : async (body, session) => {
             const { email, password } = body;
             const user = await service.users.get(email);
-            return user && await bcrypt.compare(password, user.password);
+            const authenticated = user && await bcrypt.compare(password, user.password);
+            session.user = {email, id: user.id, authenticated};
+            authenticated && await session.save();
         }
     }
 };

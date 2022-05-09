@@ -13,7 +13,7 @@ const app = express();
 
 const store = new MongoDBStore({
   uri: database.uri,
-  database: "demonstration",
+  databaseName: "demonstration",
   collection: "sessions"
 });
 

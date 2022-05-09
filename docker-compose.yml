@@ -3,7 +3,7 @@ services:
   mysql:
     image: mysql:8.0.25
     volumes:
-      - ./.mysql:/var/lib/mysql
+      - mysql-data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root-password
     ports:
@@ -14,4 +14,4 @@ services:
       - seccomp:unconfined
 
 volumes:
-  mysql:
+  mysql-data:

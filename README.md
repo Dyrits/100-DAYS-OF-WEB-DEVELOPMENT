@@ -1,15 +1,15 @@
-# Day #072
-Let's continue working on user authentication and learn about the key concepts related to that.
+# Day #073
+Time to finish the authentication part!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 35 minutes)</summary>
     <ul>
-        <li>Storing Authentication Data In Sessions</li>
-        <li>Using Sessions & Cookies For Controlling Access</li>
-        <li>Adding The Logout Functionality</li>
-        <li>A Closer Look At Cookies</li>
-        <li>Diving Deeper Into Sessions (Beyond Authentication)</li>
+        <li>Authorization vs Authentication</li>
+        <li>Practicing Sessions & Working With Sessions</li>
+        <li>Writing Custom Middlewares & Using "res.locals"</li>
+        <li>Module Summary</li>
+        <li>Quiz 22 - Learning Check: Authentication</li>
     </ul>
 </details>

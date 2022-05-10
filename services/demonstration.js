@@ -3,7 +3,6 @@ const { ObjectId } = require("mongodb");
 
 const database = require("../data/database.js");
 
-
 const error = {
     create: (email, confirmation, password, message, session, key) => {
         session[key] = {email, confirmation, password, message, error: true};

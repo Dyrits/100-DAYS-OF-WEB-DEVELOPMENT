@@ -4,6 +4,7 @@ const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 
 const database = require("./data/database");
+const service = require("./services/demonstration");
 
 const routes = {
   demonstration: require("./routes/demonstration")
@@ -30,6 +31,13 @@ app.use(session({
   store: store,
   cookie: { maxAge: 1000 * 60 * 60 * 24 * 7}
 }));
+
+app.use(async ({session}, response, next) => {
+  response.locals.authenticated = session.user?.authenticated;
+  const user = response.locals.authenticated && await service.users.get(session.user.email);
+  response.locals.authorized = user?.admin;
+  next();
+});
 
 app.use(routes.demonstration);
 

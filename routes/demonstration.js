@@ -7,6 +7,7 @@ router.get("/", controller.render.welcome);
 router.get("/signup", controller.render.signup);
 router.get("/login", controller.render.login);
 router.get('/admin', controller.render.admin);
+router.get('/profile', controller.render.profile);
 router.post('/signup', controller.$users.signup);
 router.post('/login', controller.$users.login);
 router.post('/logout', controller.$users.logout);

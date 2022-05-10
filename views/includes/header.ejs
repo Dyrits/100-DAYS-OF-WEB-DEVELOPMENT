@@ -2,12 +2,14 @@
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <% if (!authenticated) { %>
+      <% if (!locals.authenticated) { %>
       <li><a href="/signup">Signup</a></li>
       <li><a href="/login">Login</a></li>
+      <% } else { %>
+      <li><a href="/profile">Profile</a></li>
+      <% if (locals.authorized) { %>
+        <li><a href="/admin">Admin</a></li>
       <% } %>
-      <li><a href="/admin">Admin</a></li>
-      <% if (authenticated) { %>%>
       <li>
         <form action="/logout" method="POST">
           <button>Logout</button>

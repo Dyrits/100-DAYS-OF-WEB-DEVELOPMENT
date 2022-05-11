@@ -1,0 +1,18 @@
+version: "3.5"
+version: "3.5"
+services:
+  mysql:
+    image: mysql:8.0.25
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root-password
+    ports:
+      - "3306:3306"
+    expose:
+      - 3306
+    security_opt:
+      - seccomp:unconfined
+
+volumes:
+  mysql-data:

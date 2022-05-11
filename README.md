@@ -1,16 +1,18 @@
-# Day #073
-Time to finish the authentication part!
+# Day #074
+Time to dive into website security, various attack patterns and how to defend against them!
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 35 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 55 minutes)</summary>
     <ul>
-        <li>Authorization vs Authentication</li>
-        <li>Practicing Sessions & Working With Sessions</li>
-        <li>Writing Custom Middlewares & Using "res.locals"</li>
-        <li>Module Summary</li>
-        <li>Quiz 22 - Learning Check: Authentication</li>
+        <li>Module Introduction</li>
+        <li>Authentication vs Website Security</li>
+        <li>Understanding CSRF Attacks</li>
+        <li>Partial CSRF Protection With "Same-Site" Cookies</li>
+        <li>Implementing A Better CSRF Protection</li>
+        <li>Understanding XSS Attacks</li>
+        <li>Protecting Against XSS Attacks</li>
     </ul>
 </details>
 

@@ -15,5 +15,3 @@ Time to dive into website security, various attack patterns and how to defend ag
         <li>Protecting Against XSS Attacks</li>
     </ul>
 </details>
-
-/ [Heroku](https://demonstration-djg-073.herokuapp.com/)

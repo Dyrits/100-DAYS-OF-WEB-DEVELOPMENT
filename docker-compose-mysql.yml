@@ -1,5 +1,4 @@
-version: "3.5"
-version: "3.5"
+version: "3.1"
 services:
   mysql:
     image: mysql:8.0.25
@@ -7,6 +6,7 @@ services:
       - mysql-data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root-password
+      - MYSQL_DATABASE=security
     ports:
       - "3306:3306"
     expose:

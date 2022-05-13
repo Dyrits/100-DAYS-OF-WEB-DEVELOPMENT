@@ -1,4 +1,3 @@
-const database = require("../data/database");
 const Post = require("../models/post");
 
 module.exports = {

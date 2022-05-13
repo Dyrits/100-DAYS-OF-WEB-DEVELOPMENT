@@ -7,7 +7,9 @@ const csrf = require("csurf");
 const database = require("./data/database");
 
 const routes = {
-  blog: require("./routes/blog-demonstration")
+  users: require("./routes/users"),
+  posts: require("./routes/posts"),
+  views: require("./routes/views")
 }
 
 const app = express();
@@ -41,7 +43,9 @@ app.use(async function({ session }, response, next) {
   next();
 });
 
-app.use(routes.blog);
+app.use(routes.views);
+app.use(routes.users);
+app.use("/posts", routes.posts);
 
 app.use(function(error, request, response, next) {
   response.render('500');

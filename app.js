@@ -1,10 +1,14 @@
 const PATH = require("path");
 const express = require("express");
 const session = require("express-session");
-const MongoDBStore = require("connect-mongodb-session")(session);
 const csrf = require("csurf");
 
 const database = require("./data/database");
+const authentication = require("./middlewares/authentication");
+
+const configuration = {
+  session: require("./configuration/session")
+}
 
 const routes = {
   users: require("./routes/users"),
@@ -12,13 +16,9 @@ const routes = {
   views: require("./routes/views")
 }
 
-const app = express();
+const store = configuration.session.store(session);
 
-const store = new MongoDBStore({
-  uri: database.uri,
-  databaseName: "blog-demonstration",
-  collection: "sessions"
-});
+const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", PATH.join(__dirname, "views"));
@@ -26,22 +26,10 @@ app.set("views", PATH.join(__dirname, "views"));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
-app.use(session({
-  secret: process.env.SESSION_SECRET || "LOCAL_SECRET",
-  resave: false,
-  saveUninitialized: false,
-  store: store,
-  cookie: { maxAge: 1000 * 60 * 60 * 24 * 7}
-}));
+app.use(session(configuration.session.options(store)));
 app.use(csrf());
 
-app.use(async function({ session }, response, next) {
-  const { user } = session;
-  const { authenticated } = session;
-  if (!user || !authenticated) { return next(); }
-  response.locals.authenticated = authenticated;
-  next();
-});
+app.use(authentication);
 
 app.use(routes.views);
 app.use(routes.users);

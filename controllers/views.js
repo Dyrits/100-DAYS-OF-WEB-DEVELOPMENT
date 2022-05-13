@@ -1,4 +1,4 @@
-const posts = require("../services/posts");
+const Post = require('../models/post');
 
 module.exports = {
     welcome: async (request, response) => {
@@ -18,7 +18,7 @@ module.exports = {
     },
     post: async (request, response) => {
         let data = request.session.post;
-        const post = await posts.findById(request.params.id);
+        const post = await Post.find.byId(request.params.id);
         data = data || { title: post.title, content: post.content, error: false };
         request.session.post = null;
         response.render(!post ? "404" : "single-post", { post, data, csrfToken: request.csrfToken()});
@@ -28,6 +28,6 @@ module.exports = {
         let data = request.session.admin;
         data = data || { title: null, content: null, error: false };
         request.session.admin = null;
-        response.render("admin", { posts: await posts.findAll(), data, csrfToken: request.csrfToken() });
+        response.render("admin", { posts: await Post.find.all(), data, csrfToken: request.csrfToken() });
     }
 }

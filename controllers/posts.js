@@ -1,39 +1,22 @@
+const Post = require("../models/post");
 const service = require("../services/posts");
 
 module.exports = {
     create: async (request, response) => {
-        const [title, content] = [request.body.title.trim(), request.body.content.trim()];
-        const validation = {
-            title: title && title.length,
-            content: content && content.length
-        }
-        if (!validation.title || !validation.content) {
-            request.session.admin = { title, content, error: true, message: "Invalid input! Please check your data." };
-            request.session.save();
-        } else {
-            const post = { title, content };
-            await service.save(post);
-        }
-        response.redirect("/admin");
+        const  validity = service.validate(request, "admin");
+        const post = service.extract(request);
+        validity && await post.save();
+        request.session.save(() => response.redirect("/admin"));
     },
     edit: async (request, response) => {
-        const [title, content] = [request.body.title.trim(), request.body.content.trim()];
-        const { id } = request.params;
-        const validation = {
-            title: title && title.length,
-            content: content && content.length
-        }
-        if (!validation.title || !validation.content) {
-            request.session.post = { title, content, error: true, message: "Invalid input! Please check your data." };
-            request.session.save(() => { response.redirect(`/posts/${id}/edit`) });
-        } else {
-            await service.update(id, { title, content });
-            response.redirect("/admin");
-        }
+        const  validity = service.validate(request, "post");
+        const post = service.extract(request);
+        validity && await post.update();
+        request.session.save(() => response.redirect(validity ? "/admin" : `/posts/${post.id}/edit`));
     },
-    delete: async (request, response) => {
-        const { id } = request.params;
-        await service.delete(id);
+    delete: async ({ params }, response) => {
+        const post = new Post(null, null, params.id);
+        await post.delete();
         response.redirect("/admin");
     }
 }

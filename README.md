@@ -1,17 +1,14 @@
-# Day #076
-Explore more details about writing good code, using good patterns and organizing code into multiple files and modules.
+# Day #077
+Learn more about refactoring and refactor code we wrote before.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 56 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 41 minutes)</summary>
     <ul>
-        <li>Splitting Our Routes</li>
-        <li>Extracting Configuration Settings</li>
-        <li>Extracting Custom Middleware</li>
-        <li>An Introduction To The MVC Pattern</li>
-        <li>Creating Our First Model</li>
-        <li>Adding Update & Delete Functionalities To The Model</li>
-        <li>Adding Fetch Functionalities To The Model</li>
+        <li>Adding A First Controller & Controller Actions</li>
+        <li>Refactoring The Sessions & Input Validation Errors Functionality</li>
+        <li>Refactoring The CSRF Token Handling</li>
+        <li>Migrating The "Authentication" Functionality To MVC</li>
     </ul>
 </details>

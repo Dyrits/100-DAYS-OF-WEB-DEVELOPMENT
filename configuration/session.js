@@ -1,5 +1,6 @@
-const database = require("../data/database");
 const MongoDBStore = require("connect-mongodb-session");
+
+const database = require("../data/database");
 
 module.exports = {
     store: (session) => {

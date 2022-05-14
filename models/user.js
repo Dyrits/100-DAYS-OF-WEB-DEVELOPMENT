@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt");
+
 const database = require("../data/database");
 
 class User {

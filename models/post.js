@@ -1,5 +1,6 @@
-const database = require("../data/database");
 const { ObjectId } = require("mongodb");
+
+const database = require("../data/database");
 
 class Post {
     constructor(title, content, id) {

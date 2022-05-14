@@ -6,14 +6,14 @@ const services = {
 }
 
 module.exports = {
-    welcome: async (request, response) => {
+    welcome: (request, response) => {
         response.render("welcome", { csrfToken: request.csrfToken() });
     },
-    signup: async (request, response) => {
+    signup: (request, response) => {
         const data = services.users.session.data(request, "signup");
         response.render("signup", { data, csrfToken: request.csrfToken() });
     },
-    login: async (request, response) => {
+    login: (request, response) => {
         const data = services.users.session.data(request, "login");
         response.render("login", { data, csrfToken: request.csrfToken() });
     },

@@ -5,6 +5,7 @@ const csrf = require("csurf");
 
 const database = require("./data/database");
 const authentication = require("./middlewares/authentication");
+const authorization = require("./middlewares/authorization");
 
 const configuration = {
   session: require("./configuration/session")
@@ -30,6 +31,7 @@ app.use(session(configuration.session.options(store)));
 app.use(csrf());
 
 app.use(authentication);
+app.use(authorization);
 
 app.use(routes.views);
 app.use(routes.users);

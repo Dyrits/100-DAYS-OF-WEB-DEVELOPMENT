@@ -11,7 +11,7 @@
       <p id="input-error"><%= data.message %></p>
     <% } %>
     <form action="/signup" method="POST">
-      <input type="hidden" value="<%= csrfToken %>" name="_csrf">
+      <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf">
       <div class="form-control">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" value="<%= data.email %>" required>

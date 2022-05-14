@@ -1,16 +1,19 @@
 const Post = require("../models/post");
-const service = require("../services/posts");
+
+const services = {
+    posts: require("../services/posts")
+}
 
 module.exports = {
     create: async (request, response) => {
-        const  validity = service.validate(request, "admin");
-        const post = service.extract(request);
+        const  validity = services.posts.validate(request, "admin");
+        const post = services.posts.extract(request);
         validity && await post.save();
         request.session.save(() => response.redirect("/admin"));
     },
     edit: async (request, response) => {
-        const  validity = service.validate(request, "post");
-        const post = service.extract(request);
+        const  validity = services.posts.validate(request, "post");
+        const post = services.posts.extract(request);
         validity && await post.update();
         request.session.save(() => response.redirect(validity ? "/admin" : `/posts/${post.id}/edit`));
     },

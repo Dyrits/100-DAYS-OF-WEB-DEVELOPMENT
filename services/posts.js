@@ -11,5 +11,12 @@ module.exports = {
             session[key] = { title, content, error: true, message: "Invalid input! Please check your data." };
         }
         return validity;
+    },
+    session: {
+        data: function({ session }, key, post = {}) {
+            let data = session[key];
+            session[key] = null;
+            return data || { title: post.title || null, content: post.content || null, message: null, error: false };
+        },
     }
 }

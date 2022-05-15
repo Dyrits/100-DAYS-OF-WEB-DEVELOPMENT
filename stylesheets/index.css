@@ -11,7 +11,7 @@
   width: 900px;
   max-width: 90%;
   background-color: rgba(51, 47, 47, 0.8);
-  box-shadow: 2px 4px 8px #444343;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 10px;
   text-align: center;
   padding: 50px 0;
@@ -40,30 +40,30 @@
 }
 #hero-content a {
   text-decoration: none;
-  background-color: #f5f3a0;
+  background-color: rgb(245, 243, 160);
   color: rgba(51, 47, 47, 0.8);
   padding: 15px 25px;
   border-radius: 0 20px 0 20px;
   font-size: 24px;
   font-weight: bold;
-  box-shadow: 2px 4px 8px #444343;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
   transition: border-radius 0.5s;
 }
 #hero-content a:hover {
-  border: 2px solid #f5f3a0;
-  color: #f5f3a0;
+  border: 2px solid rgb(245, 243, 160);
+  color: rgb(245, 243, 160);
   background-color: rgba(51, 47, 47, 0.8);
   border-radius: 20px 0 20px 0;
 }
 
 #highlights {
-  background: linear-gradient(0deg, #e3fffd, #caf3f0);
+  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
 }
 #highlights h2 {
-  color: #3b4140;
+  color: rgb(59, 65, 64);
   font-family: "Raleway", sans-serif;
   font-size: 40px;
   margin: 25px;
@@ -82,7 +82,7 @@
 .destination img {
   height: 200px;
   width: 265px;
-  box-shadow: 2px 4px 8px #444343;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 10px;
   object-fit: cover;
   transition: transform 0.25s;
@@ -92,10 +92,10 @@
 }
 .destination p {
   font-size: 24px;
-  color: #7c7b7b;
+  color: rgb(124, 123, 123);
 }
 .destination p strong {
-  color: #00a075;
+  color: rgb(0, 160, 117);
 }
 
 /*# sourceMappingURL=index.css.map */

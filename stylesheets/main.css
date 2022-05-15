@@ -32,19 +32,19 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #f5f3a0;
+  color: rgb(245, 243, 160);
   font-size: 25px;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   padding: 10px;
   border-radius: 10px 0 10px 0;
 }
 header nav ul li a:hover {
-  border-right: 2px solid #f5f3a0;
-  border-bottom: 2px solid #f5f3a0;
+  border-right: 2px solid rgb(245, 243, 160);
+  border-bottom: 2px solid rgb(245, 243, 160);
 }
 
 footer {
-  background: linear-gradient(70deg, #181818, #191d1d);
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
   padding: 35px;
 }
 footer ul {
@@ -74,17 +74,17 @@ footer ul li img:hover {
 #logo a {
   padding: 10px;
   font-family: "Oleo Script", sans-serif;
-  color: #f5f3a0;
+  color: rgb(245, 243, 160);
   font-size: 50px;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 #logo a:hover .initials {
   color: rgba(51, 47, 47, 0.8);
-  text-shadow: 1px 1px 2px #f5f3a0;
-  border-bottom: 2px solid #f5f3a0;
-  border-top: 2px solid #f5f3a0;
+  text-shadow: 1px 1px 2px rgb(245, 243, 160);
+  border-bottom: 2px solid rgb(245, 243, 160);
+  border-top: 2px solid rgb(245, 243, 160);
 }
 
 #about {

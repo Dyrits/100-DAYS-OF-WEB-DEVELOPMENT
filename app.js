@@ -11,7 +11,9 @@ const configuration = {
   session: require("./configuration/session")
 }
 
-const routes = {}
+const routes = {
+  authentication: require("./routes/authentication")
+}
 
 const store = configuration.session.store(session);
 
@@ -28,6 +30,8 @@ app.use(csrf());
 
 app.use(authentication);
 app.use(authorization.csrf);
+
+app.use(routes.authentication);
 
 app.use(function(error, request, response, next) {
   response.render('500');

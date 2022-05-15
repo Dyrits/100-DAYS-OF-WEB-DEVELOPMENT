@@ -16,5 +16,3 @@ Time for another, huge milestone project: Time for the 'Online Shop' project.
         <li>Creating Folders, Files & A First Set Of Routes</li>
     </ul>
 </details>
-
-/ [Heroku](https://blog-demonstration-djg-078-01.herokuapp.com/)

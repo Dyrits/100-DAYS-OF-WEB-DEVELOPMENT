@@ -17,4 +17,4 @@ Explore yet more form elements and practice what you learned about HTML forms.
 
 ---
 
-/ [Netlify](https://100daysofcode-028-dyrits.netlify.app/)
+/ [Netlify](https://dyrits-register.netlify.app/)

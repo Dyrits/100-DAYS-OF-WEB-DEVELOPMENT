@@ -21,4 +21,4 @@ Dive even deeper into AJAX requests before you thereafter start exploring 'User 
 
 ---
 
-/ [Heroku](https://blog-djg-070-01.herokuapp.com/posts)
+/ [Heroku](https://dyrits-blog-with-comments.herokuapp.com/posts)

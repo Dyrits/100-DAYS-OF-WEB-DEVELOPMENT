@@ -7,7 +7,6 @@ const services = {
 
 module.exports = {
     welcome: (request, response) => {
-        console.log('welcome');
         response.render("welcome");
     },
     signup: (request, response) => {

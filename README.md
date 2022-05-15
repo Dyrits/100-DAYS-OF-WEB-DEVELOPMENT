@@ -23,4 +23,4 @@ More forms practice AND the introduction of another key frontend technology: Jav
 
 ---
 
-/ [Netlify](https://100daysofcode-029-dyrits.netlify.app/)
+/ [Netlify](https://dyrits-contact-us.netlify.app/)

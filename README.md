@@ -17,4 +17,4 @@ Time for another, huge milestone project: Time for the 'Online Shop' project.
     </ul>
 </details>
 
-/ [Heroku](https://blog-demonstration-djg-078-01.herokuapp.com/)
+/ [Heroku](https://dyrits-blog-demonstration.herokuapp.com/)

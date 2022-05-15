@@ -1,14 +1,18 @@
-# Day #077
-Learn more about refactoring and refactor code we wrote before.
+# Day #078
+Time for another, huge milestone project: Time for the 'Online Shop' project.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 41 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 56 minutes)</summary>
     <ul>
-        <li>Adding A First Controller & Controller Actions</li>
-        <li>Refactoring The Sessions & Input Validation Errors Functionality</li>
-        <li>Refactoring The CSRF Token Handling</li>
-        <li>Migrating The "Authentication" Functionality To MVC</li>
+        <li>Improving Asynchronous Error Handling </li>
+        <li>Protecting Routes With Custom Middleware</li>
+        <li>Quiz 24 - Learning Check: Refactoring & MVC</li>
+        <hr>
+        <li>Module Introduction</li>
+        <li>Planning The Project</li>
+        <li>Your Challenge!</li>
+        <li>Creating Folders, Files & A First Set Of Routes</li>
     </ul>
 </details>

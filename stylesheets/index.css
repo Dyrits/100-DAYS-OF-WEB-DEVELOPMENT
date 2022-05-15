@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #F4EAFFFF;
+  background-color: #f4eaff;
   font-family: "Roboto", sans-serif;
 }
 
@@ -13,7 +13,7 @@ header {
   text-align: center;
 }
 header h1 {
-  color: #5831C4FF;
+  color: #5831c4;
   font-size: 3.25rem;
 }
 header img {
@@ -22,8 +22,8 @@ header img {
 }
 
 main {
-  background-color: #7A4ADAFF;
-  color: #F8F1FFFF;
+  background-color: #7a4ada;
+  color: #f8f1ff;
   width: 44rem;
   padding: 2.5rem;
   margin: 2rem auto;
@@ -40,14 +40,14 @@ main section ul li {
   border-left: 0.5rem solid transparent;
 }
 main section a {
-  background-color: #FFEDB1FF;
-  color: #7A4ADAFF;
+  background-color: #ffedb1;
+  color: #7a4ada;
   text-decoration: none;
   padding: 0.25rem;
   border-radius: 0.25rem;
 }
 main section a:hover, main section a:active {
-  background-color: #F8F1FFFF;
+  background-color: #f8f1ff;
 }
 
 footer {
@@ -55,8 +55,8 @@ footer {
 }
 footer a {
   text-decoration: none;
-  background-color: #FAC927FF;
-  color: #423304FF;
+  background-color: #fac927;
+  color: #423304;
   padding: 0.75rem 1.25rem;
   border-radius: 1rem;
   transition: all 0.5s;
@@ -66,7 +66,7 @@ footer a:hover, footer a:active {
   font-weight: bold;
 }
 footer p {
-  color: #837195FF;
+  color: #837195;
   margin-top: 2rem;
 }
 footer p:before {
@@ -74,8 +74,8 @@ footer p:before {
 }
 
 .important {
-  color: #FFEDB1FF;
-  border-left: 0.5rem solid #F7D155FF;
+  color: #ffedb1;
+  border-left: 0.5rem solid #f7d155;
 }
 
 @keyframes jello-horizontal {

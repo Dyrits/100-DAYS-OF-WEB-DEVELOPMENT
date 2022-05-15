@@ -16,4 +16,4 @@ Continue using NoSQL with Node + Express and apply what you learned.
 
 ---
 
-/ [Heroku](https://blog-djg-066.herokuapp.com/)
+/ [Heroku](https://dyrits-blog.herokuapp.com/)

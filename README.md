@@ -17,4 +17,4 @@ Learn about more key features that help with building beautiful webpages.
 
 ---
 
-/ [Netlify](https://100daysofcode-025-dyrits.netlify.app/)
+/ [Netlify](https://dyrits-monthly-subscription.netlify.app/)

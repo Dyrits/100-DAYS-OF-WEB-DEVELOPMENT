@@ -31,7 +31,7 @@ app.use(session(configuration.session.options(store)));
 app.use(csrf());
 
 app.use(authentication);
-app.use(authorization);
+app.use(authorization.csrf);
 
 app.use(routes.views);
 app.use(routes.users);

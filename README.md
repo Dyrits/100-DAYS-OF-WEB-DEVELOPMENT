@@ -17,4 +17,4 @@ Explore how different kinds of control structures work and why (and when) you wo
 
 ---
 
-/ [Netlify](https://100daysofcode-039-dyrits.netlify.app/)
+/ [Netlify](https://dyrits-javascript-loops-in-action.netlify.app/)

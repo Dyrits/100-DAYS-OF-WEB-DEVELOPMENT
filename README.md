@@ -14,4 +14,4 @@ Time to finish the authentication part!
     </ul>
 </details>
 
-/ [Heroku](https://demonstration-djg-073.herokuapp.com/)
+/ [Heroku](https://dyrits-demonstration.herokuapp.com/)

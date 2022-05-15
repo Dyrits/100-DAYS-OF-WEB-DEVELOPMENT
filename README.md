@@ -14,4 +14,4 @@ Time to finish our first milestone project!
 
 ---
 
-/ [Netlify](https://100daysofcode-044-dyrits.netlify.app/)
+/ [Netlify](https://dyrits-tic-tac-toe.netlify.app/)

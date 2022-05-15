@@ -1,6 +1,6 @@
 h1 {
   font-size: 3rem;
-  color: #473E3EFF;
+  color: #473e3e;
 }
 
 ol {
@@ -13,14 +13,14 @@ ol li {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin: 0.5rem auto;
-  box-shadow: 0.25rem 0.25rem 0.5rem #00000040;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2509803922);
 }
 ol li h3 {
-  color: #4E0D05FF;
+  color: #4e0d05;
   font-family: "Oswald", sans-serif;
 }
 ol li p {
-  color: #471D16FF;
+  color: #471d16;
   margin: 0.75rem;
 }
 

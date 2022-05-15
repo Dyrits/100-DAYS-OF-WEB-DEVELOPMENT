@@ -9,7 +9,7 @@ module.exports = {
     const client = await MongoClient.connect(this.uri);
     if (client) {
       info("The connection to the database is successful. Retrieving the schema...");
-      this._schema = client.db("blog-demonstration");
+      this._schema = client.db("online-shop");
       this._schema ? info("The schema has been retrieved.") : error("The schema has not been retrieved.");
     } else { error( "The connection to the database has failed."); }
   },

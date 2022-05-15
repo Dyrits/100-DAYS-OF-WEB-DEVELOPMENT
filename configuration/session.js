@@ -7,7 +7,7 @@ module.exports = {
         const DBStore = MongoDBStore(session);
         return new DBStore({
             uri: database.uri,
-            databaseName: "blog-demonstration",
+            databaseName: "online-shop",
             collection: "sessions"
         })
     },
@@ -16,6 +16,6 @@ module.exports = {
         resave: false,
         saveUninitialized: false,
         store,
-        cookie: { maxAge: 1000 * 60 * 60 * 24}
+        cookie: { maxAge: 1000 * 60 * 60 * 48}
     })
 }

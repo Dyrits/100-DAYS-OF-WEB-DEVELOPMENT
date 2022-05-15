@@ -11,11 +11,7 @@ const configuration = {
   session: require("./configuration/session")
 }
 
-const routes = {
-  users: require("./routes/users"),
-  posts: require("./routes/posts"),
-  views: require("./routes/views")
-}
+const routes = {}
 
 const store = configuration.session.store(session);
 
@@ -32,10 +28,6 @@ app.use(csrf());
 
 app.use(authentication);
 app.use(authorization.csrf);
-
-app.use(routes.views);
-app.use(routes.users);
-app.use("/posts", routes.posts);
 
 app.use(function(error, request, response, next) {
   response.render('500');

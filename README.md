@@ -1,18 +1,14 @@
-# Day #078
-Time for another, huge milestone project: Time for the 'Online Shop' project.
+# Day #079
+We're going to work on the online shop project for multiple days - this is day 2. Time for the basic structure and setup and some first styling.
 
 ---
 
 <details>
     <summary>List of Lectures (Video Duration: 56 minutes)</summary>
     <ul>
-        <li>Improving Asynchronous Error Handling </li>
-        <li>Protecting Routes With Custom Middleware</li>
-        <li>Quiz 24 - Learning Check: Refactoring & MVC</li>
-        <hr>
-        <li>Module Introduction</li>
-        <li>Planning The Project</li>
-        <li>Your Challenge!</li>
-        <li>Creating Folders, Files & A First Set Of Routes</li>
+        <li>Adding EJS & First Views</li>
+        <li>Populating & Rendering The First View</li>
+        <li>Adding Base CSS Files & Static File Serving</li>
+        <li>Adding CSS Variables & A Website Theme</li>
     </ul>
 </details>

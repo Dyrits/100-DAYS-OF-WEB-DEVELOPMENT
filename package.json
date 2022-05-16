@@ -1,7 +1,7 @@
 {
   "name": "100-days-of-code",
   "version": "1.0.0",
-  "description": "Day #078",
+  "description": "Day #079",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

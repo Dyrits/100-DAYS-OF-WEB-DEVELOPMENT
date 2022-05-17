@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  color: var(--color-gray-300);
+}
+
+form {
+  max-width: 25rem;
+  margin: var(--space-8) auto;
+  padding: var(--space-4);
+  background-color: var(--color-gray-600);
+  border-radius: var(--border-radius-medium);
+  text-align: center;
+  a {
+    color: var(--color-primary-200);
+    &:hover, &:active { color: var(--color-primary-400); }
+  }
+  hr {
+    border-color: var(--color-primary-200);
+    margin: var(--space-4);
+  }
+  label {
+    display: block;
+    color: var(--color-gray-100);
+    margin-bottom: var(--space-2);
+  }
+  input, textarea {
+    font: inherit;
+    padding: var(--space-2);
+    border-radius: var(--border-radius-small);
+    border: none;
+    width: 90%;
+    &:focus { outline: none;}
+  }
+  p:focus-within label {
+    transform: scale(1.05);
+    color: var(--color-primary-100);
+  }
+}

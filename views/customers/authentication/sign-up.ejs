@@ -2,7 +2,7 @@
 <%- include("../includes/header") %>
 <main>
     <h1>Create a new account</h1>
-    <form action="" method="">
+    <form action="/sign-up" method="POST">
         <p>
             <label for="email">E-Mail</label>
             <input type="email" name="email" id="email" required>
@@ -29,7 +29,7 @@
             <input type="text" name="postal" id="postal" minlength="5" maxlength="5" required>
         </p>
         <p>
-            <label for="city">Postal code</label>
+            <label for="city">City</label>
             <input type="text" name="city" id="city" required>
         </p>
         <button class="button">Create an account</button>

@@ -15,7 +15,7 @@ module.exports = {
   },
   get schema() {
     if (!this._schema) {
-      throw { message: "The connection to the database has not been established." }
+      throw new Error("The connection to the database has not been established.");
     }
     return this._schema;
   }

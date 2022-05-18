@@ -1,13 +1,14 @@
-# Day #080
-Online Shop Day 3
+# Day #081
+Online Shop Day 4
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 37 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 49 minutes)</summary>
     <ul>
-        <li>More Base CSS Styles For The Website</li>
-        <li>Styling First Form Elements</li>
-        <li>Adding A MongoDB Database Server & Connection</li>
+        <li>Adding User Signup</li>
+        <li>Security Time: Adding CSRF Protection</li>
+        <li>Implementing Proper Error Handling With The Error Handling Middleware</li>
+        <li>Introducing Sessions & Configuring Sessions</li>
     </ul>
 </details>

@@ -1,8 +1,9 @@
-<%- include("../includes/head", { title: "Sign-up", stylesheets: ["form", "authentication"] } ) %>
-<%- include("../includes/header") %>
+<%- include("../../includes/head", { title: "Sign-up", stylesheets: ["form", "authentication"] } ) %>
+<%- include("../../includes/header") %>
 <main>
     <h1>Create a new account</h1>
     <form action="/sign-up" method="POST">
+        <input type="hidden" value="<%= locals.csrf %>" name="_csrf">
         <p>
             <label for="email">E-Mail</label>
             <input type="email" name="email" id="email" required>
@@ -32,8 +33,8 @@
             <label for="city">City</label>
             <input type="text" name="city" id="city" required>
         </p>
-        <button class="button">Create an account</button>
-        <p id="switch-form"><a href="/sign-in">Sign-in</a></p>
+        <button class="button">Sign-up</button>
+        <p id="switch-form">You already have an account? <a href="/sign-in">Sign-in</a> with your existing account!</p>
     </form>
 </main>
-<%- include("../includes/footer") %>
+<%- include("../../includes/footer") %>

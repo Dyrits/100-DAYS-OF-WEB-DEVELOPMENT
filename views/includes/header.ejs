@@ -2,6 +2,14 @@
     <div><a href="/">WDE</a></div>
     <nav>
         <ul>
+            <% if (locals.authenticated) { %>
+            <li>
+                <form action="/sign-out" method="POST">
+                    <input type="hidden" value="<%= locals.csrf %>" name="_csrf">
+                    <button>Sign-out</button>
+                </form>
+            </li>
+            <% } %>
         </ul>
     </nav>
 </header>

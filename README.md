@@ -1,15 +1,14 @@
-# Day #082
-Online Shop Day 5
+# Day #083
+Online Shop Day 6
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 54 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 56 minutes)</summary>
     <ul>
-        <li>Implementing Authentication & User Login</li>
-        <li>Finishing Authentication & Checking The Auth Status (Custom Middleware)</li>
-        <li>Adding Logout Functionality</li>
-        <li>Handling Errors In Asynchronous Code</li>
-        <li>Adding User Input Validation</li>
+        <li>Flashing Errors & Input Data Onto Sessions</li>
+        <li>Displaying Error Messages & Saving User Input</li>
+        <li>Admin Authorization & Protected Navigation</li>
+        <li>Setting Up Base Navigation Styles</li>
     </ul>
 </details>

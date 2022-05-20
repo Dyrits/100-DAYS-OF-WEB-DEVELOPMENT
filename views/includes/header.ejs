@@ -1,15 +1,13 @@
 <header>
-    <div><a href="/">WDE</a></div>
-    <nav>
-        <ul>
-            <% if (locals.authenticated) { %>
-            <li>
-                <form action="/sign-out" method="POST">
-                    <input type="hidden" value="<%= locals.csrf %>" name="_csrf">
-                    <button>Sign-out</button>
-                </form>
-            </li>
-            <% } %>
-        </ul>
-    </nav>
+    <% const { authenticated, administrator, csrf } = locals; %>
+    <div id="logo"><a href="/">WDE</a></div>
+    <%- include("./navigation.ejs") %>
+    <button id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
+<aside id="mobile-navigation">
+    <%- include("./navigation.ejs") %>
+</aside>

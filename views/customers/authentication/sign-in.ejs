@@ -2,15 +2,21 @@
 <%- include("../../includes/header") %>
 <main>
     <h1>Sign-in to your account</h1>
+    <% if (data.error) { %>
+        <section class="alert">
+            <h2>Invalid input</h2>
+            <p><%= data.error %></p>
+        </section>
+    <% } %>
     <form action="/sign-in" method="POST">
         <input type="hidden" value="<%= locals.csrf %>" name="_csrf">
         <p>
             <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" value="<%= data.email %>" required>
         </p>
         <p>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" minlength="6" required>
+            <input type="password" name="password" id="password" minlength="6" value="<%= data.password %>" required>
         </p>
         <button class="button">Sign-in</button>
         <p id="switch-form">You don't have an account yet? <a href="/sign-up">Sign-up</a> to create a new one!</p>

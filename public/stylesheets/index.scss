@@ -9,6 +9,8 @@ body {
   margin: 0;
 }
 
+@import "./-navigation";
+
 main {
   width: 90%;
   max-width: 50rem;
@@ -38,6 +40,20 @@ a {
     background-color: var(--color-primary-700);
     border-color: var(--color-primary-700);
   }
+}
+
+.alert {
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-error-100);
+  color: var(--color-error-500);
+  padding: var(--space-4);
+  text-align: center;
+  h2 {
+    font-size: 1rem;
+    margin: var(--space-2) 0;
+    text-transform: uppercase;
+  }
+  p { margin: var(--space-2) 0; }
 }
 
 

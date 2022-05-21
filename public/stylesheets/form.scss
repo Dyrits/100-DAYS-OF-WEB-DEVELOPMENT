@@ -1,19 +1,7 @@
-h1 {
-  text-align: center;
-  color: var(--color-gray-300);
-}
+h1 { text-align: center; }
 
 form {
-  margin: var(--space-8) auto;
-  padding: var(--space-4);
-  background-color: var(--color-gray-600);
-  border-radius: var(--border-radius-medium);
   text-align: center;
-  &.authentication { max-width: 25rem; }
-  a {
-    color: var(--color-primary-200);
-    &:hover, &:active { color: var(--color-primary-400); }
-  }
   hr {
     border-color: var(--color-primary-200);
     margin: var(--space-4);
@@ -29,6 +17,10 @@ form {
     border-radius: var(--border-radius-small);
     border: none;
     width: 90%;
+    &[type="file"] {
+      width: max-content;
+      margin-inline: auto;
+    }
     &:focus { outline: none;}
   }
   p:focus-within label {

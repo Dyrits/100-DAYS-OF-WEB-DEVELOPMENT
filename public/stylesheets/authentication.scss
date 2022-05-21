@@ -1,0 +1,13 @@
+h1 { color: var(--color-gray-300); }
+
+form {
+  max-width: 25rem;
+  margin: var(--space-8) auto;
+  padding: var(--space-4);
+  background-color: var(--color-gray-600);
+  border-radius: var(--border-radius-medium);
+  a {
+    color: var(--color-primary-200);
+    &:hover, &:active { color: var(--color-primary-400); }
+  }
+}

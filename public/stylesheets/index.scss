@@ -40,6 +40,11 @@ a {
     background-color: var(--color-primary-700);
     border-color: var(--color-primary-700);
   }
+  &-alternative {
+    background-color: transparent;
+    color: var(--color-primary-500);
+    &:hover, &:active { background-color: var(--color-primary-500-bg); }
+  }
 }
 
 .alert {

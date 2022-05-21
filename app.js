@@ -19,6 +19,7 @@ const routes = {
   index: require("./routes/index"),
   authentication: require("./routes/authentication"),
   products: require("./routes/products"),
+  administration: require("./routes/administration")
 }
 
 const store = configurations.session.store(session);
@@ -40,6 +41,7 @@ app.use(middlewares.authorization.csrf);
 app.use(routes.index);
 app.use(routes.authentication);
 app.use(routes.products);
+app.use("/administration", routes.administration);
 
 app.use(middlewares.error);
 

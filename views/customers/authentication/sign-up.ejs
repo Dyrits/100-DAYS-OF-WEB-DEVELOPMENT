@@ -8,7 +8,7 @@
             <p><%= data.error %></p>
         </section>
     <% } %>
-    <form action="/sign-up" method="POST">
+    <form class="authentication" action="/sign-up" method="POST">
         <input type="hidden" value="<%= locals.csrf %>" name="_csrf">
         <p>
             <label for="email">E-Mail</label>

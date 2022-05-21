@@ -6,7 +6,6 @@ const { verify, check } = require("./tools/verification");
 module.exports = {
     session: {
         create(session, user, action) {
-            console.log(user);
             session.user = { id: user._id.toString() };
             session.authenticated = true;
             session.administrator = user.administrator;

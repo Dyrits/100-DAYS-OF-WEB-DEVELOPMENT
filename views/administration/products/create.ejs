@@ -2,7 +2,7 @@
 <%- include("../../includes/header") %>
 <main>
     <h1>Administration: Create a product</h1>
-    <form action="/products" method="POST">
+    <form action="/administration/products?_csrf=<%= locals.csrf %>" method="POST" enctype="multipart/form-data">
         <p>
             <label for="title">Title</label>
             <input type="text" id="title" name="title" required>

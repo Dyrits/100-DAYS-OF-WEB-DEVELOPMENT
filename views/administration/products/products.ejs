@@ -7,7 +7,11 @@
         <p><a href="/administration/products/create" class="button">Create product</a></p>
     </section>
     <section>
-        <p>A list of products...</p>
+        <ul class="list">
+            <% for (const product of products) { %>
+                <li><%- include("./includes/product", { product }) %></li>
+            <% } %>
+        </ul>
     </section>
 </main>
 <%- include("../../includes/footer") %>

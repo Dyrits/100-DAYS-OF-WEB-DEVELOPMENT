@@ -30,6 +30,7 @@ app.set("view engine", "ejs");
 app.set("views", PATH.join(__dirname, "views"));
 
 app.use(express.static("public"));
+app.use("/assets/products", express.static("data/products"));
 app.use(express.urlencoded({ extended: false }));
 
 app.use(session(configurations.session.options(store)));

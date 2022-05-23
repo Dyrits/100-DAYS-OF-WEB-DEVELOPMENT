@@ -1,0 +1,8 @@
+<%- include("../../includes/head", { title: "Administration: Update a product", stylesheets: ["form"] } ) %>
+<%- include("../../includes/header") %>
+<main>
+    <h1>Administration: Update a product</h1>
+    <% const action = `/administration/products/${product.id}` %>
+    <%- include("./includes/product-form", { action, product }) %>
+</main>
+<%- include("../../includes/footer") %>

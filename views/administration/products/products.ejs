@@ -1,4 +1,4 @@
-<%- include("../../includes/head", { title: "Administration: Products" } ) %>
+<%- include("../../includes/head", { title: "Administration: Products", stylesheets: ["products"] } ) %>
 <%- include("../../includes/header") %>
 <main>
     <h1>Administration: Products</h1>
@@ -7,7 +7,7 @@
         <p><a href="/administration/products/create" class="button">Create product</a></p>
     </section>
     <section>
-        <ul class="list">
+        <ul id="products-list" class="list">
             <% for (const product of products) { %>
                 <li><%- include("./includes/product", { product }) %></li>
             <% } %>

@@ -1,8 +1,10 @@
 <article class="product-item">
     <img src="<%= product.image.url %>" alt="<%= product.title %>">
-    <h2><%= product.title %></h2>
-    <div>
-        <a class="button button-alternative" href="administration/products/<%= product.id %>">View & Edit</a>
-        <button class="button">Delete</button>
+    <div class="product-item-content">
+        <h2><%= product.title %></h2>
+        <div class="product-item-content-buttons">
+            <a class="button button-alternative" href="/administration/products/<%= product.id %>">View & Edit</a>
+            <button class="button button-alternative">Delete</button>
+        </div>
     </div>
 </article>

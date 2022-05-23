@@ -8,7 +8,7 @@
 node_modules/
 
 # Data
-data/products/images
+data/products/images/
 
 # PHPStorm
 .idea/

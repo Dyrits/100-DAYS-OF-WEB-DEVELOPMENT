@@ -41,6 +41,13 @@ module.exports = {
                 await product.save(id);
                 response.redirect("/administration/products");
             } catch (error) { next(error); }
+        },
+        delete: async ({ params }, response, next) => {
+            try {
+                const { id } = params;
+                await Product.delete(id);
+                response.json({ message: "The product has been successfully deleted." });
+            } catch (error) { next(error); }
         }
     }
 }

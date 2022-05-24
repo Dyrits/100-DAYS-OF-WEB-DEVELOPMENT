@@ -17,14 +17,23 @@ form {
     border-radius: var(--border-radius-small);
     border: none;
     width: 90%;
-    &[type="file"] {
-      width: max-content;
-      margin-inline: auto;
-    }
     &:focus { outline: none;}
   }
   p:focus-within label {
     transform: scale(1.05);
     color: var(--color-primary-100);
+  }
+}
+
+#image-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
   }
 }

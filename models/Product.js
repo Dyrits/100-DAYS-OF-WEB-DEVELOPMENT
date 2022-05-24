@@ -41,6 +41,8 @@ class Product {
         return products.map(product => ({...product, id: product._id.toString()}));
     }
 
+    static async delete(id) { await database.schema.collection("products").deleteOne({ _id: ObjectId(id) }); }
+
     static mock = () => ({ title: null, image: null, summary: null, price: null, description: null })
 }
 

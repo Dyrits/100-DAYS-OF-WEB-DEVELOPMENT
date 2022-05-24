@@ -4,7 +4,7 @@
         <h2><%= product.title %></h2>
         <div class="product-item-content-buttons">
             <a class="button button-alternative" href="/administration/products/<%= product.id %>">View & Edit</a>
-            <button class="button button-alternative">Delete</button>
+            <button class="button button-alternative" data-id="<%= product.id %>" data-csrf="<%= locals.csrf %>">Delete</button>
         </div>
     </div>
 </article>

@@ -1,0 +1,14 @@
+<%- include("../../includes/head", {  title: product.title, stylesheets: ["products"], }) %>
+<%- include("../../includes/header") %>
+<main id="product">
+    <div id="product-header">
+        <img src="<%= product.image.url %>" alt="No preview available.">
+        <div id="product-header-information">
+            <h1><%= product.title %></h1>
+            <p><%= product.price %></p>
+            <button class="button">Add to card</button>
+        </div>
+    </div>
+    <p id="product-description"><%= product.description %></p>
+</main>
+<%- include("../../includes/footer") %>

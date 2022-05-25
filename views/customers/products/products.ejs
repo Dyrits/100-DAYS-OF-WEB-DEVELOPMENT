@@ -1,7 +1,11 @@
-<%- include("../../includes/head", { title: "Products" } ) %>
+<%- include("../../includes/head", { title: "Products", stylesheets: ["products"] } ) %>
 <%- include("../../includes/header") %>
 <main>
     <h1>Products</h1>
-    <p>A list of products...</p>
+    <ul id="products-list">
+        <% for (const product of products) { %>
+            <li><%- include("../../includes/products/product", { product }) %></li>
+        <% } %>
+    </ul>
 </main>
 <%- include("../../includes/footer") %>

@@ -42,7 +42,7 @@ app.use(middlewares.authorization.csrf);
 app.use(routes.index);
 app.use(routes.authentication);
 app.use(routes.products);
-app.use("/administration", routes.administration);
+app.use("/administration",  middlewares.authorization.administration, routes.administration);
 
 app.use(middlewares.error);
 

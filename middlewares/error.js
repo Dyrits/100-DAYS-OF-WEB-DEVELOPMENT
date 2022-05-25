@@ -1,4 +1,4 @@
 module.exports = (error, request, response, next) => {
     console.error(error);
-    response.status(500).render("errors/500");
+    error.status === 404 ? response.status(404).redirect("/errors/404") : response.status(500).redirect("/errors/500");
 };

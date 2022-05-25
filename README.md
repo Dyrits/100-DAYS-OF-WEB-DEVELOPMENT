@@ -1,13 +1,13 @@
-# Day #087
-Online Shop Day  9
+# Day #088
+Online Shop Day  10
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 43 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 37 minutes)</summary>
     <ul>
-        <li>Adding a "File Upload" Preview</li>
-        <li>Making Products Deletable</li>
-        <li>Using Ajax / Frontend JS Requests & Updating The DOM</li>
+        <li>Various Fixes & Proper Route Protection</li>
+        <li>Outputting Products For Customers</li>
+        <li>Outputting Product Details</li>
     </ul>
 </details>

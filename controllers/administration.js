@@ -46,7 +46,7 @@ module.exports = {
             try {
                 const { id } = params;
                 await Product.delete(id);
-                response.json({ message: "The product has been successfully deleted." });
+                response.status(204).json({ message: "The product has been successfully deleted." });
             } catch (error) { next(error); }
         }
     }

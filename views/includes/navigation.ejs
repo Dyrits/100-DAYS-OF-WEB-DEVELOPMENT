@@ -2,7 +2,7 @@
     <ul class="list navigation-items">
         <% if (!administrator) { %>
             <li><a href="/">Shop</a></li>
-            <li><a href="/cart">Cart</a></li>
+            <li><a href="/cart">Cart<span class="badge"><%= locals.cart.quantity %></span></a></li>
         <% } %>
         <% if (authenticated) { %>
             <% if (administrator) { %>

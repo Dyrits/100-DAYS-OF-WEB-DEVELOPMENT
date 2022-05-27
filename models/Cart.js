@@ -15,7 +15,18 @@ class Cart {
             this.total += product.price;
             this.items[index] ? this.items[index] = item : this.items.push(item);
         },
-        remove: (product) => {}
+        update: (id, quantity) => {
+            if (!isNaN(quantity)) {
+                quantity = Number(quantity) < 0 ? 0 : Number(quantity);
+                const index = this.items.findIndex(item => item.product.id === id);
+                const item = this.items[index];
+                this.quantity = this.quantity - item.quantity + quantity;
+                this.total = this.total - item.total + item.product.price * quantity;
+                item.total = item.product.price * quantity;
+                quantity ? item.quantity = quantity : this.items.splice(index, 1);
+                return item.total;
+            }
+        },
     }
 }
 

@@ -1,0 +1,15 @@
+<%- include("../../includes/head", { title: "Cart", stylesheets: ["cart"], scripts: ["cart-update"] } ) %>
+<%- include("../../includes/header") %>
+<main>
+    <h1>Cart</h1>
+    <ul id="cart-items" class="list">
+        <% for (const item of locals.cart.items) { %>
+            <li><%- include("./includes/cart-item", { item }) %></li>
+        <% } %>
+    </ul>
+    <div id="cart-total">
+        <p>Total: $<span id="cart-total-value"><%= locals.cart.total.toFixed(2) %></span></p>
+        <button class="button">Buy</button>
+    </div>
+</main>
+<%- include("../../includes/footer") %>

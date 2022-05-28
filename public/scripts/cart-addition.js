@@ -8,6 +8,8 @@ document.querySelector("#product-header-information button").addEventListener("c
     if (!response.ok) { alert("Something went wrong!"); }
     else {
         const { quantity } = await response.json();
-        document.querySelector(".navigation-items .badge").innerText = quantity;
+        document.querySelectorAll(".navigation-items .badge").forEach(function (badge) {
+            badge.textContent = quantity;
+        });
     }
 });

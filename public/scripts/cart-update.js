@@ -11,8 +11,10 @@ document.querySelectorAll(".cart-item-management").forEach(function (form) {
         if (!response.ok) { alert("Something went wrong!"); }
         else {
             const { cart, total } = await response.json();
-            document.querySelector(".navigation-items .badge").innerText = cart.quantity;
-            document.querySelector("#cart-total-value").innerText = cart.total.toFixed(2);
+            document.querySelectorAll(".navigation-items .badge").forEach(function (badge) {
+                badge.textContent = cart.quantity;
+            });
+            document.querySelector("#cart-total-price").innerText = cart.total.toFixed(2);
             if (quantity) { this.previousElementSibling.querySelector(".cart-item-information-total").innerText = total; }
             else { this.closest("li").remove(); }
         }

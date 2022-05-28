@@ -13,7 +13,7 @@ const middlewares = {
   authorization: require("./middlewares/authorization"),
   csrf: require("csurf"),
   error: require("./middlewares/error"),
-  cart: require("./middlewares/cart"),
+  cart: require("./middlewares/cart")
 }
 
 const routes = {
@@ -21,7 +21,8 @@ const routes = {
   authentication: require("./routes/authentication"),
   products: require("./routes/products"),
   administration: require("./routes/administration"),
-  cart: require("./routes/cart")
+  cart: require("./routes/cart"),
+  orders: require("./routes/orders")
 }
 
 const store = configurations.session.store(session);
@@ -48,7 +49,10 @@ app.use(routes.index);
 app.use(routes.authentication);
 app.use(routes.products);
 app.use("/cart", routes.cart);
-app.use("/administration",  middlewares.authorization.administration, routes.administration);
+app.use(middlewares.authorization.authentication);
+app.use("/orders", routes.orders);
+app.use(middlewares.authorization.administration);
+app.use("/administration", routes.administration);
 
 app.use(middlewares.error);
 

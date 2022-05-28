@@ -49,4 +49,15 @@ main { text-align: center; }
     font-weight: bold;
     color: var(--color-primary-500);
   }
+  &-authentication {
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+        color: var(--color-gray-100);
+      a {
+        color: var(--color-primary-200);
+        &:hover, &:active { color: var(--color-primary-400); }
+      }
+    }
+  }
 }

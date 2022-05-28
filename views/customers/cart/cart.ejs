@@ -9,7 +9,17 @@
     </ul>
     <div id="cart-total">
         <p>Total: $<span id="cart-total-price"><%= locals.cart.total.toFixed(2) %></span></p>
-        <button class="button">Buy</button>
+        <% if (locals.authenticated) { %>
+            <form action="/orders" method="POST">
+                <input type="hidden" value="<%= locals.csrf %>" name="_csrf">
+                <button class="button">Purchase</button>
+            </form>
+        <% } else { %>
+            <div id="cart-total-authentication">
+                <p>Please <a href="/sign-in">sign-in</a> to purchase the items.</p>
+                <p><a href="/sign-up">Sign-up</a> if you don't have an account.</p>
+            </div>
+        <% } %>
     </div>
 </main>
 <%- include("../../includes/footer") %>

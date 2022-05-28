@@ -1,3 +1,4 @@
+const { ObjectId } = require("mongodb");
 const bcrypt = require("bcrypt");
 
 const database = require("../data/database");
@@ -16,7 +17,10 @@ class User {
         await database.schema.collection("users").insertOne(this);
     }
 
-    static async find(email) { return await database.schema.collection("users").findOne({email}); }
+    static find = {
+        email: async (email) => await database.schema.collection("users").findOne({email}),
+        id: async (id) => await database.schema.collection("users").findOne({_id: ObjectId(id)}, { projection: { password: false } })
+    }
     static mock = () => ({ email: null, confirmation: null, password: null, name: null, street: null, postal: null, city: null })
 }
 

@@ -1,14 +1,14 @@
-# Day #090
-Online Shop Day  13
+# Day #091
+Online Shop Day  14
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 50 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 43 minutes)</summary>
     <ul>
-        <li>Adding A Cart Page</li>
-        <li>Styling The Cart Page</li>
-        <li>Updating Cart Items (Changing Quantities)</li>
-        <li>Updating Carts Via Ajax Requests (PATCH Requests)</li>
+        <li>Updating The DOM After Cart Item Updates</li>
+        <li>JavaScript & Floating Point Arithmetic</li>
+        <li>Adding The Order Controller & A Basic Order Model</li>
+        <li>Saving Orders In The Database</li>
     </ul>
 </details>

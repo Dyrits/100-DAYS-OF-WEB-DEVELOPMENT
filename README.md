@@ -1,14 +1,15 @@
-# Day #091
-Online Shop Day  14
+# Day #092
+Online Shop Day  15
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 43 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 44 minutes)</summary>
     <ul>
-        <li>Updating The DOM After Cart Item Updates</li>
-        <li>JavaScript & Floating Point Arithmetic</li>
-        <li>Adding The Order Controller & A Basic Order Model</li>
-        <li>Saving Orders In The Database</li>
+        <li>Displaying Orders (For Customers & Administrators)</li>
+        <li>Managing Orders As An Administrator</li>
+        <li>Keeping Cart Items Updated</li>
+        <li>Bugfixing & Polishing</li>
+        <li>Module Summary</li>
     </ul>
 </details>

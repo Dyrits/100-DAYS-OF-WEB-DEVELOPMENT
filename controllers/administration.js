@@ -1,10 +1,11 @@
-const Product = require('../models/product');
+const Product = require('../models/Product');
+const Order = require('../models/Order');
 
 module.exports = {
     render: {
         products: async (request, response, next) => {
             try {
-                const products = await Product.findAll();
+                const products = await Product.find.all();
                 response.render("administration/products/products", { products });
             } catch (error) { next(error); }
         },
@@ -15,12 +16,13 @@ module.exports = {
         update: async ({ params }, response, next) => {
             try {
                 const { id } = params;
-                const product = await Product.find(id);
+                const product = await Product.find.identifier(id);
                 response.render("administration/products/update", { product });
             } catch (error) { next(error); }
         },
-        orders: (request, response) => {
-            response.render("administration/orders");
+        orders: async (request, response) => {
+            const orders = await Order.find.all();
+            response.render("administration/orders/orders", {orders});
         }
     },
     $products: {
@@ -47,6 +49,16 @@ module.exports = {
                 const { id } = params;
                 await Product.delete(id);
                 response.status(204).json({ message: "The product has been successfully deleted." });
+            } catch (error) { next(error); }
+        }
+    },
+    $orders: {
+        update: async ({ params, body }, response, next) => {
+            try {
+                const { status } = body;
+                const { id } = params;
+                await Order.update(id, status);
+                response.status(200).json({ message: "The order has been successfully updated.", status });
             } catch (error) { next(error); }
         }
     }

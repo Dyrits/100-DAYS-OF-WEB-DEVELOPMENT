@@ -1,5 +1,5 @@
 const database = require("../data/database");
-const {ObjectId} = require("mongodb");
+const { ObjectId } = require("mongodb");
 
 class Order {
     constructor (cart, user, status = "pending") {
@@ -9,18 +9,24 @@ class Order {
         this.date = new Date();
     }
 
-    get localDateString () {
-        return this.date.toLocaleDateString({
-            weekday: "short",
-            day: "numeric",
-            month: "long",
-            year: "numeric"
-        });
-    }
+    async save () { await database.schema.collection("orders").insertOne(this); }
 
-    async save (id) {
-        if (id) { await database.schema.collection("orders").updateOne({ _id: ObjectId(id) }, { $set: this }); }
-        else { await database.schema.collection("orders").insertOne(this); }
+    static async update (id, status) { await database.schema.collection("orders").updateOne({ _id: ObjectId(id) }, { $set: { status } }); }
+
+    static find = {
+        identifier: async (id) => {
+            const order = await database.schema.collection("orders").findOne({ _id: ObjectId(id) });
+            order.id = order._id.toString();
+            return order;
+        },
+        user: async (id) => {
+            const orders = await database.schema.collection("orders").find({ "user._id": ObjectId(id) }).sort({ _id: -1 }).toArray();
+            return orders.map(order => ({...order, id: order._id.toString()}));
+        },
+        all: async () => {
+            const orders = await database.schema.collection("orders").find({}).sort({ _id: -1 }).toArray();
+            return orders.map(order => ({...order, id: order._id.toString()}));
+        }
     }
 }
 

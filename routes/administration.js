@@ -15,6 +15,7 @@ router.post("/products", middlewares.upload, controller.$products.create);
 router.post("/products/:id", middlewares.upload, controller.$products.update);
 router.delete("/products/:id", controller.$products.delete);
 router.get("/orders", controller.render.orders);
+router.patch("/orders/:id", controller.$orders.update);
 
 
 module.exports = router;

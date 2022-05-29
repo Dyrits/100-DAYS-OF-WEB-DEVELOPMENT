@@ -49,10 +49,8 @@ app.use(routes.index);
 app.use(routes.authentication);
 app.use(routes.products);
 app.use("/cart", routes.cart);
-app.use(middlewares.authorization.authentication);
-app.use("/orders", routes.orders);
-app.use(middlewares.authorization.administration);
-app.use("/administration", routes.administration);
+app.use("/orders", middlewares.authorization.authentication, routes.orders);
+app.use("/administration", middlewares.authorization.administration, routes.administration);
 
 app.use(middlewares.error);
 

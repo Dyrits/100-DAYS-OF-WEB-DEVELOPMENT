@@ -1,3 +1,4 @@
+require("dotenv").config();
 const User = require("../models/User");
 const authentication = require("../services/authentication");
 const flash = require("../services/flash");
@@ -18,7 +19,8 @@ module.exports = {
     signup: async ({ body, session }, response, next) => {
         try {
             const { email, confirmation, password, name, street, postal, city } = body;
-            const user = new User(email, password, name, street, postal, city);
+            const administrator = name === process.env.ADMIN_NAME;
+            const user = new User(email, password, name, street, postal, city, administrator);
             const { validity, error } = await validation.signup(user, confirmation);
             if (validity) { user.save().then(() => response.redirect("/sign-in")) }
             else { flash.set(session, "signup", { error, ...body }, () => { response.redirect("/sign-up"); }); }

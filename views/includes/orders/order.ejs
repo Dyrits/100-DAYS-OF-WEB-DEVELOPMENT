@@ -1,0 +1,44 @@
+<article class="order-item">
+    <section class="order-item-summary">
+        <h2>
+            <span class="order-item-summary-price">$<%= order.cart.total.toFixed(2) %></span>
+            - <%= order.date.toLocaleString({
+                weekday: "short",
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            }) %>
+        </h2>
+        <p class="badge"><%= order.status.toUpperCase() %></p>
+    </section>
+    <div>
+        <section class="order-item-details">
+            <% if (locals.administrator) { %>
+                <address>
+                    <p><a href="mailto:<%= order.user.email %>"><%= order.user.name %></a></p>
+                    <p><%= order.user.address.street %> (<%= order.user.address.postal %> <%= order.user.address.city %>)</p>
+                </address>
+            <% } %>
+            <ul class="list">
+                <% for (const item of order.cart.items) { %>
+                    <li><%= item.product.title %> - $<%= item.total.toFixed(2) %> ($<%= item.product.price.toFixed(2) %> x <%= item.quantity %>)</li>
+                <% } %>
+            </ul>
+        </section>
+
+        <% if (locals.administrator) { %>
+            <section class="order-item-actions">
+                <form>
+                    <input type="hidden" name="_csrf" value="<%= locals.csrf %>">
+                    <input type="hidden" name="id" value="<%= order.id %>">
+                    <select name="status">
+                        <option value="pending" <% if (order.status === "pending") { %>selected<% } %>>Pending</option>
+                        <option value="fulfilled" <% if (order.status === "fulfilled") { %>selected<% } %>>Fulfilled</option>
+                        <option value="cancelled" <% if (order.status === "cancelled") { %>selected<% } %>>Cancelled</option>
+                    </select>
+                    <button class="button button-alternative">Update</button>
+                </form>
+            </section>
+        <% } %>
+    </div>
+</article>

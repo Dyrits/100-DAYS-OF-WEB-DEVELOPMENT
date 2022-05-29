@@ -29,6 +29,8 @@ a {
   padding: 0;
 }
 
+button, a { outline: none; }
+
 .button {
   cursor: pointer;
   font: inherit;

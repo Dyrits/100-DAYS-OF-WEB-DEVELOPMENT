@@ -6,6 +6,7 @@
 
 # Node
 node_modules/
+.env
 
 # Data
 data/products/images/

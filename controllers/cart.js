@@ -8,7 +8,7 @@ module.exports = {
         const { cart } = response.locals;
         try {
             const { id } = body;
-            const product = await Product.find(id);
+            const product = await Product.find.id(id);
             cart.add(product);
             session.cart = cart;
             const { quantity } = cart;
@@ -19,7 +19,7 @@ module.exports = {
         const { cart } = response.locals;
         try {
             const { id, quantity } = body;
-            const total = cart.update(id, quantity);
+            const total = cart.update.quantity(id, quantity);
             session.cart = cart;
             response.status(200).json({
                 message: "The product has been successfully updated.",

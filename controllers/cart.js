@@ -8,7 +8,7 @@ module.exports = {
         const { cart } = response.locals;
         try {
             const { id } = body;
-            const product = await Product.find.id(id);
+            const product = await Product.find.identifier(id);
             cart.add(product);
             session.cart = cart;
             const { quantity } = cart;

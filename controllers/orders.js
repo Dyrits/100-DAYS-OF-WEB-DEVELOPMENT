@@ -1,5 +1,6 @@
 const Order = require("../models/Order");
 const User = require("../models/User");
+const stripe = require("../services/stripe");
 
 module.exports = {
     render: {
@@ -10,6 +11,8 @@ module.exports = {
                 response.render("customers/orders/orders", { orders });
             } catch (error) { next(error); }
         },
+        success: async (request, response, next) => { response.render("customers/orders/success"); },
+        failure: async (request, response, next) => { response.render("customers/orders/failure"); }
     },
     create: async ({ session }, response, next) => {
         try {
@@ -19,7 +22,8 @@ module.exports = {
             const order = new Order(cart, user);
             await order.save();
             session.cart = null;
-            response.redirect("/orders");
+            const checkout = await stripe.checkout(cart);
+            response.redirect(303, checkout.url);
         } catch (error) { next(error); }
     },
 }

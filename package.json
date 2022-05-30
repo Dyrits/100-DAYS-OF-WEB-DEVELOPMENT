@@ -21,6 +21,7 @@
     "express-session": "^1.17.2",
     "mongodb": "^4.0.1",
     "multer": "^1.4.4",
+    "stripe": "^9.5.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

@@ -5,7 +5,7 @@
         <img src="<%= product.image.url %>" alt="No preview available.">
         <div id="product-header-information">
             <h1><%= product.title %></h1>
-            <p><%= product.price %></p>
+            <p>$<%= product.price %></p>
             <button class="button" data-id="<%= product.id %>" data-csrf="<%= locals.csrf %>">Add to card</button>
         </div>
     </div>

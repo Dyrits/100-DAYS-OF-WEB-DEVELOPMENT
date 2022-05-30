@@ -14,7 +14,7 @@ module.exports = {
                 price_data: {
                     currency: "usd",
                     product_data: { name: item.product.title },
-                    unit_amount: item.product.price.toFixed(2) * 100,
+                    unit_amount: Math.round(item.product.price.toFixed(2) * 100),
                 },
                 quantity: item.quantity,
             }

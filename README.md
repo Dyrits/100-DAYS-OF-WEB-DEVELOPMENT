@@ -1,21 +1,21 @@
 # Day #094
-Just as earlier in the course, you of course want to publish your website at some point. Now that we can build more complex websites, it's time to take another look at deployment therefore.
+Deploy static and dynamic websites (and learn about the difference). Also start into a brand-new section on how you may build your own services or APIs.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 47 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 52 minutes)</summary>
     <ul>
+        <li>Improving Performance & Shrinking Assets (JS, Images)</li>
+        <li>Deployment Example: Static Websites (Refresher)?</li>
+        <li>Deployment Example: Dynamic Website With Backend Code</li>
+        <li>Deploying A MongoDB Database With Atlas</li>
+        <li>Finishing Dynamic Website Deployment</li>
+        <hr>
         <li>Module Introduction</li>
-        <li>How Are Websites Made Available To The Public?</li>
-        <li>Static vs Dynamic Websites</li>
-        <li>Hosting Database Servers</li>
-        <li>Deployment (Preparation) Steps</li>
-        <li>The Example Projects</li>
-        <li>Testing & Code Preparation (incl. Environment Variables)</li>
-        <li>Evaluating Cross-Browser Support</li>
-        <li>Search Engine Optimization (SEO)</li>
-        <li>Adding a Favicon</li>
+        <li>APIs & Services: What & Why?</li>
+        <li>JS Packages vs URL-based APIs: What We Will Build Here</li>
+        <li>APIs vs "Traditional Websites"</li>
     </ul>
 </details>
 

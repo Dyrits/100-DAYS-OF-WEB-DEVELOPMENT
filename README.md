@@ -18,5 +18,3 @@ Just as earlier in the course, you of course want to publish your website at som
         <li>Adding a Favicon</li>
     </ul>
 </details>
-
-/ [Heroku](https://dyrits-wde.herokuapp.com/)

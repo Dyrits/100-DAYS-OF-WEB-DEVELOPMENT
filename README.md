@@ -18,5 +18,3 @@ Deploy static and dynamic websites (and learn about the difference). Also start 
         <li>APIs vs "Traditional Websites"</li>
     </ul>
 </details>
-
-/ [Heroku](https://dyrits-wde.herokuapp.com/)

@@ -4,9 +4,10 @@
 *.sass.map
 *.scss.map
 
-# Node
+# Node & PNPM
 node_modules/
 .env
+.pnpm-debug.log
 
 # Data
 data/products/images/

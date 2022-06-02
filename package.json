@@ -1,0 +1,24 @@
+{
+  "name": "100-days-of-code",
+  "version": "1.0.0",
+  "description": "Day #096",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyrits/100-DAYS-OF-CODE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dyrits/100-DAYS-OF-CODE/issues"
+  },
+  "homepage": "https://github.com/Dyrits/100-DAYS-OF-CODE#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0"
+  }
+}

@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 
 const database = require("./data/database");
 
@@ -7,7 +8,10 @@ const app = express();
 const routes = {
     quotes: require("./routes/quotes"),
     todos: require("./routes/todos")
-}
+};
+
+app.use(express.json());
+app.use(cors({ origin: "*" }));
 
 app.use("/quotes", routes.quotes);
 app.use("/todos", routes.todos);

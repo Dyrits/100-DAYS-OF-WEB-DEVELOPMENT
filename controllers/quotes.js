@@ -4,7 +4,7 @@ module.exports = {
     get: {
         random: async function (request, response, next) {
             const quote = await Quote.get.random();
-            response.json({quote: "I'm a quote..."});
+            response.json({ quote });
         }
     }
 }

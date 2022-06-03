@@ -7,6 +7,12 @@ module.exports = {
                 const todos = await ToDo.get.all();
                 response.json({ todos });
             } catch (error) { next(error); }
+        },
+        id: async function (request, response, next) {
+            try {
+                const todo = await ToDo.get.id(request.params.id);
+                response.json({ todo });
+            } catch (error) { next(error); }
         }
     },
     add: async function (request, response, next) {
@@ -19,9 +25,9 @@ module.exports = {
     },
     update: async function (request, response, next) {
         try {
-            const todo = new ToDo(request.body.text);
+            let todo = new ToDo(request.body.text);
             await todo.save(request.params.id);
-            response.json({ todo });
+            response.json({ ...todo, _id: request.params.id });
         } catch (error) { next(error); }
 
     },

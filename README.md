@@ -1,16 +1,19 @@
-# Day #098
-ack to frontend development! But now it's time to dive into powerful frontend JavaScript frameworks (= libraries)!
+# Day #099
+Finish this thorough introduction into JavaScript frontend frameworks by also connecting your frontend website to your API.
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 40 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
     <ul>
-        <li>Module Introduction</li>
-        <li>Why Would You Use Frontend JavaScript UI Frameworks?</li>
-        <li>React vs Vue vs Angular: Which Framework Should You Use?</li>
-        <li>Getting Started With Vue.js ("Vue")</li>
-        <li>Listening To Events & Updating Data + the DOM</li>
-        <li>Introducing "Two-Way-Binding"</li>
+        <li>Outputting Lists Of Data</li>
+        <li>Outputting Content Conditionally</li>
+        <li>Updating Data</li>
+        <li>Deleting Data</li>
+        <li>Sending a POST Http Request</li>
+        <li>Loading Data & Managing Loading States</li>
+        <li>Loading Vue Differently</li>
+        <li>Sending PATCH + DELETE Requests & Module Summary</li>
+        <li>Quiz 26 - Learning Check: JavaScript Frameworks & Vue.js</li>
     </ul>
 </details>

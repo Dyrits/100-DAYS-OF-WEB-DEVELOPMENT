@@ -1,5 +1,5 @@
 # Day #098
-ack to frontend development! But now it's time to dive into powerful frontend JavaScript frameworks (= libraries)!
+Back to frontend development! But now it's time to dive into powerful frontend JavaScript frameworks (= libraries)!
 
 ---
 

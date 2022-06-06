@@ -80,7 +80,6 @@ async function deleteTodo(event) {
   const todoId = todoElement.dataset.todoid;
   try {
     const response = await fetch(url + todoId, { method: "DELETE" });
-    console.log(response);
     response.ok ? todoElement.remove() : alert("The todo couldn't be deleted.");
   } catch (error) {
     console.error(error);

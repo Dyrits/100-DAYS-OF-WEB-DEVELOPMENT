@@ -4,27 +4,35 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Todos</title>
+    <title>To-dos</title>
     <link rel="stylesheet" href="styles/main.css"/>
-    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="scripts/app.js" defer></script>
 </head>
 <body>
 <header>
-    <h1>Todo Management</h1>
-    <p>Manage your (daily) todos with ease!</p>
+    <h1>To-do Management</h1>
+    <p>Manage your (daily) to-dos with ease!</p>
 </header>
 <main id="app">
     <section id="todo-management">
         <form @submit="add">
-            <label for="text">Todo text</label>
+            <label for="text">To-do text</label>
             <input type="text" id="text" name="text" v-model="input" required />
             <button>Save</button>
         </form>
     </section>
-    <section id="todos">
+    <section v-else id="todos">
+        <p v-if="loading">Loading...</p>
+        <p v-else-if="!todos.length">There is no to-do available.</p>
         <ul id="todos-list">
-            <li>{{ todo }}</li>
+            <li v-for="todo of todos">
+                <p>{{ todo.text }}</p>
+                <div>
+                    <button @click="edit(todo._id)">Edit</button>
+                    <button @click="remove(todo._id)">Delete</button>
+                </div>
+            </li>
         </ul>
     </section>
 </main>

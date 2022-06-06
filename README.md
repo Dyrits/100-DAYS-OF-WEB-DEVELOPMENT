@@ -28,5 +28,6 @@ The "100 Days of Code" challenge is a challenge that was invented to motivate pe
 | [Day #059](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23059) |                                                                 [Day #069](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23069)                                                                  |                                                                 [Day #079](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23079)                                                                  | [Day #089](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23089) |                     [Day #099](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23099)                     |
 | [Day #060](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23060) | Day #070 ([01](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23070-01) [🔗](https://dyrits-blog-with-comments.herokuapp.com/) / [02](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23070-02)) |                                                                 [Day #080](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23080)                                                                  | [Day #090](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23090) |                     [Day #100](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23100)                     |
 
-## Udemy Course Completion Certificate
+---
+
 ![Udemy Course Completion Certificate](UC-8853e4b7-b7d1-4a68-833a-04e314b31b5c.jpg)

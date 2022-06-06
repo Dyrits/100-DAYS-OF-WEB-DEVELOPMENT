@@ -1,16 +1,2 @@
-# SASS
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-
-# Node & PNPM
-node_modules/
-.env
-.pnpm-debug.log
-
-# Data
-data/products/images/
-
 # PHPStorm
 .idea/

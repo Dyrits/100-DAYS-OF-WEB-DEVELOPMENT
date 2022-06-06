@@ -1,19 +1,11 @@
-# Day #099
-Finish this thorough introduction into JavaScript frontend frameworks by also connecting your frontend website to your API.
+# Day #100
+Bonus: Possible Next Steps, Practice Opportunities & Project Ideas
 
 ---
 
 <details>
-    <summary>List of Lectures (Video Duration: 53 minutes)</summary>
+    <summary>List of Lectures (Video Duration: 5 minutes)</summary>
     <ul>
-        <li>Outputting Lists Of Data</li>
-        <li>Outputting Content Conditionally</li>
-        <li>Updating Data</li>
-        <li>Deleting Data</li>
-        <li>Sending a POST Http Request</li>
-        <li>Loading Data & Managing Loading States</li>
-        <li>Loading Vue Differently</li>
-        <li>Sending PATCH + DELETE Requests & Module Summary</li>
-        <li>Quiz 26 - Learning Check: JavaScript Frameworks & Vue.js</li>
+        <li>Bonus: Possible Next Steps, Practice Opportunities & Project Ideas</li>
     </ul>
 </details>

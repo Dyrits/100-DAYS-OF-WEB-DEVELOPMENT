@@ -1,5 +1,12 @@
-# [100 Days Of Code (100 Days Of Web Development)](https://100daysofwebdev.com/paths/100-days-challenge)
+# 100 Days of Code - Web Development
+
+An index tracking progress through the "100 Days of Code" challenge, following the Academind "100 Days Of Code: The Complete Web Development Bootcamp". Each day links to its own branch.
+
+## About The Project
+
 The "100 Days of Code" challenge is a challenge that was invented to motivate people to continue learning and coding (and therefore growing as a developer).
+
+## Progress
 
 |                                                    Days #001-010                                                     |                                                                                        Days #011-020                                                                                        |                                                                                     Days #021-030                                                                                      |                                                                Days #031-040                                                                 |                                                                Days #041-050                                                                 |    
 |:--------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -28,6 +35,10 @@ The "100 Days of Code" challenge is a challenge that was invented to motivate pe
 | [Day #059](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23059) |                                                                 [Day #069](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23069)                                                                  |                                                                 [Day #079](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23079)                                                                  | [Day #089](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23089) |                     [Day #099](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23099)                     |
 | [Day #060](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23060) | Day #070 ([01](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23070-01) / [02](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23070-02)) |                                                                 [Day #080](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23080)                                                                  | [Day #090](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23090) |                     [Day #100](https://github.com/Dyrits/100-DAYS-OF-CODE/tree/%23100)                     |
 
----
+## Certificate
 
 ![Udemy Course Completion Certificate](UC-8853e4b7-b7d1-4a68-833a-04e314b31b5c.jpg)
+
+## License
+
+No license file is present.
